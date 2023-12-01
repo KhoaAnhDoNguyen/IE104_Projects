@@ -220,10 +220,10 @@ section .delivery p {
     text-decoration: none;
 }
 
-.delivery a:hover, .delivery:hover{
+/*.delivery a:hover, .delivery:hover{
     background-color: #888;
     color: #000;
-}
+}*/
 
 /*small picture*/
 main .smallpicture img {

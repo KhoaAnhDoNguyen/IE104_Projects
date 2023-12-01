@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Kiểm tra giá trị của id và hiển thị thông tin tương ứng
     if (id === 'PhinSuaDa') {
-        document.getElementById('product-show').src = 'Cà phê/Cà phê/cà phê phin/phin sữa đá.jpg';
-        document.getElementById('smallpicture-id').src = 'Cà phê/Cà phê/cà phê phin/phin sữa đá.jpg';
+        document.getElementById('product-show').src = 'Ảnh/Cà phê/phin đen nóng.png';
+        document.getElementById('smallpicture-id').src = 'Ảnh/Cà phê/phin đen nóng.png';
         document.getElementById('product-description').textContent = 'Phin Sữa Đá hương vị cà phê Việt Nam đích thực! Từng hạt cà phê hảo hạng được chọn bằng tay, phối trộn độc đáo giữa hạt Robusta từ cao nguyên Việt Nam, thêm Arabica thơm lừng. Cà phê được pha từ Phin truyền thống, hoà cùng sữa đặc sánh và thêm vào chút đá tạo nên ly Phin Sữa Đá – Đậm Đà Chất Phin.';
         document.getElementById('intro-id').textContent = 'Menu / Cafe / Phin Sữa Đá';
         document.getElementById('product-name').textContent = 'Cafe Sữa Đá';
@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
     } 
 
     else if (id === 'PhinHatDe') {
-        document.getElementById('product-show').src = 'Cà phê/PHINDI/phindi hạt dẻ.jpg';
-        document.getElementById('smallpicture-id').src = 'Cà phê/PHINDI/phindi hạt dẻ.jpg';
+        document.getElementById('product-show').src = 'Ảnh/Cà phê/phindi choco 2.jpg';
+        document.getElementById('smallpicture-id').src = 'Ảnh/Cà phê/phindi choco 2.jpg';
         document.getElementById('product-description').textContent = 'Phindi Hạt Dẻ Cười là sự kết hợp tinh tế giữa hương vị đậm đà của cà phê và sự mịn màng, thơm ngon của sốt phistiachio. ';
         document.getElementById('intro-id').textContent = 'Menu / Cafe / Phin Hạt Dẻ';
         document.getElementById('product-name').textContent = 'Phin Hạt Dẻ';
@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
     } 
 
     else if (id === 'TraThachVai') {
-        document.getElementById('product-show').src = 'Trà/Trà thạch vải/trà thạch vải.jfif';
-        document.getElementById('smallpicture-id').src = 'Trà/Trà thạch vải/trà thạch vải.jfif';
+        document.getElementById('product-show').src = 'Ảnh/Trà/trà thạch vải 2.jfif';
+        document.getElementById('smallpicture-id').src = 'Ảnh/Trà/trà thạch vải 2.jfif';
         document.getElementById('product-description').textContent = 'Một sự kết hợp thú vị giữa trà đen, những quả vải thơm ngon và thạch giòn khó cưỡng, mang đến thức uống tuyệt hảo!';
         document.getElementById('intro-id').textContent = 'Menu / Cafe / Trà Thạch Vải';
         document.getElementById('product-name').textContent = 'Trà Thạch Vải';
@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
     } 
 
     else if (id === 'DauChanhMat') {
-        document.getElementById('product-show').src = 'Detox/detox thanh lọc/nước dâu chanh mật/cach-lam-nuoc-uong-thai-doc-co-the-an-toan-va-hieu-qua-4.jpg';
-        document.getElementById('smallpicture-id').src = 'Detox/detox thanh lọc/nước dâu chanh mật/cach-lam-nuoc-uong-thai-doc-co-the-an-toan-va-hieu-qua-4.jpg';
+        document.getElementById('product-show').src = 'Ảnh/Trà/trà xanh đậu đỏ.jpg';
+        document.getElementById('smallpicture-id').src = 'Ảnh/Trà/trà xanh đậu đỏ.jpg';
         document.getElementById('product-description').textContent = 'Nước dâu tây chanh detox với công thức đơn giản và chưa đến 15 phút thực hiện à bạn đã có ngay cho mình một chai detox giảm cân, xả stress, loại bỏ căng thẳng mệt mỏi và cải thiện làn da rồi.';
         document.getElementById('intro-id').textContent = 'Menu / Cafe / Nước dâu tây chanh detox';
         document.getElementById('product-name').textContent = 'Nước dâu tây chanh detox';
