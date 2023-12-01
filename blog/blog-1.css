@@ -18,9 +18,14 @@
 
 .body_main{
   display: inline-block;
+<<<<<<< HEAD
   margin: 0 20% 0 20%;
   margin-top: 30px;
 
+=======
+  margin: 0 15% 0 15%;
+  
+>>>>>>> 7d25d1481dee71894a34d2ffdabca92d540c4d5a
 }
 
 .body_h2{
@@ -42,7 +47,10 @@
 .body_p {
   font-family: Inter;
   font-size:2.5em;
+<<<<<<< HEAD
   /* margin-bottom: 50px; */
+=======
+>>>>>>> 7d25d1481dee71894a34d2ffdabca92d540c4d5a
 }
 
 /* -----img---------- */
