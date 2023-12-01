@@ -261,6 +261,15 @@ header {
     background-color: rgba(255, 255, 255, 0.873);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    animation: fadeIn linear 0.2s;
+}
+
+.product-menu::before {
+    content: "";
+    display: block;
+    height: 10px;
+    top: -10px;
+    position: relative; 
 }
 
 .menu-item {
@@ -379,7 +388,7 @@ header {
 
 .sidebar__navbar-item:hover,
 .sidebar__navbar-item:hover a {
-    color: #ff7f7f;
+    color: var(--primary-color);
     right: -2px;
 }
 
@@ -431,7 +440,7 @@ header {
 }
 
 .content-item__product-item:hover .product-link {
-    color: #ff7f7f;
+    color: var(--primary-color)
 }
 
 .content {
