@@ -187,6 +187,13 @@ img {
     max-height: auto;
 }
 
+header {
+    height: var(--header-height);
+    position: sticky;
+    -webkit-sticky: sticky;
+    top: 0;
+    z-index: 1;
+}
 
 /* --------------------------------------top bar------------------------------------------ */
 .row {
@@ -194,28 +201,26 @@ img {
     background-color: rgb(233, 201, 133);
     justify-content: space-around;
     font-size: 15px;
-    height: 30px;
+    height: var(--header-info-height);
     align-items: center;
     justify-self: center;
 }
 
-.topBarIcon {
+/* .topBarIcon {
     width: 20px;
     height: auto;
-}
+} */
 
 
 /* --------------------------------------header------------------------------------------ */
-.nav-links {
-    font-size: 0.7em;
-}
-
 .clearfix {
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
-    height: 2em;
+    height: var(--header-navbar-height);
+    margin: 0;
+    font-size: 1.2rem;
 }
 
 .clearfix li {
@@ -237,6 +242,7 @@ img {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     width: 100%;
+    height: var(--header-navbar-height);
 }
 
 .logo {
@@ -305,15 +311,9 @@ img {
     font-size: 1.2em;
 }
 
-header {
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-}
-
 #searchInput {
     align-self: center;
-    height: 25px;
+    line-height: 2.4rem;
     margin-right: 7px;
     border-color: rgba(174, 174, 174, 0.415);
     border-width: 0.01cap;
@@ -323,6 +323,11 @@ header {
 
 #searchInput:focus {
     outline: none;
+}
+
+.header__cart-icon {
+    font-size: 2rem;
+    margin-left: 8px;
 }
 
 
@@ -381,7 +386,7 @@ header {
 /*------------------- Product ---------------------*/
 .content-item__product-item {
     margin:8px 0 44px 32px;
-    border-radius: 5px;
+    border-radius: 12px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
     transition: transform linear 0.1s;
     will-change: transform;
@@ -404,14 +409,19 @@ header {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .product-link {
     font-size: 1.2rem;
     color: var(--text-color);
     text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.content-item__product-desc {
+    padding: 0 0 1px 9px;
 }
 
 .product-link h5 {
