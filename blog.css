@@ -133,6 +133,7 @@
 
 
 
+
 /*---------BODY------------*/
 /* Thiết kế mỗi bài viết */
 .article {
@@ -184,6 +185,15 @@
 .sidebar li {
     margin-bottom: 10px;
 }
+
+/* CSS cho phần table-of-contents */
+aside.table-of-contents {
+    position: sticky;
+    top: 0; /* Điều này sẽ làm cho phần table-of-contents cố định ở trên đầu màn hình khi cuộn xuống */
+    padding: 20px; /* Thêm padding cho đẹp */
+
+}
+
 
 
 
@@ -261,6 +271,7 @@
     background-image: linear-gradient(#ff4568, #ff4568);
     background-repeat: no-repeat;
 }
+
 
 
 /*table of contents*/
