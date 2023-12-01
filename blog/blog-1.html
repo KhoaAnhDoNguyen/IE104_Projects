@@ -13,84 +13,165 @@
 
 </head>
   <body>
-    <div id="main">
-      <header id="header"> 
-        <div class="header__info">
-            <div class="sereprate">
-                <div class="header__location">
-                    <i class="header__location-icon fa-solid fa-location-dot"></i>
-                    Hơn 150 cửa hàng trên toàn quốc
-                </div>
-            </div>
-            <div class="header__call">
-                <i class="header__call-icon fa-solid fa-phone"></i>
-                012345678
-            </div>
-        </div>
-        
-        <div class="header__navbar">
-            <img src="./assets/img/primary_logo.png" alt="Logo" class="primary-logo">
-            
-
-            <div class="header__navbar-list">
-                <ul class="navbar-list">
-                    <li class="header__navbar-item"><a href="#" class="header__navbar-link">COFFEE</a></li>
-                    <li class="header__navbar-item"><a href="#" class="header__navbar-link">TEA</a></li>
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">
-                            MENU
-                            <i class="subnav-down-icon fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul class="header__subnav">
-                            <li><a href="#">Merchandlise</a></li>
-                            <li><a href="#">Extrass</a></li>
-                            <li><a href="#">Media</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">
-                            CỬA HÀNG
-                            <i class="subnav-down-icon fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul class="header__subnav">
-                            <li><a href="#">Merchandlise</a></li>
-                            <li><a href="#">Extrass</a></li>
-                            <li><a href="#">Media</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">
-                            VỀ CHÚNG TÔI
-                            <i class="subnav-down-icon fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul class="header__subnav">
-                            <li><a href="#">Merchandlise</a></li>
-                            <li><a href="#">Extrass</a></li>
-                            <li><a href="#">Media</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__navbar-item"><a href="#" class="header__navbar-link">TUYỂN DỤNG</a></li>
-                </ul>
-            </div>
-
-            <div class="header__cart">
-                <a href="" class="header__cart-link">
-                    <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
-                    GIỎ HÀNG
-                </a>
-            </div>
-        </div>
-     </header>
+     <!-- Này là phần top bar -->
+     <div class="topBar">
+      <div class="container">
+          <div class="row">
+              <div>
+                  <a href>
+                      <img src="/blog/assets/img/location.png" alt="StoreIcon" class="topBarIcon">
+                      <span>Hơn 1000 cửa hàng trên toàn quốc</span>
+                  </a>
+              </div>
+              <div>
+                  <a href>
+                      <img src="/blog/assets/img/telephone.png" alt="telephoneIcon" class="topBarIcon">
+                      <span>Đặt hàng: 1800.6969</span>
+                  </a>
+              </div>
+          </div>
+      </div>
   </div>
+
+  <!-- Đây là phần header -->
+  <header>
+      <div class="container">
+          <div class="navbar">
+              <div class="nav-links" id="nav-links">
+                  <ul class="clearfix">
+                      <li>
+                          <img src="/blog/assets/img/Grey.png" alt="logo" class="logo">
+                      </li>
+                      <li>
+                          <a href=""><span>COFFEE</span></a>
+                      </li>
+                      <li>
+                          <a href=""><span>TEA</span></a>
+                      </li>
+                      <li>
+                          <div class="menu-item">
+                              <a href=""><span>MENU</span></a>
+                              <div class="product-menu" id="productMenu">
+                                  <!-- Nội dung bảng sản phẩm chi tiết -->
+                                  <ul class="menu_child">
+                                      <li>
+                                          <a class="menu_title" href="#">Tất cả</a>
+                                      </li>
+                                      <li>
+                                          <ul>
+                                              <li>
+                                                  <a class="menu_title" href="#">Cà phê</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">PHINDI</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Macchiato</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Latte</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Cà phê phin</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Bạc xỉu</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Americano</a>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                      <li>
+                                          <ul>
+                                              <li>
+                                                  <a class="menu_title" href="#">Trà</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Trà xanh đậu đỏ</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Trà xanh đào</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Trà thạch vải</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Trà thạch đào</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Trà sen vàng</a>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                      <li>
+                                          <ul>
+                                              <li>
+                                                  <a class="menu_title" href="#">Detox</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Detox thanh lọc</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Detox giảm cân</a>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                      <li>
+                                          <ul>
+                                              <li>
+                                                  <a class="menu_title" href="#">Bánh</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Tiramisu</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Tart trứng</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Panna cotta</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Mousse cake</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Bông lan trứng muối</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">Biscotti</a>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <a href=""><span>VỀ CHÚNG TÔI</span></a>
+                      </li>
+                      <li>
+                          <a href=""><span>TUYỂN DỤNG</span></a>
+                      </li>
+                      <li>
+                          <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm....">
+                          <a href="#" class="image-link">
+                              <img src="/blog/assets/img/loupe.png" alt="cartIcon" class="cartIcon">
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </header>
 
     <main class="main_base">
       <article>
-        <image class="body_img" src="/assets/img/top_bg.png" />
+        <img src="/blog/assets/img/bg.png" alt="bannerPic1" class="bannerPic">
         <p class="body_tab">Blog / Coffeeholic</p>  
 
         <h2 class="body_h2" id="blog_1">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON</h2>
         <div class="body_main">
-          <p class="body_p">
+          <p class="body_p1">
             <b>Mới đây, các "tín đồ" cà phê đang bàn tán xôn xao về SIGNATURE -
               Biểu tượng văn hóa cà phê của The Coffee House đã quay trở lại.</b>
           </p>
@@ -117,7 +198,7 @@
             của mình theo cách gần gũi nhất. Bạn sẽ có cơ hội thưởng thức cà phê
             bằng đủ những giác quan - ngửi hương, lắng nghe, ngắm nhìn và nếm vị.
           </p>
-          <image class="body_img1" src="/assets/img/image_1.png"  />
+          <image class="body_img1" src="/blog/assets/img/image_1.png"  />
           <p class="body_p">
             Không gian rộng mở, được thiết kế như một xưởng rang cà phê nhưng vẫn
             tạo cảm giác thân thuộc, gần gũi với nhiều cây xanh và hai tông màu cam
@@ -127,7 +208,7 @@
             Khoảng 1 giờ, quán sẽ rang 1 mẻ nhỏ, tạo nên tiếng cà phê chạy trong các
             ống đồng rất vui tai, như 1 bản nhạc.
           </p>
-          <image class="body_img1" src="/assets/img/image_2.png"  />
+          <image class="body_img1" src="/blog/assets/img/image_2.png"  />
           <p class="body_p">
             Không chỉ được thưởng thức những ly cà phê đặc sản thơm ngon, đậm vị,
             đến với SIGNATURE by The Coffee House, bạn còn có thể thưởng thức
@@ -139,7 +220,7 @@
             loạt những bình luận khen ngợi về không gian cửa hàng, thức uống, đồ
             ăn và "rủ rê" bạn bè tới khám phá và trải nghiệm.
           </p>
-          <image class="body_img1" src="/assets/img/image_3.png" />
+          <image class="body_img1" src="/blog/assets/img/image_3.png" />
           <p class="body_p">
             Bạn Lan Anh, một "fan cứng" của The Coffee House Signature Phạm Ngọc
             Thạch đã tỏ ra rất hào hứng khi nghe tin bạn cũ sắp quay lại: "Lần đầu
@@ -166,28 +247,16 @@
 
         <div class="line-sereprate"></div>
 
-        <!-- ----- like, share---- -->
-
-        <div class="body_footer">
-          <button class="like">
-            <i class="fa fa-heart"></i>
-            Thích
-            <span class="like-count">0</span>
-          </button>
-          <button class="share">
-            Chia sẻ
-            <i class="fa fa-share"></i>
-          </button>
-        </div>
+      
         <div >
           <h2 class="body_h2_footer">Bài viết mới nhất</h2>
         </div>
         <!-- --------Tóm tắt các blog------- -->
         <!-- Thêm thẻ <a> bao quanh khung blog và đặt href là "blog-1.html" -->
-        <div class="body_blog">
-          <div class="blog">
-            <a href="blog-2.html">
-              <image class="body_img2" src="/assets/img/image_4.png" />
+        <div class="body_blog" >
+          <div class="blog" data-index="0">
+            <a href="#" >
+              <image class="body_img2" src="/blog/assets/img/image_4.png" />
               <p class="text_blog">Blog</p>
               <p class="text_blog2"> 3 tháng trước<br/>
                 Sống lành mạnh (healthy) đang là xu hướng được nhiều người trẻ ưa chuộng. 
@@ -195,9 +264,9 @@
               </p>
             </a>
           </div>
-          <div class="blog">
-            <a href="blog-2.html">
-              <image class="body_img2" src="/assets/img/image_5.png" />
+          <div class="blog" data-index="1" >
+            <a href="#">
+              <image class="body_img2" src="/blog/assets/img/image_5.png" />
               <p class="text_blog">Blog</p>
               <p class="text_blog2"> 3 tháng trước<br/>
                 Sống lành mạnh (healthy) đang là xu hướng được nhiều người trẻ ưa chuộng. 
@@ -205,9 +274,9 @@
               </p>
             </a>
           </div>
-          <div class="blog">
-            <a href="blog-2.html">
-              <image class="body_img2" src="/assets/img/image_6.png" />
+          <div class="blog" data-index="2">
+            <a href="#">
+              <image class="body_img2" src="/blog/assets/img/image_6.png" />
               <p class="text_blog">Blog</p>
               <p class="text_blog2"> 3 tháng trước<br/>
                 Sống lành mạnh (healthy) đang là xu hướng được nhiều người trẻ ưa chuộng. 

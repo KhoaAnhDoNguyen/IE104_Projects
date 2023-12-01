@@ -1,27 +1,27 @@
 // Khai báo một mảng chứa thông tin của từng bài
 var blogList = [
     {
-        content: 'Nội dung mới của Bài 1',
+        content: 'CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON',
         images: [
-            '/assets/img/image_new_1_1.png',
-            '/assets/img/image_new_1_2.png',
-            '/assets/img/image_new_1_3.png'
+            '/blog/assets/img/image_1.png',
+            '/blog/assets/img/image_2.png',
+            '/blog/assets/img/image_3.png'
         ]
     },
     {
-        content: 'Nội dung mới của Bài 2',
+        content: 'TRÀ XANH ĐẬU ĐỎ THE COFFEE HOUSE - HƯƠNG VỊ TRUYỀN THỐNG',
         images: [
-            '/assets/img/image_new_2_1.png',
-            '/assets/img/image_new_2_2.png',
-            '/assets/img/image_new_2_3.png'
+            '/blog/assets/img/image_1.png',
+            '/blog/assets/img/image_2.png',
+            '/blog/assets/img/trà xanh đậu đỏ.jpg'
         ]
     },
     {
-        content: 'Nội dung mới của Bài 3',
+        content: 'BÁNH BÔNG LAN TRỨNG MUỐI THE COFFEE HOUSE - HƯƠNG VỊ TRUYỀN THỐNG',
         images: [
-            '/assets/img/image_new_3_1.png',
-            '/assets/img/image_new_3_2.png',
-            '/assets/img/image_new_3_3.png'
+            '/blog/assets/img/image_1.png',
+            '/blog/assets/img/image_2.png',
+            '/blog/assets/img/BongLan.png'
         ]
     },
     // Thêm thông tin của các bài tiếp theo vào đây
@@ -73,6 +73,21 @@ nextButton.addEventListener('click', function () {
 
     // Cập nhật chỉ số mới
     nextButton.setAttribute('data-index', currentIndex);
+});
+// Lấy tất cả các phần tử có class 'blog'
+var blogElements = document.querySelectorAll('.blog');
+
+// Lặp qua mỗi phần tử và thêm sự kiện click
+blogElements.forEach(function (blogElement, index) {
+    blogElement.addEventListener('click', function () {
+        // Thay đổi nội dung và hình ảnh dựa trên chỉ số
+        document.getElementById('blog_1').innerText = blogList[index].content;
+        setImages(blogList[index].images);
+
+        // Cập nhật chỉ số mới cho cả prevButton và nextButton
+        prevButton.setAttribute('data-index', index);
+        nextButton.setAttribute('data-index', index);
+    });
 });
 
 // Hàm để đặt hình ảnh
