@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // Lấy tất cả các ảnh
     var images = document.querySelectorAll('img');
@@ -60,7 +59,37 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 );
 
-//nut bam dat hang 
+//nut bam dat hang
+const buyBtns =document.querySelectorAll('.js-buy-ticket')
+    const modal = document.querySelector('.js-modal')
+    const modalClose = document.querySelector('.js-modal-close')
+    const modalcontainer = document.querySelector('.js-modal-container')
+    const modalBuy = document.querySelector('#buy-ticket')
 
+
+    //ham hien thi form mua ve
+    function showBuyTickets(){
+        modal.classList.add('open')
+    }
+    //go bo class modal 
+    function hideBuyTickets(){
+        modal.classList.remove('open')
+    }
+
+    //lap qua tung the bottom va nghe hanh vi click
+    for(const buyBtn of buyBtns){
+        buyBtn.addEventListener('click',showBuyTickets)
+    }
+
+    //nghe hanh vi click vao nut xoa
     
+    modalClose.addEventListener('click',hideBuyTickets)
+    modalBuy.addEventListener('click',hideBuyTickets)
+    //modal.addEventListener('click',hideBuyTickets)
+    modal.addEventListener('click',function(event){
+        event.stopImmediatePropagation()
+    })
 
+    modalcontainer.addEventListener('click',function(event){
+        event.stopImmediatePropagation()
+    })
