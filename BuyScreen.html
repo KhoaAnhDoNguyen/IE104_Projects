@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Team4</title>
-    <link rel="stylesheet" href="./Ảnh/themify-icons-font/themify-icons/themify-icons.css">
     <link href="BuyScreen.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -55,15 +54,15 @@
                 <p style="margin:35px ; margin-left:100px; font-weight: normal;">Chọn size (bắt buộc)</p>
                 
                 <div class="list-size">
-                    <div class="size-product">
+                    <div class="size-product" onclick="changeBackground(this)">
                         <a href=""><img  src="Ảnh\Header&FooterImage\PaperCup_Icon.png">Nhỏ + 0đ</a>
                     </div>
 
-                    <div class="size-product">
+                    <div class="size-product" onclick="changeBackground(this)">
                         <a href=""><img  src="Ảnh\Header&FooterImage\PaperCup_Icon.png">Vừa + 10.000đ</a>
                     </div>
 
-                    <div class="size-product">
+                    <div class="size-product" onclick="changeBackground(this)">
                         <a href=""><img src="Ảnh\Header&FooterImage\PaperCup_Icon.png">Lớn + 16.000đ</a>
                     </div>
                 </div>
@@ -86,12 +85,11 @@
                 <div class="ul-topping">
                     <a href=""><p style="font-weight: normal;">Thạch OOLong + 10.000đ</p></a>
                 </div>
-                <!--
+
                 <div class="delivery">
                     <a href=""> <p> <img src="Ảnh\Header&FooterImage\Delivery.png">Giao hàng tận nơi</p></a>
-                </div> 
-                -->      
-                <button  class="delivery place-buy-btn js-buy-ticket"><p> <img src="Ảnh\Header&FooterImage\Delivery.png">Giao hàng tận nơi</p></button> 
+                   
+                </div>        
             </div>
         </section>
 
@@ -199,88 +197,4 @@
     
     <script src="BuyScreen.js"></script>
 </body>
-
-<!--delivery btn start-->
-<div class="modal js-modal">
-    <div class="modal-container js-modal-container">
-        <div class="modal-close js-modal-close">
-            <i class="ti-close"></i>
-        </div>
-        
-        <header class="modal-header">
-            <i class="ti-bag"></i>
-            Đơn đặt hàng 
-        </header>
-        <div class="modal-body">
-            <!-- Thêm một dòng để hiển thị thông báo -->
-            <label for="name" class="modal-label">
-                <i class="ti-shopping-cart"></i>
-                Họ và tên 
-            </label>
-            <input id="name" type="text" class="modal-input" placeholder="VD : Nguyễn Văn A">
-
-            <label for="phone_number" class="modal-label">
-                <i class="ti-user"></i>
-                Số điện thoại
-            </label>
-            <input id="phone_number" type="text" class="modal-input" placeholder="0123xxxxxx">
-            
-            <label for="address" class="modal-label">
-                <i class="ti-location"></i>
-                Địa chỉ 
-            </label>
-            <input id="address" type="text" class="modal-input" placeholder="Số 123 / Đường / Quận">
-
-            <label for="note" class="modal-label">
-                <i class="ti-location"></i>
-                Ghi Chú 
-            </label>
-            <input id="note" type="text" class="modal-input" placeholder="Ghi chú">
-
-            <button id="buy-ticket">
-                Đặt hàng <i class="ti-check"></i>
-            </button>
-        </div>
-    </div>
-</div>
- <!--delivery btn end-->
 </html>
-
-<script>
-    const buyBtns =document.querySelectorAll('.js-buy-ticket')
-    const modal = document.querySelector('.js-modal')
-    const modalClose = document.querySelector('.js-modal-close')
-    const modalcontainer = document.querySelector('.js-modal-container')
-    const modalBuy = document.querySelector('#buy-ticket')
-
-
-    //ham hien thi form mua ve
-    function showBuyTickets(){
-        modal.classList.add('open')
-    }
-    //go bo class modal 
-    function hideBuyTickets(){
-        modal.classList.remove('open')
-    }
-
-    //lap qua tung the bottom va nghe hanh vi click
-    for(const buyBtn of buyBtns){
-        buyBtn.addEventListener('click',showBuyTickets)
-    }
-
-    //nghe hanh vi click vao nut xoa
-    
-    modalClose.addEventListener('click',hideBuyTickets)
-    modalBuy.addEventListener('click',hideBuyTickets)
-    //modal.addEventListener('click',hideBuyTickets)
-    modal.addEventListener('click',function(event){
-        event.stopImmediatePropagation()
-    })
-
-    modalcontainer.addEventListener('click',function(event){
-        event.stopImmediatePropagation()
-    })
-
-    
-
-</script>
