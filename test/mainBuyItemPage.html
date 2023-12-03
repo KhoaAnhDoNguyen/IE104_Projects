@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
-    <title>Team4</title>
+    <title>Trang danh sách sản phẩm</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -15,9 +16,9 @@
 
 <body>
     <div class="main">
-        <header class="header">
-            <!-- Header loacion & contact -->
-            <div class="header__info">              
+        <!-- <header class="header"> -->
+        <!-- Header loacion & contact -->
+        <!-- <div class="header__info">              
                 <div class="grid">
                     <div class="grid__row">
                         <div class="header__location">
@@ -31,10 +32,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <!-- Header with navbar -->
-            <div class="header-with-navbar">
+        <!-- Header with navbar -->
+        <!-- <div class="header-with-navbar">
                 <div class="grid">
                     <div class="header-with-navbar-wrap">
                         <div class="header__logo">
@@ -93,6 +94,160 @@
                     </div>
                 </div>
             </div>
+        </header> -->
+
+        <!-- Này là phần top bar -->
+
+
+        <!-- Đây là phần header -->
+        <header>
+            <div class="topBar">
+                <div class="row">
+                    <div>
+                        <a href>
+                            <!-- <img src="images\location.png" alt="StoreIcon" class="topBarIcon"> -->
+                            <i class="header__location-icon ti-location-pin"></i>
+                            <span>Hơn 1000 cửa hàng trên toàn quốc</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href>
+                            <!-- <img src="images\telephone.png" alt="telephoneIcon" class="topBarIcon"> -->
+                            <i class="header__call-icon ti-headphone-alt"></i>
+                            <span>Đặt hàng: 1800.6969</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="navbar">
+                <div class="nav-links" id="nav-links">
+                    <ul class="clearfix">
+                        <li>
+                            <img src="./assets/img/primary_img.png" alt="logo" class="logo">
+                        </li>
+                        <li>
+                            <a href=""><span>COFFEE</span></a>
+                        </li>
+                        <li>
+                            <a href=""><span>TEA</span></a>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href=""><span>MENU</span></a>
+                                <div class="product-menu" id="productMenu">
+                                    <!-- Nội dung bảng sản phẩm chi tiết -->
+                                    <ul class="menu_child">
+                                        <li>
+                                            <a class="menu_title" href="#">Tất cả</a>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Cà phê</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHINDI</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Macchiato</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Latte</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Cà phê phin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Bạc xỉu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Americano</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Trà</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà xanh đậu đỏ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà xanh đào</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà thạch vải</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà thạch đào</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà sen vàng</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Detox</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Detox thanh lọc</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Detox giảm cân</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Bánh</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tiramisu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tart trứng</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Panna cotta</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Mousse cake</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Bông lan trứng muối</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Biscotti</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><span>VỀ CHÚNG TÔI</span></a>
+                        </li>
+                        <li>
+                            <a href=""><span>TUYỂN DỤNG</span></a>
+                        </li>
+                        <li>
+                            <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm....">
+                            <a href="#" class="image-link">
+                                <!-- <img src="images\loupe.png" alt="cartIcon" class="cartIcon"> -->
+                                <i class="header__cart-icon ti-shopping-cart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </header>
 
         <div class="container">
@@ -105,426 +260,348 @@
                                 <h3 class="sidebar__heading">Tất cả</h3>
 
                                 <div class="sidebar__navbar">
-                                    <a href="" class="sidebar__navbar-heading"><h4>Cà phê</h4></a>
+                                    <a href="#coffee" class="sidebar__navbar-heading">
+                                        <h4>Cà phê</h4>
+                                    </a>
                                     <ul class="sidebar__navbar-list">
-                                        <li class="sidebar__navbar-item"><a href="#PHINDI" class="sidebar__navbar-item-link">PHINDI</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#Macchiato" class="sidebar__navbar-item-link">Macchiato</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#Latte" class="sidebar__navbar-item-link">Latte</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#Cà_phê_phin" class="sidebar__navbar-item-link">Cà phê phin</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#Bạc_xỉu" class="sidebar__navbar-item-link">Bạc xỉu</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#Americano" class="sidebar__navbar-item-link">Americano</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#coffee"
+                                                class="sidebar__navbar-item-link">PHINDI</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#coffee"
+                                                class="sidebar__navbar-item-link">Macchiato</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#coffee"
+                                                class="sidebar__navbar-item-link">Latte</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#coffee"
+                                                class="sidebar__navbar-item-link">Cà phê phin</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#coffee"
+                                                class="sidebar__navbar-item-link">Bạc xỉu</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#coffee"
+                                                class="sidebar__navbar-item-link">Americano</a></li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="sidebar__navbar">
-                                    <a href="" class="sidebar__navbar-heading"><h4>Trà</h4></a>
+                                    <a href="#Tea" class="sidebar__navbar-heading">
+                                        <h4>Trà</h4>
+                                    </a>
                                     <ul class="sidebar__navbar-list">
-                                        <li class="sidebar__navbar-item"><a href="#TRÀ" class="sidebar__navbar-item-link">Trà xanh đậu đỏ</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#TRÀ" class="sidebar__navbar-item-link">Trà thanh đào</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#TRÀ" class="sidebar__navbar-item-link">Trà thạch vải</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#TRÀ" class="sidebar__navbar-item-link">Trà thạch đào</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#TRÀ" class="sidebar__navbar-item-link">Trà sen vàng</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#Tea"
+                                                class="sidebar__navbar-item-link">Trà xanh đậu đỏ</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#Tea"
+                                                class="sidebar__navbar-item-link">Trà thanh đào</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#Tea"
+                                                class="sidebar__navbar-item-link">Trà thạch vải</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#Tea"
+                                                class="sidebar__navbar-item-link">Trà thạch đào</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#Tea"
+                                                class="sidebar__navbar-item-link">Trà sen vàng</a></li>
                                     </ul>
                                 </div>
-                    
+
                                 <div class="sidebar__navbar">
-                                    <a href="" class="sidebar__navbar-heading"><h4>Detox</h4></a>
+                                    <a href="#DETOX" class="sidebar__navbar-heading">
+                                        <h4>Detox</h4>
+                                    </a>
                                     <ul class="sidebar__navbar-list">
-                                        <li class="sidebar__navbar-item"><a href="#DETOX_thanh_lọc" class="sidebar__navbar-item-link">Detox thanh lọc</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#DETOX_giảm_cân" class="sidebar__navbar-item-link">Detox giảm cân</a></li>
-                                    
+                                        <li class="sidebar__navbar-item"><a href="#DETOX"
+                                                class="sidebar__navbar-item-link">Detox thanh lọc</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#DETOX"
+                                                class="sidebar__navbar-item-link">Detox giảm cân</a></li>
+
                                     </ul>
                                 </div>
-                    
+
                                 <div class="sidebar__navbar">
-                                    <a href="" class="sidebar__navbar-heading"><h4>Bánh</h4></a>
+                                    <a href="#cake" class="sidebar__navbar-heading">
+                                        <h4>Bánh</h4>
+                                    </a>
                                     <ul class="sidebar__navbar-list">
-                                        <li class="sidebar__navbar-item"><a href="#Banh" class="sidebar__navbar-item-link">Tiramisu</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#Banh" class="sidebar__navbar-item-link">Tart trứng</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#Banh" class="sidebar__navbar-item-link">Panna cotta</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#Banh" class="sidebar__navbar-item-link">Mousse cake</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#Banh" class="sidebar__navbar-item-link">Bông lan trứng muối</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#Banh" class="sidebar__navbar-item-link">Biscotti</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#Banh" class="sidebar__navbar-item-link">cookies</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#cake"
+                                                class="sidebar__navbar-item-link">Tiramisu</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#cake"
+                                                class="sidebar__navbar-item-link">Tart trứng</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#cake"
+                                                class="sidebar__navbar-item-link">Panna cotta</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#cake"
+                                                class="sidebar__navbar-item-link">Mousse cake</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#cake"
+                                                class="sidebar__navbar-item-link">Bông lan trứng muối</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#cake"
+                                                class="sidebar__navbar-item-link">Biscotti</a></li>
+                                        <li class="sidebar__navbar-item"><a href="#cake"
+                                                class="sidebar__navbar-item-link">cookies</a></li>
                                     </ul>
                                 </div>
                             </div>
-                
+
                         </div>
                     </div>
 
                     <!-- Product -->
                     <div class="grid__column-10 content">
-                        <div id="PHINDI" class="content-item">
+                        <div id="coffee" class="content-item">
                             <h2 class="content-item__title">Cà phê</h2>
-                            <div class="grid__row">                                
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/phindi\ kem\ sữa\ 1.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>PHINDI kem sữa</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                            <div class="grid__row">
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="Phindi" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/Phindi.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>PHINDI</h5>
+                                                <p class="price">45.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                 <div class="content-item__product-img" style="background-image: url(./assets/img/phindi-hạnh-nhân-1.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>PHINDI hạnh nhân</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="Macchiato" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/Macchiato.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Macchiato</h5>
+                                                <p class="price">45.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                 <div class="content-item__product-img" style="background-image: url(./assets/img/phindi-hạnh-nhân-1.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>PHINDI hạnh nhân</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="Latte" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/Latte.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Latte</h5>
+                                                <p class="price">45.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/phindi-choco-1.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>PHINDI choco</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="CoffeePhin" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/Phin.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Cà phê phin</h5>
+                                                <p class="price">45.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/caramell.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Cameramel</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="BacXiu" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/BacXiu.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Bạc xỉu</h5>
+                                                <p class="price">45.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
-            
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/mochaa.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Mocha</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>  
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/latte.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Latte</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="Americano" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/Americano.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Americano</h5>
+                                                <p class="price">45.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
-
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/phin-đen-nóng.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Cà phê đen nóng</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-            
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/phin-sữa-nóng.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Cà phê sữa nóng</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-            
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/đen-đá.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Cà phê đen đá</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                               
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/Phin_sữa_đá.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Cà phê sữa đá</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/bac-xiu.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Bạc xỉu</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/Americano.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Americano</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div id="TRÀ" class="content-item">
+                        <div id="Tea" class="content-item">
                             <h2 class="content-item__title">TRÀ</h2>
-                            <div class="grid__row">                                
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/trà-xanh-đậu-đỏ.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Trà xanh đậu đỏ</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                            <div class="grid__row">
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="TraXanh" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/TraXanhDauDo.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Trà xanh đậu đỏ</h5>
+                                                <p class="price">45.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/thanh-đào.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Trà thanh đào</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="TraDao" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/TraThanhDao.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Trà thanh đào</h5>
+                                                <p class="price">45.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/thach-vai.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Trà thạch vải</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="TraVai" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/TraThachVai.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Trà thạch vải</h5>
+                                                <p class="price">45.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
-                               
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/trà-thạch-đào.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Trà thạch đào</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/trà-sen.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Trà sen vàng</h5>
-                                                    <p class="price">45.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="TraThachDao" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/TraThachDao.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Trà thạch đào</h5>
+                                                <p class="price">45.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
+
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="TraSen" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/TraSenVang.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Trà sen vàng</h5>
+                                                <p class="price">45.000đ</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div id="DETOX_thanh_lọc" class="content-item">
-                            <h2 class="content-item__title">DETOX thanh lọc</h2>
-                            <div class="grid__row">                                
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/dâu-chanh-mật.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Nước dâu chanh mật</h5>
-                                                    <p class="price">25.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                        <div id="DETOX" class="content-item">
+                            <h2 class="content-item__title">DETOX</h2>
+                            <div class="grid__row">
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="DetoxThanhLoc" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/DetoxThanhLoc.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>DETOX thanh lọc</h5>
+                                                <p class="price">25.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/nha-đam-chanh-dừa.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Nước nha đam chanh dừa</h5>
-                                                    <p class="price">25.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>  
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="DetoxGiamCan" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/DetoxGiamCan.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>DETOX giảm cân</h5>
+                                                <p class="price">25.000đ</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div id="DETOX_giảm_cân" class="content-item">
-                            <h2 class="content-item__title">DETOX giảm cân</h2>
-                            <div class="grid__row">                                
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/bưởi-chanh-gừng.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Nước bưởi chanh gừng</h5>
-                                                    <p class="price">25.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/tao-chanh-que.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Nước táo chanh quế</h5>
-                                                    <p class="price">25.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>  
-                            </div>
-                        </div>
-
-                        <div id="Banh" class="content-item">
+                        <div id="cake" class="content-item">
                             <h2 class="content-item__title">Bánh</h2>
-                            <div class="grid__row">                                
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/tiramisu.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Tiramisu</h5>
-                                                    <p class="price">30.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                            <div class="grid__row">
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="Tiramisu" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/Tiramisu.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Tiramisu</h5>
+                                                <p class="price">30.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/tart-trứng.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Tart trứng</h5>
-                                                    <p class="price">10.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="Tart" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/Tart.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Tart trứng</h5>
+                                                <p class="price">10.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/panna-cotta.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Panna cotta</h5>
-                                                    <p class="price">10.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="PannaCotta" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/PannaCotta.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Panna cotta</h5>
+                                                <p class="price">10.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
-                               
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/mousse-cake.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Mousse cake</h5>
-                                                    <p class="price">30.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/trung-muoi.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Bông lan trứng muối</h5>
-                                                    <p class="price">25.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="Mousse" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/MousseCake.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Mousse cake</h5>
+                                                <p class="price">30.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/biscotti.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Biscotti</h5>
-                                                    <p class="price">40.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="BongLan" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/BongLan.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Bông lan trứng muối</h5>
+                                                <p class="price">25.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="grid__column-4-10">
-                                        <div class="content-item__product-item">
-                                            <a href="" class="product-link">
-                                                <div class="content-item__product-img" style="background-image: url(./assets/img/cookies.png);"></div>
-                                                <div class="content-item__product-desc">
-                                                    <h5>Cookies</h5>
-                                                    <p class="price">20.000đ</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="grid__column-4-10">
+                                    <div class="content-item__product-item">
+                                        <a id="Biscotti" href="" class="product-link">
+                                            <div class="content-item__product-img"
+                                                style="background-image: url(./assets/img/Bicossti.png);"></div>
+                                            <div class="content-item__product-desc">
+                                                <h5>Biscotti</h5>
+                                                <p class="price">40.000đ</p>
+                                            </div>
+                                        </a>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -593,7 +670,8 @@
 
                 <div class="footer-bottom text-center">
                     <p>Công ty cổ phần thương mại dịch vụ Trà Cà Phê Team 4</p>
-                    <p>Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại diện: Team 4</p>
+                    <p>Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại diện: Team 4
+                    </p>
                     <p>Địa chỉ: Khu phố 6 Phường Linh Trung Quận Thủ Đức</p>
                     <p>© 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu</p>
                 </div>
@@ -602,5 +680,18 @@
         </footer>
 
     </div>
+
+    <script>
+        let listProduct = document.querySelectorAll('.product-link')
+
+        // danh sách link các sản phẩm từ trang mua hàng của Khoa
+        let listLinkItem = ['a', 'b', 'c']
+
+        listProduct.forEach((item, index) => {
+            item.href = listLinkItem[index]
+        })
+        
+    </script>
 </body>
-</html>     
+
+</html>
