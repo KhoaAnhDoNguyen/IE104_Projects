@@ -7,6 +7,8 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="huy.js"></script>
     <title>Main Screen</title>
 
 </head>
@@ -50,7 +52,11 @@
                         </li>
                         <li>
                             <div class="menu-item">
-                                <a href=""><span>MENU</span></a>
+                                <a href="">
+                                    <span>MENU</span>
+                                    <img src="images\down-arrow.png" alt="downArrowIcon" class="downArrowIcon">
+                                </a>
+
                                 <div class="product-menu" id="productMenu">
                                     <!-- Nội dung bảng sản phẩm chi tiết -->
                                     <ul class="menu_child">
@@ -169,70 +175,67 @@
         <!-- Đây là hình ảnh banner đầu trang -->
         <section class="banner_home">
             <a href="">
-                <img src="images\bannerPic(2).png" alt="bannerPic1" class="bannerPic">
+                <img src="images\BannerPic4.png" alt="bannerPic2" class="bannerPic">
+                <img src="images\BannerPic2.png" alt="bannerPic2" class="bannerPic">
+                <img src="images\BannerPic3.png" alt="bannerPic2" class="bannerPic">
+                <img src="images\BannerPic1.png" alt="bannerPic2" class="bannerPic">
             </a>
         </section>
 
         <!-- Đây là phần menu -->
         <section class="menu_home">
-
-            <div class="top_menu">
-                <div class="rcm_menu">
-                    <a href="">
-                        <img src="images\main_menu.png" alt="menuItem" class="mainMenuPic">
-                        <span></span>
-                    </a>
-                </div>
-
-                <div class="aside_menu">
-                    <div class="menu_item">
-                        <img src="images\Grey.png" alt="menuItem" class="asideItemPic"><br>
-                        <span>Món 1<br>
-                            20.000<br></span>
-                    </div>
-                    <div class="menu_item">
-                        <img src="images\Grey.png" alt="menuItem" class="asideItemPic"><br>
-                        <span>Món 1<br>
-                            20.000<br></span>
-                    </div>
-                    <div class="menu_item">
-                        <img src="images\Grey.png" alt="menuItem" class="asideItemPic"><br>
-                        <span>Món 1<br>
-                            20.000<br></span>
-                    </div>
-                    <div class="menu_item">
-                        <img src="images\Grey.png" alt="menuItem" class="asideItemPic"><br>
-                        <span>Món 1<br>
-                            20.000<br></span>
-                    </div>
-                </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="images\BannerPic4.png" alt="menuItem" class="mainMenuPic">
+                    <span></span>
+                </a>
             </div>
-
-            <div class="bottom_menu">
-                <div class="menu_item">
-                    <img src="images\Grey.png" alt="menuItem" class="asideItemPic"><br>
-                    <span>Món 1<br>
+            <div class="menu_item">
+                <a href="">
+                    <img src="images\Phin.png" alt="menuItem" class="asideItemPic"><br>
+                    <span>Cà phê phin<br>
                         20.000<br></span>
-                </div>
-                <div class="menu_item">
-                    <img src="images\Grey.png" alt="menuItem" class="asideItemPic"><br>
-                    <span>Món 1<br>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="images\TraSenVang.png" alt="menuItem" class="asideItemPic"><br>
+                    <span>Trà Sen Vàng<br>
                         20.000<br></span>
-                </div>
-                <div class="menu_item">
-                    <img src="images\Grey.png" alt="menuItem" class="asideItemPic"><br>
-                    <span>Món 1<br>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="images\TraThachVai.png" alt="menuItem" class="asideItemPic2"><br>
+                    <span>Trà Thạch Vải<br>
                         20.000<br></span>
-                </div>
-                <div class="menu_item">
-                    <img src="images\Grey.png" alt="menuItem" class="asideItemPic"><br>
-                    <span>Món 1<br>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="images\Tiramisu.png" alt="menuItem" class="asideItemPic2"><br>
+                    <span>Bánh Tiramisu<br>
                         20.000<br></span>
-                </div>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="images\PannaCotta.png" alt="menuItem" class="asideItemPic2"><br>
+                    <span>Bánh Panna Cotta<br>
+                        20.000<br></span>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="images\DetoxGiamCan.png" alt="menuItem" class="asideItemPic2"><br>
+                    <span>Detox Giảm Cân<br>
+                        20.000<br></span>
+                </a>
             </div>
 
         </section>
 
+        <!-- ul.main>li.con*5 -->
         <!-- Đây là phần signature -->
         <section class="signature">
             <div class="container">

@@ -32,17 +32,29 @@ img {
 /* --------------------------------------top bar------------------------------------------ */
 .row {
     display: flex;
-    background-color: rgb(233, 201, 133);
-    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.879);
+    justify-content: center;
     font-size: 15px;
     height: 30px;
     align-items: center;
     justify-self: center;
+    height: 40px;
+    font-weight: lighter;
+}
+
+.row div {
+    margin-right: 80px;
+}
+
+.row div a {
+    display: flex;
+    align-items: center;
 }
 
 .topBarIcon {
-    width: 20px;
-    height: auto;
+    width: auto;
+    height: 20px;
+    margin-right: 10px;
 }
 
 
@@ -68,7 +80,7 @@ img {
 .menu_child {
     display: flex;
     justify-content: space-around;
-    align-items:start;
+    align-items: start;
 }
 
 .navbar {
@@ -78,6 +90,7 @@ img {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     width: 100%;
+    font-weight: 400;
 }
 
 .logo {
@@ -88,6 +101,10 @@ img {
 .cartIcon {
     max-width: 100%;
     height: 20px;
+}
+
+.downArrowIcon {
+    height: 12px;
 }
 
 .product-menu {
@@ -101,14 +118,14 @@ img {
 .menu-item {
     float: left;
     display: block;
-    color: white;
+    color: rgb(53, 53, 53);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .menu-item:hover {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.681);
     color: black;
 }
 
@@ -120,7 +137,7 @@ img {
 }
 
 .product-menu a:hover {
-    color:rgb(213, 146, 0);
+    color: rgb(213, 146, 0);
 }
 
 .product-menu ul {
@@ -133,9 +150,10 @@ img {
     border-bottom: 0px solid #ddd;
 }
 
+
 /* Chỉnh vị trí bảng xuất hiện */
 .menu-item:hover .product-menu {
-    top: 99%;
+    top: 92%;
     right: 0;
     display: block;
     width: 100%;
@@ -172,58 +190,60 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.879);
+    overflow: hidden;
 }
 
 .bannerPic {
     max-width: 100%;
-    max-height: 500px;
+    max-height: 100%;
+    display: none;
 }
 
-.top_menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+/*--------------------------------------------------------------------------------------------*/
 
-.rcm_menu {
-    grid-column: 1;
-    margin: 10px 10px 10px 10px;
+.menu_home {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 9%;
+    margin-right: 0%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .mainMenuPic {
-    max-width: 100%;
-    height: auto;
-    border-radius: 30px;
-}
-
-.aside_menu {
-    grid-column: 2;
-    margin: 10px 10px 10px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
-
-.asideItemPic {
-    max-width: 150px;
-    max-height: auto;
+    max-width: 700px;
+    width: 620px;
+    height: 300px;
     border-radius: 15px;
 }
 
+.asideItemPic {
+    max-width: 270px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.asideItemPic2 {
+    max-width: 270px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 50px 0px 10px 0px;
+}
+
 .menu_item {
-    text-align: center;
+    margin: 0px 40px 0px 40px;
     font-size: 15px;
 }
 
-.bottom_menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 30px;
-}
 
 /* --------------------------------------Sinature------------------------------------------ */
 .signature {
     position: relative;
-    margin-top: 30px;
+    margin: 0px 100px 0px 100px;
 }
 
 .signature .signaturePic {
@@ -239,7 +259,7 @@ header {
     width: 55%;
     height: auto;
     font-family: Inter;
-    font-size: 2.2vw;
+    font-size: 1.8vw;
     text-align: left;
     color: #000;
 }
@@ -275,7 +295,7 @@ header {
     width: 100px;
     height: auto;
     font-family: Inter;
-    font-size: 25px;
+    font-size: 1.8vw;
     font-weight: 600;
     font-style: italic;
     text-align: left;
