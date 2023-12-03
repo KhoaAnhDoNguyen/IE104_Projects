@@ -1,0 +1,19 @@
+:root {
+  --black-color: #000;
+  --white-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
