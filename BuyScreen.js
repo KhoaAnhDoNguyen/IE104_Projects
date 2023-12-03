@@ -82,7 +82,6 @@ const buyBtns =document.querySelectorAll('.js-buy-ticket')
     }
 
     //nghe hanh vi click vao nut xoa
-    
     modalClose.addEventListener('click',hideBuyTickets)
     modalBuy.addEventListener('click',hideBuyTickets)
     //modal.addEventListener('click',hideBuyTickets)
@@ -93,3 +92,67 @@ const buyBtns =document.querySelectorAll('.js-buy-ticket')
     modalcontainer.addEventListener('click',function(event){
         event.stopImmediatePropagation()
     })
+
+    //size
+    var selectedSize = null;
+    var Price = 29000;
+
+
+    function toggleBackgroundColor(sizeId) {
+    // Kiểm tra xem size ID mới có khác size ID hiện tại hay không
+    if (sizeId !== selectedSize) {
+        //Cập nhật giá
+        if (sizeId == "size-small") 
+        Price += 0;
+        
+        else if (sizeId == "size-normal" && selectedSize == "size-small") 
+        {
+            Price += 10000;
+        }
+
+        else if (sizeId == "size-normal" && selectedSize == "size-big") 
+        {
+            Price = Price - 16000 + 10000;
+        }
+
+        else if (sizeId == "size-big" && selectedSize == "size-small") 
+        {
+            Price += 16000;
+        }
+
+        else if (sizeId == "size-big" && selectedSize == "size-normal") 
+        {
+            Price = Price - 10000 + 16000;
+        }
+
+        // Nếu có, hủy chọn size ID hiện tại (nếu có)
+        if (selectedSize !== null) {
+            document.getElementById(selectedSize).style.backgroundColor = 'white';
+        }
+
+        // Đặt màu nền cho size ID mới
+        document.getElementById(sizeId).style.backgroundColor = 'darkorange'; // Nền cam
+
+        // Cập nhật biến selectedSize với size ID mới
+        selectedSize = sizeId;
+
+    } 
+    else {
+        if (sizeId == "size-small") 
+        Price += 0;
+        
+        else if (sizeId == "size-normal") 
+        {
+            Price -= 10000;
+        }
+
+        else if (sizeId == "size-big") 
+        {
+            Price -= 16000;
+        }
+        // Nếu nhấp vào size ID đã chọn, hủy chọn nó
+        document.getElementById(sizeId).style.backgroundColor = 'white';
+        selectedSize = null;
+
+    } }
+    document.getElementById('product-price-id').textContent = Price;

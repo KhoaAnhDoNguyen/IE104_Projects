@@ -51,22 +51,28 @@
 
             <div class="product-price">
                 <p style="font-size: 40px;" id="product-name">Bạc Sĩu</p>
-                <p style="color:gold; font-size: 40px;" id="product-price-id">29.0000 đ</p>
+                <p style="color:gold; font-size: 40px;" id="product-price-id"></p>
                 <p style="margin:35px ; margin-left:100px; font-weight: normal;">Chọn size (bắt buộc)</p>
                 
                 <div class="list-size">
-                    <div class="size-product">
-                        <a href=""><img  src="Ảnh\Header&FooterImage\PaperCup_Icon.png">Nhỏ + 0đ</a>
+                    <div class="size-product" id="size-small">
+                        <a href="#" onclick="toggleBackgroundColor('size-small')">
+                            <img src="Ảnh\Header&FooterImage\PaperCup_Icon.png" onclick="toggleBackgroundColor('size-small')">Nhỏ + 0đ
+                        </a>
                     </div>
-
-                    <div class="size-product">
-                        <a href=""><img  src="Ảnh\Header&FooterImage\PaperCup_Icon.png">Vừa + 10.000đ</a>
+                
+                    <div class="size-product" id="size-normal">
+                        <a href="#" onclick="toggleBackgroundColor('size-normal')">
+                            <img src="Ảnh\Header&FooterImage\PaperCup_Icon.png">Vừa + 10.000đ
+                        </a>
                     </div>
-
-                    <div class="size-product">
-                        <a href=""><img src="Ảnh\Header&FooterImage\PaperCup_Icon.png">Lớn + 16.000đ</a>
+                
+                    <div class="size-product" id="size-big">
+                        <a href="#" onclick="toggleBackgroundColor('size-big')">
+                            <img src="Ảnh\Header&FooterImage\PaperCup_Icon.png">Lớn + 16.000đ
+                        </a>
                     </div>
-                </div>
+                </div>                
 
                 <p style="margin:25px ; margin-left:100px; font-weight: normal;">Topping</p>
 
@@ -196,9 +202,6 @@
                 <br>
             </div>        
     </footer>
-    
-    
-
 
 <!--delivery btn start-->
 <div class="modal js-modal">
