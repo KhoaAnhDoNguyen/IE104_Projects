@@ -95,7 +95,14 @@ const buyBtns =document.querySelectorAll('.js-buy-ticket')
 
     //size
     var selectedSize = null;
-    var Price = 29000;
+    let k = 1;
+
+    if (k === 1)
+    {
+        var Price = 29000;
+        k += 1;
+    }
+    
 
 
     function toggleBackgroundColor(sizeId) {
