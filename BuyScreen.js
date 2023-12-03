@@ -132,6 +132,7 @@ const buyBtns =document.querySelectorAll('.js-buy-ticket')
             Price = Price - 10000 + 16000;
         }
 
+        
         // Nếu có, hủy chọn size ID hiện tại (nếu có)
         if (selectedSize !== null) {
             document.getElementById(selectedSize).style.backgroundColor = 'white';
