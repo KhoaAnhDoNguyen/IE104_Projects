@@ -422,6 +422,7 @@ header {
 }
 
 .sidebar__navbar-item a {
+    min-width: 109px;
     display: block;
     padding: 6px 0;
 }
