@@ -10,79 +10,161 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./img/themify-icons/themify-icons.css">
 </head>
 
 <!--body start-->
 <body>
-    <div id="main">
-        <!--header and menu-->
-        <header id="header"> 
-            <div class="header__info">
-                <div class="sereprate">
-                    <div class="header__location">
-                        <i class="fa header__location-icon fa-solid fa-location-dot"></i>
-                        Hơn 150 cửa hàng trên toàn quốc
+        <!-- Này là phần top bar -->
+        <div class="topBar">
+            <div class="container">
+                <div class="row_header">
+                    <div>
+                        <a href>
+                            <img src="./img/header/location.png" alt="StoreIcon" class="topBarIcon">
+                            <span>Hơn 1000 cửa hàng trên toàn quốc</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href>
+                            <img src="./img/header/telephone.png" alt="telephoneIcon" class="topBarIcon">
+                            <span>Đặt hàng: 1800.6969</span>
+                        </a>
                     </div>
                 </div>
-                <div class="header__call">
-                    <i class="fa header__call-icon fa-solid fa-phone"></i>
-                    012345678
+            </div>
+        </div>
+        
+        <!-- Đây là phần header -->
+        <header>
+            <div class="container">
+                <div class="navbar">
+                    <div class="nav-links" id="nav-links">
+                        <ul class="clearfix">
+                            <li>
+                                <img src="./img/footer/primary_logo.png" alt="logo" class="logo">
+                            </li>
+                            <li>
+                                <a href=""><span>COFFEE</span></a>
+                            </li>
+                            <li>
+                                <a href=""><span>TEA</span></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <a href=""><span>MENU</span></a>
+                                    <div class="product-menu" id="productMenu">
+                                        <!-- Nội dung bảng sản phẩm chi tiết -->
+                                        <ul class="menu_child">
+                                            <li>
+                                                <a class="menu_title" href="#">Tất cả</a>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li>
+                                                        <a class="menu_title" href="#">Cà phê</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">PHINDI</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Macchiato</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Latte</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Cà phê phin</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Bạc xỉu</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Americano</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li>
+                                                        <a class="menu_title" href="#">Trà</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Trà xanh đậu đỏ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Trà xanh đào</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Trà thạch vải</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Trà thạch đào</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Trà sen vàng</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li>
+                                                        <a class="menu_title" href="#">Detox</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Detox thanh lọc</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Detox giảm cân</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li>
+                                                        <a class="menu_title" href="#">Bánh</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tiramisu</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tart trứng</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Panna cotta</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Mousse cake</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Bông lan trứng muối</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Biscotti</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href=""><span>VỀ CHÚNG TÔI</span></a>
+                            </li>
+                            <li>
+                                <a href=""><span>TUYỂN DỤNG</span></a>
+                            </li>
+                            <li>
+                                <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm....">
+                                <a href="#" class="image-link">
+                                    <img src="./img/header/loupe.png" alt="cartIcon" class="cartIcon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            
-            <div class="header__navbar">
-                <img src="./img/footer/primary_logo.png" alt="Logo" class="primary-logo">
-                <div class="header__navbar-list">
-                    <ul class="navbar-list">
-                        <li class="header__navbar-item"><a href="#" class="header__navbar-link">COFFEE</a></li>
-                        <li class="header__navbar-item"><a href="#" class="header__navbar-link">TEA</a></li>
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">
-                                MENU
-                                <i class="fa subnav-down-icon fa-solid fa-chevron-down"></i>
-                            </a>
-                            <ul class="header__subnav">
-                                <li><a href="#">Merchandlise</a></li>
-                                <li><a href="#">Extrass</a></li>
-                                <li><a href="#">Media</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">
-                                CỬA HÀNG
-                                <i class="fa fa-solid fa-chevron-down"></i>
-                            </a>
-                            <ul class="header__subnav">
-                                <li><a href="#">Merchandlise</a></li>
-                                <li><a href="#">Extrass</a></li>
-                                <li><a href="#">Media</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">
-                                VỀ CHÚNG TÔI
-                                <i class="fa subnav-down-icon fa-solid fa-chevron-down"></i>
-                            </a>
-                            <ul class="header__subnav">
-                                <li><a href="#">Merchandlise</a></li>
-                                <li><a href="#">Extrass</a></li>
-                                <li><a href="#">Media</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__navbar-item"><a href="#" class="header__navbar-link">TUYỂN DỤNG</a></li>
-                    </ul>
-                </div>
-
-                <div class="header__cart">
-                    <a href="" class="header__cart-link">
-                        <i class="header__cart-icon fa fa-solid fa-cart-shopping"></i>
-                        GIỎ HÀNG
-                    </a>
-                </div>
-            </div>
-        </header> 
-        <!--header and menu-->
+        </header>
         
         <!--conten_1_start-->
             <div class="content_1 ">
@@ -231,16 +313,16 @@
             <img src="./img/footer/primary_logo.png" alt="primary logo" class="footer__logo-img">
             <div class = 'social-icon'>
                 <a href="#" class="facebook">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="ti-facebook" aria-hidden="true"></i>
                 </a>
                 <a href="#" class="instagram">
-                    <i class="fa fa-instagram"></i>
+                    <i class="ti-instagram"></i>
                 </a>
                 <a href="#" class="twitter">
-                    <i class="fa fa-twitter"></i>
+                    <i class="ti-twitter"></i>
                 </a>
                 <a href="#" class="youtube">
-                    <i class="fa fa-youtube"></i>
+                    <i class="ti-youtube"></i>
                 </a>
             </div>
         </div>
@@ -265,11 +347,11 @@
         </div>
         <div class="footer__info-item">
             <div class="footer__location">
-                <i class="fa fa-sharp fa-solid fa-location-dot"></i>
+                <i class="ti-location-pin"></i>
                 <a href="">Hơn 150 cửa hàng trên toàn quốc</a>
             </div>
             <div class="footer__call">
-                <i class="fa fa-solid fa-phone"></i>
+                <i class="ti-mobile"></i>
                 <a href="tel: 012345678">012345678</a>
             </div>
         </div>
