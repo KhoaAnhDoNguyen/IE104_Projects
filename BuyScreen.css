@@ -1,8 +1,38 @@
+/* --------------------------------------General------------------------------------------ */
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #000;
+    line-height: 1.4;
+    font-family: 'roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #191919;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.div {
+    display: block;
+}
+
+img {
+    max-width: 300px;
+    max-height: auto;
+}
+
 
 /* --------------------------------------top bar------------------------------------------ */
 .row {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.879);
+    background-color: #32312f;
     justify-content: center;
     font-size: 12px;
     height: 30px;
@@ -17,12 +47,13 @@
 }
 
 .row div a {
+    color: #b7aaaa;
     display: flex;
     align-items: center;
 }
 
 .row div a:hover {
-    color: #E57905;
+    color: #d8944a;
 }
 
 .topBarIcon {
@@ -53,7 +84,7 @@
     height: 60px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 300px;
+    margin: 0 300px 0 100px;
 }
 
 .clearfix li a {
@@ -75,7 +106,7 @@
 }
 
 .logo {
-    width: 50px;
+    width: 80%;
     height: auto;
 }
 
@@ -173,13 +204,6 @@ header {
 
 #searchInput:focus {
     outline: none;
-}
-
-.horizontal-line {
-    border: none; /* Loại bỏ viền */
-    background-color: black; /* Chỉ định màu sắc cho đường thẳng */
-    height: 1px; /* Điều chỉnh độ dày của đường thẳng */
-    width: 100%; /* Chiều rộng tương đương với toàn bộ cửa sổ trình duyệt */
 }
  
 /**/
