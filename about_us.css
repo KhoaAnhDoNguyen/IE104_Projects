@@ -174,10 +174,7 @@ h5{
     color: #000;
 }
 
-.menu-item:hover {
-    background-color: #ffffff;
-    color: black;
-}
+
 
 .product-menu a {
     color: black;
@@ -233,12 +230,25 @@ header {
     outline: none;
 }
 
+.clearfix{
+    height: 47px;
+}
 
+.clearfix >li{
+    height: 47px;
+    width: 100%;
+}
 
+.clearfix >li:hover, .clearfix >li:hover>a{
+    background-color: #CCCCCC;
+    color: white;
+}
 
-
-
-
+.clearfix >li:hover>.menu-item>a{
+    color: white;
+    background-color: #CCCCCC;
+    
+}
 
 
 /* Center */
