@@ -92,7 +92,6 @@ const modalBuy = document.querySelector('#buy-ticket')
 
     modalcontainer.addEventListener('click',function(event){
         event.stopImmediatePropagation()
-        alert("Quý khách đã đặt hàng thành công. Xin cảm ơn!");
     })
 
     //size
