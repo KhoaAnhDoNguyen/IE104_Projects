@@ -114,10 +114,6 @@ main .list-size {
     display: flex;
 }
 
-.list-size a:hover,.size-product:hover {
-    background-color: #888;
-}
-
 main .size-product{
     align-items: center;
     justify-content: center;
@@ -129,7 +125,6 @@ main .size-product{
     margin-left: 100px;
     margin-right: 10px;
     font-size: 25px;
-    padding-right: 10px;
     margin-bottom: 30px;
 }
 
@@ -137,6 +132,19 @@ main .size-product{
     width: 40px; /* Điều chỉnh kích thước hình ảnh (tùy chỉnh) */
     height: 40px;   
     vertical-align:-10px; 
+}
+
+.size-product a {
+    color: black; /* Màu chữ ban đầu */
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+}
+
+.size-product a:hover {
+    background-color:darkorange; /* Màu nền khi di chuột vào */
+
+    display: block; /* Chuyển thành khối để có thể đặt chiều rộng và chiều cao */
+    border-radius: 5px; /* Bo tròn các góc */
+    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
 }
 
 .product-price a{
@@ -180,6 +188,10 @@ main .ul-topping {
 }
 
 /*Shipping*/
+.delivery{
+    width: 1000px;
+}
+
 section .delivery img{
     width: 40px; /* Điều chỉnh kích thước hình ảnh (tùy chỉnh) */
     height: 40px;
@@ -212,10 +224,15 @@ section .delivery p {
     text-decoration: none;
 }
 
+/*change color when touch*/
 .delivery a:hover, .delivery:hover{
+    background-color:#ccc;
+}
+
+/*.delivery a:hover, .delivery:hover{
     background-color: #888;
     color: #000;
-}
+}*/
 
 /*small picture*/
 main .smallpicture img {
@@ -352,3 +369,114 @@ footer .store_address p {
     font-weight: normal;
     margin: 5px;
 }
+
+
+/*delivery btn start*/
+.clear{
+    clear: both;
+}
+
+.modal{
+    position: fixed;
+    top : 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-header{
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-close:hover{
+    background-color: red;
+    color: white;
+    display: block;
+    border:10px ;
+    opacity: 1;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+    
+}
+
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+#buy-ticket {
+    height: 54px;
+    border: none;
+    width: 100%;
+    color: white;
+    background: #009688;
+    margin: 16px 0px;
+    padding: 16px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#buy-ticket:hover{
+    opacity: 0.7;
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+    
+}
+
+.modal-footer a{
+    color: #2196f3;
+}
+
+#name, #phone_number, #address,#note{
+    width: 840px;
+}
+ /*delivery btn end*/
