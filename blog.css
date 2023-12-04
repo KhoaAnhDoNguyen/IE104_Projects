@@ -139,7 +139,7 @@
 .article {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .article a img {
@@ -195,83 +195,23 @@ aside.table-of-contents {
 }
 
 
-
-
-
 /*--------pagination------*/
-.pagination {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    color: #625e5e;
-    padding: 10px 20px; /* Giảm padding để làm cho phần pagination ngang hơn */
-    border-radius: 6px;
-}
-
-.pagination ul {
-    display: flex;
-    margin: 20px 20px;
-    padding: 0;
-}
-
-.pagination ul li {
-    margin: 0 8px; /* Giảm khoảng cách giữa các ô phân trang */
-    display: inline-block;
-    background: rgb(237, 236, 236);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+.listPage{
+    padding:10px;
     text-align: center;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 30px;
+    list-style: none;
+}
+.listPage li{
+    background-color: #ffffffBD;
+    padding:20px;
+    display: inline-block;
+    margin:0 10px;
     cursor: pointer;
 }
-
-.pagination ul li a {
-    display: inline-block;
-    background: #ccc;
-    width: 100px; /* Giảm kích thước của mỗi ô phân trang */
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 60px; /* Increase the font size to 60px or any value you prefer */
-    font-weight: 500;
-    line-height: 30px;
-    color: #383838;
-    text-decoration: none;
+.listPage .active{
+    background-color: #B192EF;
+    color:#fff;
 }
-
-
-.pagination .btn1,
-.pagination .btn2 {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 500;
-    color: #383838;
-    background: transparent;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-
-.btn1 img,
-.btn2 img {
-    width: 17px; /* Giảm kích thước của biểu tượng hình ảnh */
-    margin-right: 8px;
-    margin-left: 8px;
-}
-.btn2 img{
-    transform: rotate(180deg);
-}
-
-.pagination ul li.active {
-    color: #fff;
-    background-image: linear-gradient(#ff4568, #ff4568);
-    background-repeat: no-repeat;
-}
-
 
 
 /*table of contents*/
@@ -367,3 +307,4 @@ aside.table-of-contents .main-section a {
 .address-info {
     font-size: 12px;
 }
+
