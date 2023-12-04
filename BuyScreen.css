@@ -4,7 +4,7 @@ header .header-container{
     padding: 0px; /* Khoảng cách giữa header và nội dung bên dưới */
     text-align: right;
     align-items: center;
-    height: 50px;
+    height: 30px;
     background: linear-gradient(120deg, #FFC0CB 60%,  #FF69B4 40%);
 }
 
@@ -495,3 +495,10 @@ footer .store_address p {
     width: 840px;
 }
  /*delivery btn end*/
+
+body {
+    zoom: 100%;
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
