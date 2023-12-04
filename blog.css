@@ -56,7 +56,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 2rem;
-  height: 50px;
+  height: 10%;
   font-size: 1.3rem;
 }
 
@@ -196,10 +196,19 @@ ol {
   right: 3px;
   color: rgb(213, 146, 0);
 }
-
+.main_block-body {
+  display: block;
+  margin-top: 8%;
+}
 .body_main-context {
-  display: inline-block;
-  margin: 0 22% 0 22%;
+  display: block;
+  margin-top: 7%;
+  margin-left: 18%;
+}
+.body_main-ul {
+  display: block;
+  margin-top: 20px;
+  margin-left: 18%;
 }
 
 #the-bar {
@@ -315,27 +324,22 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 120px;
+  margin-top: 40px;
   font-size: 1.5rem;
 }
 
 /* Phần nội dung chính chiếm nhiều nhất */
 .main-content {
-  flex: 2;
+  flex:2;
   /* Chiếm 2 phần trên tổng 3 phần */
-  margin-left: 200px;
+  margin-left: 15%;
 }
 
-/* Phần mục lục theo chiều dọc */
-.sidebar {
-  flex: 1;
-  /* Chiếm 1 phần trên tổng 3 phần */
-}
 
 /*---------BODY------------*/
 /* Thiết kế mỗi bài viết */
 .article {
-  display: flex;
+  /* flex: 1; */
   align-items: flex-start;
   margin-bottom: 20px;
 }
@@ -397,12 +401,17 @@ aside.table-of-contents {
   /* Điều này sẽ làm cho phần table-of-contents cố định ở trên đầu màn hình khi cuộn xuống */
   padding: 80px 20px 20px 20px;
   z-index: 120;
+  flex:1;
 }
 
 /*--------pagination------*/
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
 .listPage {
   padding: 10px;
-  text-align: center;
   list-style: none;
 }
 
@@ -437,7 +446,9 @@ aside.table-of-contents .main-section .sub-sections a {
 aside.table-of-contents .main-section a {
   color: orange;
 }
-
+.main-section {
+  padding-left:25% ;
+}
 /*---------------footer start--------------------------*/
 #footer {
   width: 100%;
@@ -534,4 +545,83 @@ aside.table-of-contents .main-section a {
 
 .navbar-list .header__navbar-item:hover .header__subnav {
   display: block !important;
+}
+
+/* Responsive cho màn hình điện thoại */
+@media screen and (max-width: 768px) {
+  /* Phần header */
+  .row {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    margin-left: 0;
+  }
+
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu a {
+    font-size: 1.2rem; /* Giảm kích thước font cho menu */
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .logo {
+    position: static;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  #searchInput {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  /* Phần main */
+  .content-container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .main-content {
+    flex: 1;
+    margin-left: 0;
+  }
+
+  .body_main-context,
+  .body_main-ul {
+    margin-left: 0;
+  }
+
+  .article a img {
+    float: none;
+    margin-right: 0;
+  }
+
+  /* Phần table of contents */
+  aside.table-of-contents {
+    display: none;
+  }
+
+  /* Phần footer */
+  #footer {
+    height: auto;
+  }
+
+  .footer__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__info-item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
