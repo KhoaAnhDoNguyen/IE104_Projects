@@ -1,56 +1,52 @@
-let link =document.getElementsByClassName("link");
-let btn1 = document.querySelector('.btn1');
-let currentValue = 1;
 
-function activeLink(){
-    for(l of link){
-        l.classList.remove("active");
-    }
-    event.target.classList.add("active");
-    currentValue = event.target.value;
 
-    // Kiểm tra giá trị để ẩn/hiện nút back
-    if (currentValue === 1) {
-        btn1.style.visibility = 'hidden';
-    } else {
-        btn1.style.visibility = 'visible';
-    }
-}
 
-function backBtn(){
-    if(currentValue > 1){
-        for(l of link){
-            l.classList.remove("active");
-        }
-        currentValue--;
-        link[currentValue-1].classList.add("active");
-       
-        // Kiểm tra giá trị để ẩn/hiện nút back
-        if (currentValue === 1) {
-            btn1.style.visibility = 'hidden';
+let thisPage = 1;
+let limit = 6;
+let list = document.querySelectorAll('.list .article');
+
+function loadItem() {
+    let beginGet = limit * (thisPage - 1);
+    let endGet = limit * thisPage - 1;
+    list.forEach((article, key) => {
+        if (key >= beginGet && key <= endGet) {
+            article.style.display = 'block';
         } else {
-            btn1.style.visibility = 'visible';
+            article.style.display = 'none';
         }
+    })
+    listPage();
+}
+loadItem();
+function listPage() {
+    let count = Math.ceil(list.length / limit);
+    document.querySelector('.listPage').innerHTML = '';
 
+    if (thisPage != 1) {
+        let prev = document.createElement('li');
+        prev.innerText = 'PREV';
+        prev.setAttribute('onclick', "changePage(" + (thisPage - 1) + ")");
+        document.querySelector('.listPage').appendChild(prev);
+    }
+
+    for (i = 1; i <= count; i++) {
+        let newPage = document.createElement('li');
+        newPage.innerText = i;
+        if (i == thisPage) {
+            newPage.classList.add('active');
+        }
+        newPage.setAttribute('onclick', "changePage(" + i + ")");
+        document.querySelector('.listPage').appendChild(newPage);
+    }
+
+    if (thisPage != count) {
+        let next = document.createElement('li');
+        next.innerText = 'NEXT';
+        next.setAttribute('onclick', "changePage(" + (thisPage + 1) + ")");
+        document.querySelector('.listPage').appendChild(next);
     }
 }
-
-function nextBtn(){
-    if(currentValue < 4){
-        for(l of link){
-            l.classList.remove("active");
-        }
-        currentValue++;
-        link[currentValue-1].classList.add("active");
-
-        // Kiểm tra giá trị để ẩn/hiện nút back
-        if (currentValue === 1) {
-            btn1.style.visibility = 'hidden';
-        } else {
-            btn1.style.visibility = 'visible';
-        }
-    }
+function changePage(i) {
+    thisPage = i;
+    loadItem();
 }
-
-// Ẩn hình khi trang web được tải
-btn1.style.visibility = 'hidden';
