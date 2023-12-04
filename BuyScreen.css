@@ -1,0 +1,497 @@
+header .header-container{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px; /* Khoảng cách giữa header và nội dung bên dưới */
+    text-align: right;
+    align-items: center;
+    height: 50px;
+    background: linear-gradient(120deg, #FFC0CB 60%,  #FF69B4 40%);
+}
+
+.text {
+    text-align: center;
+    flex: 1;
+    color:forestgreen;
+}
+
+.icon {
+    width: 30px; /* Kích thước chiều rộng */
+    height: 30px; /* Kích thước chiều cao */
+    vertical-align: middle;
+    filter: invert(88%) sepia(30%) saturate(5428%) hue-rotate(78deg) brightness(96%) contrast(94%);
+}
+
+.logo img {
+    padding: 40%;
+    margin-top: 70px;
+    width: 100px; /* Kích thước chiều rộng của logo (tùy chỉnh) */
+    height: auto; /* Để tỷ lệ khung hình tự điều chỉnh */
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    flex: 7;
+    color:black;
+    font-weight: bold;
+    list-style: none; /* Loại bỏ dấu chấm trước mỗi mục */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 350px;
+    font-size: 25px;
+    margin-right: 100px;
+}
+
+.menu ul li a {
+    text-decoration: none; /* Loại bỏ đường gạch chân mặc định của thẻ a */
+    cursor: pointer; /* Thay đổi kiểu con trỏ khi trỏ vào */
+    color:#000
+}
+
+.cart{
+    flex: 3;
+    color:black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 150px;
+    cursor: pointer;
+} 
+
+nav .cart img{
+    width: 60px; /* Điều chỉnh kích thước hình ảnh (tùy chỉnh) */
+    height: 30px;
+    vertical-align: -10px; /* Điều chỉnh vị trí dọc của chữ*/
+    margin-left: 5px; /* Khoảng cách giữa chữ và hình ảnh (tùy chỉnh) */
+    margin-top: 8px; /* Di chuyển ảnh xuống thêm 10px */
+}
+
+.menu img {
+    width: 10px; /* Điều chỉnh kích thước hình ảnh (tùy chỉnh) */
+    height: 10px;
+    margin-left: 5px; /* Khoảng cách giữa chữ và hình ảnh (tùy chỉnh) */
+}
+
+.horizontal-line {
+    border: none; /* Loại bỏ viền */
+    background-color: black; /* Chỉ định màu sắc cho đường thẳng */
+    height: 1px; /* Điều chỉnh độ dày của đường thẳng */
+    width: 100%; /* Chiều rộng tương đương với toàn bộ cửa sổ trình duyệt */
+}
+ 
+/**/
+main .intro{
+    color:black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.product-info {
+    display: flex; /* Hiển thị các phần tử con cùng một hàng (ngang) */
+}
+
+.product-image img{
+    margin-left: 150px; /* Khoảng cách giữa chữ và hình ảnh (tùy chỉnh) */
+    height: 800px;
+    width: 700px;
+}
+
+.product-price  p{
+    color:black;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+/*size*/
+main .list-size {
+    display: flex;
+}
+
+main .size-product{
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888;
+
+    margin-left: 100px;
+    margin-right: 10px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.size-product img {
+    width: 40px; /* Điều chỉnh kích thước hình ảnh (tùy chỉnh) */
+    height: 40px;   
+    vertical-align:-10px; 
+}
+
+.size-product a {
+    color: black; /* Màu chữ ban đầu */
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+}
+
+.size-product a:hover {
+    background-color:darkorange; /* Màu nền khi di chuột vào */
+
+    display: block; /* Chuyển thành khối để có thể đặt chiều rộng và chiều cao */
+    border-radius: 5px; /* Bo tròn các góc */
+    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
+}
+
+.product-price a{
+    text-decoration: none;
+}
+
+/*topping*/
+main .list-topping {
+    display: flex;
+}
+
+main .topping p{
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888;
+
+    margin-left: 100px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: normal;
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+
+main .ul-topping {
+    align-items:center;
+    justify-content: center;
+    text-align : 40px;
+
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888;
+
+    margin-left: 100px;
+    margin-right: 300px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.topping p:hover {
+    background-color:darkorange; /* Màu nền khi di chuột vào */
+    display: block; /* Chuyển thành khối để có thể đặt chiều rộng và chiều cao */
+    border-radius: 2px; /* Bo tròn các góc */
+    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
+}
+
+.ul-topping a:hover {
+    background-color:darkorange; /* Màu nền khi di chuột vào */
+    display: block; /* Chuyển thành khối để có thể đặt chiều rộng và chiều cao */
+    height: 44px;
+    border-radius: 2px; /* Bo tròn các góc */
+    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
+}
+/*Shipping*/
+.delivery{
+    width: 1000px;
+}
+
+section .delivery img{
+    width: 40px; /* Điều chỉnh kích thước hình ảnh (tùy chỉnh) */
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: -7px; /* Điều chỉnh vị trí dọc của chữ*/
+    filter: invert(88%) sepia(30%) saturate(5428%) hue-rotate(78deg) brightness(96%) contrast(94%);
+}
+
+section .delivery {
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888;
+    background-color:darkorange;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 100px;
+    margin-right: 15px;
+    margin-top: 100px;
+}
+
+section .delivery p {
+    color:white;
+    font-weight:normal;
+
+}
+.delivery a{
+    text-decoration: none;
+}
+
+/*change color when touch*/
+.delivery a:hover, .delivery:hover{
+    background-color:darkorange;
+    cursor: pointer;
+}
+
+/*.delivery a:hover, .delivery:hover{
+    background-color: #888;
+    color: #000;
+}*/
+
+/*small picture*/
+main .smallpicture img {
+    width:250px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 50px;
+    border-radius: 10%; /* Đặt giá trị này để bo góc hình ảnh thành hình tròn */
+    border: 2px solid orange;
+}
+
+/*relative information*/
+aside {
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-top: 70px;
+    font-size: 30px;
+}
+
+/*relative drinks*/
+span p {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+span .relative_drinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+span .relative_drinks_list img {
+    margin-left: 150px;
+    margin-right: 20px;
+    width:250px;
+    height: 250px;
+    margin-top: 25px;
+    border-radius: 10%; /* Đặt giá trị này để bo góc hình ảnh thành hình tròn */
+    border: 2px solid orange;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.relative_drinks_list:hover img {
+    transform: translateY(-10px);
+}
+
+span .relative_drinks_list p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 100px;
+    margin-left: 210px;
+}
+
+/*footer*/
+footer {
+    background-color:  #ccc;
+    margin-top: 50px;
+}
+
+footer .footer_layout {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 300px;
+}
+
+footer .footer_detail img {
+    margin-left: 150px;
+    margin-top: 50px;
+
+    width: 170px;
+    height: 170px;
+}
+
+footer .footer_detail_phone {
+    margin-top: 35px;
+    margin-right: -20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer_detail_phone .item {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều ngang */
+    margin-top: 10px; /* Khoảng cách giữa các cặp ảnh và chữ */
+}
+
+footer .footer_detail_phone img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Khoảng cách giữa ảnh và chữ */
+}
+
+footer .footer_detail_phone p {
+    margin: 0; /* Loại bỏ margin mặc định của đoạn văn bản */
+    font-weight: normal;
+    font-size: 20px;
+}
+
+footer p {
+    margin-top: 50px;
+    font-weight: bold; /* Đặt độ đậm cho đoạn văn bản */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Đổ bóng với màu đen có độ trong suốt */
+    font-size: 30px;
+}
+
+footer li {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    padding: 5px; /* Tạo khoảng cách bên trong mỗi mục */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer .relative_links {
+    display: flex;
+}
+
+footer .relative_links img {
+    width: 45px;
+    height: 40px;
+    margin-right: -150px;
+    margin-top: 5px;
+}
+
+footer .store_address {
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+footer .store_address p {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 5px;
+}
+
+
+/*delivery btn start*/
+.clear{
+    clear: both;
+}
+
+.modal{
+    position: fixed;
+    top : 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-header{
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-close:hover{
+    background-color: red;
+    color: white;
+    display: block;
+    border:10px ;
+    opacity: 1;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+    
+}
+
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+#buy-ticket {
+    height: 54px;
+    border: none;
+    width: 100%;
+    color: white;
+    background: #009688;
+    margin: 16px 0px;
+    padding: 16px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#buy-ticket:hover{
+    opacity: 0.7;
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+    
+}
+
+.modal-footer a{
+    color: #2196f3;
+}
+
+#name, #phone_number, #address,#note{
+    width: 840px;
+}
+ /*delivery btn end*/
