@@ -305,86 +305,86 @@ span .relative_drinks_list p {
 }
 
 /*footer*/
-footer {
-    background-color:  #ccc;
-    margin-top: 50px;
+#footer {
+    width: 100%;
+    height: 250px;
+    background-color: #CCCCCC;
 }
 
-footer .footer_layout {
+.footer__info {
+    height: 70%;
     display: flex;
-    justify-content: space-between;
-    margin-right: 300px;
+    
 }
 
-footer .footer_detail img {
-    margin-left: 150px;
-    margin-top: 50px;
-
-    width: 170px;
-    height: 170px;
+#footer a:hover{
+    color: red;
 }
 
-footer .footer_detail_phone {
-    margin-top: 35px;
-    margin-right: -20px;
-    display: flex;
-    flex-direction: column;
+/*chỉnh kích cở cho icon*/
+.social-icon i{
+    width: 15px;
 }
 
-footer .footer_detail_phone .item {
-    display: flex;
-    align-items: center; /* Căn giữa theo chiều ngang */
-    margin-top: 10px; /* Khoảng cách giữa các cặp ảnh và chữ */
+/*kích cở của ảnh*/
+.footer__logo-img {
+    width: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 36px;
 }
 
-footer .footer_detail_phone img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px; /* Khoảng cách giữa ảnh và chữ */
+.footer__info-icon {
+    margin-top: 4px;
+    font-size: 16px;
+    padding: 4px;
 }
 
-footer .footer_detail_phone p {
-    margin: 0; /* Loại bỏ margin mặc định của đoạn văn bản */
-    font-weight: normal;
-    font-size: 20px;
+.footer__info-item {
+    flex: 1;
+    height: 100%;
 }
 
-footer p {
-    margin-top: 50px;
-    font-weight: bold; /* Đặt độ đậm cho đoạn văn bản */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Đổ bóng với màu đen có độ trong suốt */
-    font-size: 30px;
+.footer__info-item h4 {
+    margin-top: 12px;
+    margin-bottom: 4px;
 }
 
-footer li {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    padding: 5px; /* Tạo khoảng cách bên trong mỗi mục */
-    font-size: 20px;
-    font-weight: bold;
+.footer__info-item li {
+    list-style: none;
+    
 }
 
-footer .relative_links {
-    display: flex;
+.footer__info-item a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 12px;
 }
 
-footer .relative_links img {
-    width: 45px;
-    height: 40px;
-    margin-right: -150px;
-    margin-top: 5px;
+
+.footer__location,
+.footer__call {
+    margin-top: 4px;
 }
 
-footer .store_address {
-    margin-left: 150px;
-    margin-top: 50px;
+.footer__location-icon,
+.footer__call-icon {
+    min-width: 16px;
+    margin: 0 4px
 }
 
-footer .store_address p {
-    font-size: 20px;
-    font-weight: normal;
-    margin: 5px;
+.line-sereprate {
+    margin: auto;
+    width: 95%;
+    border: 1px solid #555;
+}
+.footer__address {
+    height: 30%;
+    text-align: center;
 }
 
+.address-info {
+    font-size: 12px;
+}
 
 /*delivery btn start*/
 .clear{
