@@ -61,10 +61,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //nut bam dat hang
 const buyBtns =document.querySelectorAll('.js-buy-ticket')
-    const modal = document.querySelector('.js-modal')
-    const modalClose = document.querySelector('.js-modal-close')
-    const modalcontainer = document.querySelector('.js-modal-container')
-    const modalBuy = document.querySelector('#buy-ticket')
+const modal = document.querySelector('.js-modal')
+const modalClose = document.querySelector('.js-modal-close')
+const modalcontainer = document.querySelector('.js-modal-container')
+const modalBuy = document.querySelector('#buy-ticket')
 
 
     //ham hien thi form mua ve
@@ -94,73 +94,175 @@ const buyBtns =document.querySelectorAll('.js-buy-ticket')
     })
 
     //size
-    var selectedSize = null;
-    let k = 1;
+var selectedSize = 'off';
+var Price = 29000;
+var PriceIncrease = 0;
 
-    if (k === 1)
-    {
-        var Price = 29000;
-        k += 1;
-    }
-    
+if (selectedSize === 'off')
+{
+    Price = 29000;
+    var formattedPrice =  Price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+    document.getElementById('product-price-id').textContent = formattedPrice;
+}
 
-
-    function toggleBackgroundColor(sizeId) {
-    // Kiểm tra xem size ID mới có khác size ID hiện tại hay không
-    if (sizeId !== selectedSize) {
-        //Cập nhật giá
-        if (sizeId == "size-small") 
-        Price += 0;
-        
-        else if (sizeId == "size-normal" && selectedSize == "size-small") 
+function toggleBackgroundColor(sizeId) {
+        //size small is clicked?
+        if (sizeId === 'size-small' && selectedSize === 'off')
         {
-            Price += 10000;
+            selectedSize = sizeId;
+            PriceIncrease = 0;
+            document.getElementById(sizeId).style.backgroundColor = 'darkorange';
         }
-
-        else if (sizeId == "size-normal" && selectedSize == "size-big") 
+        else if (sizeId === 'size-small' && selectedSize === 'size-small')
         {
-            Price = Price - 16000 + 10000;
+            selectedSize = 'off';
+            PriceIncrease = 0;
+            document.getElementById(sizeId).style.backgroundColor = 'white';
         }
-
-        else if (sizeId == "size-big" && selectedSize == "size-small") 
-        {
-            Price += 16000;
-        }
-
-        else if (sizeId == "size-big" && selectedSize == "size-normal") 
-        {
-            Price = Price - 10000 + 16000;
-        }
-
-        
-        // Nếu có, hủy chọn size ID hiện tại (nếu có)
-        if (selectedSize !== null) {
+        else if (sizeId === 'size-small' && selectedSize === 'size-normal')
+        {    
+            PriceIncrease = -10000;
+            document.getElementById(sizeId).style.backgroundColor = 'darkorange';
             document.getElementById(selectedSize).style.backgroundColor = 'white';
+            selectedSize = sizeId;
         }
-
-        // Đặt màu nền cho size ID mới
-        document.getElementById(sizeId).style.backgroundColor = 'darkorange'; // Nền cam
-
-        // Cập nhật biến selectedSize với size ID mới
-        selectedSize = sizeId;
-
-    } 
-    else {
-        if (sizeId == "size-small") 
-        Price += 0;
+        else if (sizeId === 'size-small' && selectedSize === 'size-big')
+        {
+            document.getElementById(sizeId).style.backgroundColor = 'darkorange';
+            document.getElementById(selectedSize).style.backgroundColor = 'white';
+            selectedSize = sizeId;
+            PriceIncrease = -16000;
+        }
         
-        else if (sizeId == "size-normal") 
+        //size normal is clicked?
+        else if (sizeId === 'size-normal' && selectedSize === 'off')
         {
-            Price -= 10000;
+            selectedSize = sizeId;
+            PriceIncrease = 10000;
+            document.getElementById(sizeId).style.backgroundColor = 'darkorange';
+        }
+        else if (sizeId === 'size-normal' && selectedSize === 'size-normal')
+        {
+            selectedSize = 'off';
+            PriceIncrease = -10000;
+            document.getElementById(sizeId).style.backgroundColor = 'white';
+        }
+        else if (sizeId === 'size-normal' && selectedSize === 'size-small')
+        {
+            document.getElementById(sizeId).style.backgroundColor = 'darkorange';
+            document.getElementById(selectedSize).style.backgroundColor = 'white';
+            selectedSize = sizeId;
+            PriceIncrease = 10000;
+        }
+        else if (sizeId === 'size-normal' && selectedSize === 'size-big')
+        {
+            document.getElementById(sizeId).style.backgroundColor = 'darkorange';
+            document.getElementById(selectedSize).style.backgroundColor = 'white';
+            selectedSize = sizeId;
+            PriceIncrease = -6000;
         }
 
-        else if (sizeId == "size-big") 
+        // size big is clicked?
+        //size normal is clicked?
+        else if (sizeId === 'size-big' && selectedSize === 'off')
         {
-            Price -= 16000;
+            selectedSize = sizeId;
+            PriceIncrease = 16000;
+            document.getElementById(sizeId).style.backgroundColor = 'darkorange';
         }
-        // Nếu nhấp vào size ID đã chọn, hủy chọn nó
-        document.getElementById(sizeId).style.backgroundColor = 'white';
-        selectedSize = null;
+        else if (sizeId === 'size-big' && selectedSize === 'size-big')
+        {
+            selectedSize = 'off';
+            PriceIncrease = -16000;
+            document.getElementById(sizeId).style.backgroundColor = 'white';
+        }
+        else if (sizeId === 'size-big' && selectedSize === 'size-small')
+        {
+            document.getElementById(sizeId).style.backgroundColor = 'darkorange';
+            document.getElementById(selectedSize).style.backgroundColor = 'white';
+            selectedSize = sizeId;
+            PriceIncrease = 16000;
+        }
+        else if (sizeId === 'size-big' && selectedSize === 'size-normal')
+        {
+            document.getElementById(sizeId).style.backgroundColor = 'darkorange';
+            document.getElementById(selectedSize).style.backgroundColor = 'white';
+            selectedSize = sizeId;
+            PriceIncrease = 6000;
+        }
+    Price += PriceIncrease;
+    var formattedPrice =  Price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+    document.getElementById('product-price-id').textContent = formattedPrice;
+    }
 
-    } }
-    document.getElementById('product-price-id').textContent = Price;
+    var KPM = 'null';
+    var TV = 'null';
+    var HS = 'null';
+    var TOL = 'null';
+    function ToppingChoosing(Topping)
+    {
+        var paragraphElement = document.getElementById(Topping).getElementsByTagName('p')[0];
+        if (Topping === 'KPM' && KPM === 'null')
+        {
+            paragraphElement.style.backgroundColor = 'darkorange';
+            //document.getElementById(Topping).style.backgroundColor = 'darkorange';
+            KPM = Topping;
+            PriceIncrease = 10000;
+        }
+        else if (Topping === 'KPM' && KPM === 'KPM')
+        {
+            paragraphElement.style.backgroundColor = 'white';
+            //document.getElementById(Topping).style.backgroundColor = 'white';
+            PriceIncrease = -10000;
+            KPM = 'null';
+        }
+
+        else if (Topping === 'TV' && TV === 'null')
+        {
+            paragraphElement.style.backgroundColor = 'darkorange';
+            //document.getElementById(Topping).style.backgroundColor = 'darkorange';
+            TV = Topping;
+            PriceIncrease = 5000;
+        }
+        else if (Topping === 'TV' && TV === 'TV')
+        {
+            paragraphElement.style.backgroundColor = 'white';
+            //document.getElementById(Topping).style.backgroundColor = 'white';
+            PriceIncrease = -5000;
+            TV = 'null';
+        }
+
+        else if (Topping === 'HS' && HS === 'null')
+        {
+            //paragraphElement.style.backgroundColor = 'darkorange';
+            document.getElementById(Topping).style.backgroundColor = 'darkorange';
+            HS = Topping;
+            PriceIncrease = 10000;
+        }
+        else if (Topping === 'HS' && HS === 'HS')
+        {
+            //paragraphElement.style.backgroundColor = 'white';
+            document.getElementById(Topping).style.backgroundColor = 'white';
+            PriceIncrease = -10000;
+            HS = 'null';
+        }
+
+        else if (Topping === 'TOL' && TOL === 'null')
+        {
+            //paragraphElement.style.backgroundColor = 'darkorange';
+            document.getElementById(Topping).style.backgroundColor = 'darkorange';
+            TOL = Topping;
+            PriceIncrease = 10000;
+        }
+        else if (Topping === 'TOL' && TOL === 'TOL')
+        {
+            //paragraphElement.style.backgroundColor = 'white';
+            document.getElementById(Topping).style.backgroundColor = 'white';
+            PriceIncrease = -10000;
+            TOL = 'null';
+        }
+
+        Price += PriceIncrease;
+        var formattedPrice =  Price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+        document.getElementById('product-price-id').textContent = formattedPrice;
+    }

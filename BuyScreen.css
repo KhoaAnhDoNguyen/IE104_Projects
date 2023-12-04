@@ -173,7 +173,7 @@ main .topping p{
 }
 
 main .ul-topping {
-    align-items: right;
+    align-items:center;
     justify-content: center;
     text-align : 40px;
 
@@ -187,6 +187,20 @@ main .ul-topping {
     margin-bottom: 30px;
 }
 
+.topping p:hover {
+    background-color:darkorange; /* Màu nền khi di chuột vào */
+    display: block; /* Chuyển thành khối để có thể đặt chiều rộng và chiều cao */
+    border-radius: 2px; /* Bo tròn các góc */
+    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
+}
+
+.ul-topping a:hover {
+    background-color:darkorange; /* Màu nền khi di chuột vào */
+    display: block; /* Chuyển thành khối để có thể đặt chiều rộng và chiều cao */
+    height: 44px;
+    border-radius: 2px; /* Bo tròn các góc */
+    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
+}
 /*Shipping*/
 .delivery{
     width: 1000px;
@@ -226,7 +240,8 @@ section .delivery p {
 
 /*change color when touch*/
 .delivery a:hover, .delivery:hover{
-    background-color:#ccc;
+    background-color:darkorange;
+    cursor: pointer;
 }
 
 /*.delivery a:hover, .delivery:hover{
