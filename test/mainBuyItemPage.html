@@ -140,12 +140,12 @@
                                     <!-- Nội dung bảng sản phẩm chi tiết -->
                                     <ul class="menu_child">
                                         <li>
-                                            <a class="menu_title" href="#">Tất cả</a>
+                                            <a class="All menu_title" href="#">Tất cả</a>
                                         </li>
                                         <li>
                                             <ul>
                                                 <li>
-                                                    <a class="menu_title" href="#">Cà phê</a>
+                                                    <a class="Coffee menu_title" href="#">Cà phê</a>
                                                 </li>
                                                 <li>
                                                     <a href="#">PHINDI</a>
@@ -170,7 +170,7 @@
                                         <li>
                                             <ul>
                                                 <li>
-                                                    <a class="menu_title" href="#">Trà</a>
+                                                    <a class="Tea menu_title" href="#">Trà</a>
                                                 </li>
                                                 <li>
                                                     <a href="#">Trà xanh đậu đỏ</a>
@@ -192,7 +192,7 @@
                                         <li>
                                             <ul>
                                                 <li>
-                                                    <a class="menu_title" href="#">Detox</a>
+                                                    <a class="Detox menu_title" href="#">Detox</a>
                                                 </li>
                                                 <li>
                                                     <a href="#">Detox thanh lọc</a>
@@ -205,7 +205,7 @@
                                         <li>
                                             <ul>
                                                 <li>
-                                                    <a class="menu_title" href="#">Bánh</a>
+                                                    <a class="Cake menu_title" href="#">Bánh</a>
                                                 </li>
                                                 <li>
                                                     <a href="#">Tiramisu</a>
@@ -259,7 +259,7 @@
                             <div class="sidebar">
                                 <h3 class="sidebar__heading">Tất cả</h3>
 
-                                <div class="sidebar__navbar">
+                                <div class="Coffee sidebar__navbar">
                                     <a href="#coffee" class="sidebar__navbar-heading">
                                         <h4>Cà phê</h4>
                                     </a>
@@ -279,7 +279,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="sidebar__navbar">
+                                <div class="Tea sidebar__navbar">
                                     <a href="#Tea" class="sidebar__navbar-heading">
                                         <h4>Trà</h4>
                                     </a>
@@ -297,20 +297,20 @@
                                     </ul>
                                 </div>
 
-                                <div class="sidebar__navbar">
+                                <div class="Detox sidebar__navbar">
                                     <a href="#DETOX" class="sidebar__navbar-heading">
                                         <h4>Detox</h4>
                                     </a>
                                     <ul class="sidebar__navbar-list">
-                                        <li class="sidebar__navbar-item"><a href="#DETOX"
+                                        <li class="sidebar__navbar-item"><a href="#Detox"
                                                 class="sidebar__navbar-item-link">Detox thanh lọc</a></li>
-                                        <li class="sidebar__navbar-item"><a href="#DETOX"
+                                        <li class="sidebar__navbar-item"><a href="#Detox"
                                                 class="sidebar__navbar-item-link">Detox giảm cân</a></li>
 
                                     </ul>
                                 </div>
 
-                                <div class="sidebar__navbar">
+                                <div class="Cake sidebar__navbar">
                                     <a href="#cake" class="sidebar__navbar-heading">
                                         <h4>Bánh</h4>
                                     </a>
@@ -338,7 +338,7 @@
 
                     <!-- Product -->
                     <div class="grid__column-10 content">
-                        <div id="coffee" class="content-item">
+                        <div id="Coffee" class="content-item">
                             <h2 class="content-item__title">Cà phê</h2>
                             <div class="grid__row">
                                 <div class="grid__column-4-10">
@@ -491,7 +491,7 @@
                             </div>
                         </div>
 
-                        <div id="DETOX" class="content-item">
+                        <div id="Detox" class="content-item">
                             <h2 class="content-item__title">DETOX</h2>
                             <div class="grid__row">
                                 <div class="grid__column-4-10">
@@ -522,7 +522,7 @@
                             </div>
                         </div>
 
-                        <div id="cake" class="content-item">
+                        <div id="Cake" class="content-item">
                             <h2 class="content-item__title">Bánh</h2>
                             <div class="grid__row">
                                 <div class="grid__column-4-10">
@@ -682,15 +682,77 @@
     </div>
 
     <script>
-        let listProduct = document.querySelectorAll('.product-link')
+       let coffeeNode = document.querySelector('.Coffee.menu_title'),
+            teaNode = document.querySelector('.Tea.menu_title'),
+            detoxNode = document.querySelector('.Detox.menu_title'),
+            cakeNode = document.querySelector('.Cake.menu_title')
+            allNode = document.querySelector('.All.menu_title')
+       let itemNode = document.querySelectorAll('.content-item'),
+            sidebarNode = document.querySelectorAll('.sidebar__navbar')
 
-        // danh sách link các sản phẩm từ trang mua hàng của Khoa
-        let listLinkItem = ['a', 'b', 'c']
 
-        listProduct.forEach((item, index) => {
-            item.href = listLinkItem[index]
-        })
-        
+        function showAll(item) {
+            item.style.display = 'block'
+        }
+        function hiddenForID(item, X) {
+            if (item.id === X) {
+                item.style.display = 'block'
+            } else {
+                item.style.display = 'none'
+            }
+        }
+        function hiddenForClass(item, X) {
+            if (item.className === X) {
+                item.style.display = 'block'
+            } else {
+                item.style.display = 'none'
+            }
+        }
+
+        allNode.onclick = function() {
+            itemNode.forEach((item) => {
+                showAll(item)
+            })
+            sidebarNode.forEach((item) => {
+                showAll(item)  
+            })
+        }
+
+        coffeeNode.onclick = function() {
+            itemNode.forEach((item) => {
+                hiddenForID(item, 'Coffee')
+            })
+            sidebarNode.forEach((item) => {
+                hiddenForClass(item, 'Coffee sidebar__navbar')  
+            })
+        }
+
+        teaNode.onclick = function() {
+            itemNode.forEach((item) => {
+                hiddenForID(item, 'Tea')
+            })
+            sidebarNode.forEach((item) => {
+                hiddenForClass(item, 'Tea sidebar__navbar')  
+            })
+        }
+
+        detoxNode.onclick = function() {
+            itemNode.forEach((item) => {
+                hiddenForID(item, 'Detox')
+            })
+            sidebarNode.forEach((item) => {
+                hiddenForClass(item, 'Detox sidebar__navbar')  
+            })
+        }
+
+        cakeNode.onclick = function() {
+            itemNode.forEach((item) => {
+                hiddenForID(item, 'Cake')
+            })
+            sidebarNode.forEach((item) => {
+                hiddenForClass(item, 'Cake sidebar__navbar')  
+            })
+        }
     </script>
 </body>
 
