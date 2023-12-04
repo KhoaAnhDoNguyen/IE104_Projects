@@ -32,7 +32,7 @@ img {
 /* --------------------------------------top bar------------------------------------------ */
 .row {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.879);
+    background-color: #32312f;
     justify-content: center;
     font-size: 12px;
     height: 30px;
@@ -47,12 +47,13 @@ img {
 }
 
 .row div a {
+    color: #b7aaaa;
     display: flex;
     align-items: center;
 }
 
 .row div a:hover {
-    color: #E57905;
+    color: #d8944a;
 }
 
 .topBarIcon {
@@ -83,7 +84,7 @@ img {
     height: 60px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 300px;
+    margin: 0 300px 0 100px;
 }
 
 .clearfix li a {
@@ -105,7 +106,7 @@ img {
 }
 
 .logo {
-    width: 50px;
+    width: 80%;
     height: auto;
 }
 
@@ -228,7 +229,7 @@ header {
     flex-wrap: wrap;
     margin-left: 10%;
     margin-right: 0%;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 
@@ -268,8 +269,9 @@ header {
 /* --------------------------------------Sinature------------------------------------------ */
 .signature {
     position: relative;
-    margin: 0px 100px 0px 100px;
+    margin: 150px 150px 0;
 }
+
 
 .signature .signaturePic {
     position: relative;
@@ -279,19 +281,23 @@ header {
 
 .signature .info_block {
     position: absolute;
-    top: 0px;
-    margin: 17% 0 0 45%;
-    width: 55%;
+    width: 46%;
     height: auto;
+    right: 25px;
+    top: 41.5%;
     font-family: Inter;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     text-align: left;
-    color: #000;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.signature .info {
+    width: 100px;
 }
 
 .signature_2 {
     position: relative;
-    margin-top: 30px;
+    margin-top: 150px;
 }
 
 .signature_2 .container {
