@@ -1,77 +1,178 @@
-header .header-container{
+
+/* --------------------------------------top bar------------------------------------------ */
+.row {
     display: flex;
-    justify-content: flex-start;
-    padding: 0px; /* Khoảng cách giữa header và nội dung bên dưới */
-    text-align: right;
-    align-items: center;
+    background-color: rgba(255, 255, 255, 0.879);
+    justify-content: center;
+    font-size: 12px;
     height: 30px;
-    background: linear-gradient(120deg, #FFC0CB 60%,  #FF69B4 40%);
+    align-items: center;
+    justify-self: center;
+    height: 40px;
+    font-weight: lighter;
 }
 
-.text {
-    text-align: center;
-    flex: 1;
-    color:forestgreen;
+.row div {
+    margin-right: 80px;
 }
 
-.icon {
-    width: 30px; /* Kích thước chiều rộng */
-    height: 30px; /* Kích thước chiều cao */
-    vertical-align: middle;
-    filter: invert(88%) sepia(30%) saturate(5428%) hue-rotate(78deg) brightness(96%) contrast(94%);
-}
-
-.logo img {
-    padding: 40%;
-    margin-top: 70px;
-    width: 100px; /* Kích thước chiều rộng của logo (tùy chỉnh) */
-    height: auto; /* Để tỷ lệ khung hình tự điều chỉnh */
-}
-
-.menu{
+.row div a {
     display: flex;
     align-items: center;
 }
 
-.menu ul {
-    flex: 7;
-    color:black;
-    font-weight: bold;
-    list-style: none; /* Loại bỏ dấu chấm trước mỗi mục */
+.row div a:hover {
+    color: #E57905;
+}
+
+.topBarIcon {
+    width: auto;
+    height: 15px;
+    margin-right: 10px;
+}
+
+
+/* --------------------------------------header------------------------------------------ */
+.navbar {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.778);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+    font-weight: 600;
+    height: 60px;
+}
+
+.nav-links {
+    font-size: 0.7em;
+}
+
+.clearfix {
     display: flex;
+    list-style: none;
+    height: 60px;
     justify-content: space-between;
-    margin-left: 350px;
-    font-size: 25px;
-    margin-right: 100px;
+    align-items: center;
+    margin: 0 300px;
 }
 
-.menu ul li a {
-    text-decoration: none; /* Loại bỏ đường gạch chân mặc định của thẻ a */
-    cursor: pointer; /* Thay đổi kiểu con trỏ khi trỏ vào */
-    color:#000
+.clearfix li a {
+    color:rgb(62, 60, 60);
 }
 
-.cart{
-    flex: 3;
-    color:black;
-    font-weight: bold;
-    font-size: 25px;
-    margin-left: 150px;
-    cursor: pointer;
-} 
-
-nav .cart img{
-    width: 60px; /* Điều chỉnh kích thước hình ảnh (tùy chỉnh) */
-    height: 30px;
-    vertical-align: -10px; /* Điều chỉnh vị trí dọc của chữ*/
-    margin-left: 5px; /* Khoảng cách giữa chữ và hình ảnh (tùy chỉnh) */
-    margin-top: 8px; /* Di chuyển ảnh xuống thêm 10px */
+.clearfix > li {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    /* min-width: 78px; */
 }
 
-.menu img {
-    width: 10px; /* Điều chỉnh kích thước hình ảnh (tùy chỉnh) */
-    height: 10px;
-    margin-left: 5px; /* Khoảng cách giữa chữ và hình ảnh (tùy chỉnh) */
+.menu_child {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.cartIcon {
+    max-width: 100%;
+    height: 20px;
+}
+
+.downArrowIcon {
+    height: 12px;
+}
+
+.product-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.93);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-item {
+    float: left;
+    display: block;
+    color: rgb(53, 53, 53);
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 0;
+}
+
+
+/* .menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.681);
+    color: black;
+} */
+
+.clearfix a :hover{
+    color: rgb(213, 146, 100);
+}
+
+.product-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.product-menu a:hover {
+    color: rgb(213, 146, 0);
+}
+
+.product-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product-menu li {
+    border-bottom: 0px solid #ddd;
+}
+
+
+/* Chỉnh vị trí bảng xuất hiện */
+.menu-item:hover .product-menu{
+    top: 100%;
+    right: 0;
+    display: block;
+    width: 100%;
+}
+
+.menu-item:hover .menu-name {
+    color: rgb(213, 146, 100);
+}
+
+.product-menu .menu_title {
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+#searchInput {
+    align-self: center;
+    height: 25px;
+    margin-right: 7px;
+    border-color: rgba(174, 174, 174, 0.415);
+    border-width: 0.01cap;
+    border-radius: 2%;
+    background-color: white;
+}
+
+#searchInput:focus {
+    outline: none;
 }
 
 .horizontal-line {
@@ -85,9 +186,9 @@ nav .cart img{
 main .intro{
     color:black;
     font-weight: bold;
-    font-size: 30px;
-    margin-left: 150px;
-    margin-top: 50px;
+    font-size: 25px;
+    margin-left: 180px;
+    margin-top: 100px;
 }
 
 .product-info {
@@ -95,18 +196,18 @@ main .intro{
 }
 
 .product-image img{
-    margin-left: 150px; /* Khoảng cách giữa chữ và hình ảnh (tùy chỉnh) */
-    height: 800px;
-    width: 700px;
+    margin-left: 180px; /* Khoảng cách giữa chữ và hình ảnh (tùy chỉnh) */
+    height: 600px;
+    width: 500px;
 }
 
 .product-price  p{
     color:black;
     font-weight: bold;
-    font-size: 30px;
-    margin: 10px;
+    font-size: 27px;
+    margin: 15px;
     margin-left: 100px;
-    margin-top: 0px;
+    margin-top: -10px;
 }
 
 /*size*/
@@ -122,9 +223,9 @@ main .size-product{
     border-radius: 5px;
     box-shadow: 5px 5px 5px #888;
 
-    margin-left: 100px;
-    margin-right: 10px;
-    font-size: 25px;
+    margin-left: 90px;
+    margin-right: 5px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
@@ -166,77 +267,91 @@ main .topping p{
 
     margin-left: 100px;
     margin-right: 10px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: normal;
     padding-right: 10px;
     margin-bottom: 30px;
 }
 
 main .ul-topping {
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    text-align : 40px;
+    text-align: center; /* Chỉnh text-align thành center */
 
-    border: 2px solid #000;
+    border: 1px solid #000; /* Giảm độ rộng của border xuống 1px */
     border-radius: 5px;
     box-shadow: 5px 5px 5px #888;
 
     margin-left: 100px;
-    margin-right: 300px;
-    font-size: 30px;
+    margin-right: 90px;
+    font-size: 25px;
     margin-bottom: 30px;
 }
 
-.topping p:hover {
-    background-color:darkorange; /* Màu nền khi di chuột vào */
-    display: block; /* Chuyển thành khối để có thể đặt chiều rộng và chiều cao */
-    border-radius: 2px; /* Bo tròn các góc */
-    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
+.ul-topping a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Kích thước chiều cao của a sẽ bằng chiều cao của ul-topping */
 }
 
+.ul-topping p {
+    margin-top: 0px;
+    padding: -50px;
+    margin-bottom: 10px;
+}
+
+.topping p:hover,
 .ul-topping a:hover {
-    background-color:darkorange; /* Màu nền khi di chuột vào */
-    display: block; /* Chuyển thành khối để có thể đặt chiều rộng và chiều cao */
-    height: 44px;
-    border-radius: 2px; /* Bo tròn các góc */
-    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
-}
-/*Shipping*/
-.delivery{
-    width: 1000px;
+    background-color: darkorange;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
 }
 
-section .delivery img{
-    width: 40px; /* Điều chỉnh kích thước hình ảnh (tùy chỉnh) */
+
+/*Shipping*/
+.delivery {
+    width: 700px;
+}
+
+section .delivery img {
+    width: 40px;
     height: 40px;
     margin-right: 10px;
-    vertical-align: -7px; /* Điều chỉnh vị trí dọc của chữ*/
+    vertical-align: -10px;
     filter: invert(88%) sepia(30%) saturate(5428%) hue-rotate(78deg) brightness(96%) contrast(94%);
+    
 }
 
 section .delivery {
     border: 2px solid #000;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #888;
-    background-color:darkorange;
-    
+    background-color: darkorange;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     margin-left: 100px;
     margin-right: 15px;
-    margin-top: 100px;
+    margin-top: 20px; /* Giảm giá trị margin-top xuống để kéo hình và chữ xuống 1 chút */
 }
 
 section .delivery p {
-    color:white;
-    font-weight:normal;
-
+    color: white;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: -10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
-.delivery a{
+
+.delivery a {
     text-decoration: none;
 }
+
 
 /*change color when touch*/
 .delivery a:hover, .delivery:hover{
@@ -251,9 +366,9 @@ section .delivery p {
 
 /*small picture*/
 main .smallpicture img {
-    width:250px;
-    height: 250px;
-    margin-left: 150px;
+    width:200px;
+    height: 200px;
+    margin-left: 180px;
     margin-top: 50px;
     border-radius: 10%; /* Đặt giá trị này để bo góc hình ảnh thành hình tròn */
     border: 2px solid orange;
@@ -261,7 +376,7 @@ main .smallpicture img {
 
 /*relative information*/
 aside {
-    margin-left: 150px;
+    margin-left: 180px;
     margin-right: 200px;
     margin-top: 70px;
     font-size: 30px;
@@ -272,7 +387,7 @@ span p {
     font-weight: bold;
     font-size: 30px;
     margin-top: 70px;
-    margin-left: 150px;
+    margin-left: 180px;
 }
 
 span .relative_drinks {
@@ -281,10 +396,10 @@ span .relative_drinks {
 }
 
 span .relative_drinks_list img {
-    margin-left: 150px;
-    margin-right: 20px;
-    width:250px;
-    height: 250px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 170px;
+    height: 170px;
     margin-top: 25px;
     border-radius: 10%; /* Đặt giá trị này để bo góc hình ảnh thành hình tròn */
     border: 2px solid orange;
@@ -297,11 +412,11 @@ span .relative_drinks_list img {
 }
 
 span .relative_drinks_list p {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
-    margin-top: 15px;
-    margin-right: 100px;
-    margin-left: 210px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 /*footer*/

@@ -9,35 +9,158 @@
 
 <body>
 
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="Ảnh\Header&FooterImage\Team4.png" alt="Website's Logo">
-            </div>
-
-            <div class="text">
-                <img class="icon" src="Ảnh\Header&FooterImage\Location_Icon.jpg">Hơn 1500 cửa hàng trên toàn quốc
-            </div>
-            <div class="text">
-                <img class="icon" src="Ảnh\Header&FooterImage\Phone_Icon.png">Đặt hàng: 1800.5868
+    <div class="topBar">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <a href>
+                        <img src="MainScreen\images\location.png" alt="StoreIcon" class="topBarIcon">
+                        <span>Hơn 1000 cửa hàng trên toàn quốc</span>
+                    </a>
+                </div>
+                <div>
+                    <a href>
+                        <img src="MainScreen\images\telephone.png" alt="telephoneIcon" class="topBarIcon">
+                        <span>Đặt hàng: 1800.6969</span>
+                    </a>
+                </div>
             </div>
         </div>
+    </div>
 
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Coffee</a></li>
-                <li><a href="#">Tea</a></li>
-                <li><a href="#">Menu <img src="Ảnh\Header&FooterImage\Down_Arrow.png" alt="Coffee Icon"></a></li>
-                <li><a href="#">Cửa hàng <img src="Ảnh\Header&FooterImage\Down_Arrow.png" alt="Coffee Icon"></a></li>
-                <li><a href="#">Về chúng tôi <img src="Ảnh\Header&FooterImage\Down_Arrow.png" alt="Coffee Icon"></a></li>
-                <li><a href="#">Tuyển dụng</a></li>
-            </ul>
-        
-            <div class="cart">
-                <img src="Ảnh\Header&FooterImage\Cart_Icon.png" alt="Website's Logo">Giỏ Hàng
+    <!-- Đây là phần header -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="nav-links" id="nav-links">
+                    <ul class="clearfix">
+                        <li>
+                            <img src="MainScreen\images\Grey.png" alt="logo" class="logo">
+                        </li>
+                        <li>
+                            <a href=""><span>Cà phê</span></a>
+                        </li>
+                        <li>
+                            <a href=""><span>Trà</span></a>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="" class="menu-name">
+                                    <span>Menu</span>
+                                    <img src="MainScreen\images\down-arrow.png" alt="downArrowIcon" class="downArrowIcon">
+                                </a>
+
+                                <div class="product-menu" id="productMenu">
+                                    <!-- Nội dung bảng sản phẩm chi tiết -->
+                                    <ul class="menu_child">
+                                        <li>
+                                            <a class="menu_title" href="#">Tất cả</a>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Cà phê</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHINDI</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Macchiato</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Latte</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Cà phê phin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Bạc xỉu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Americano</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Trà</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà xanh đậu đỏ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà xanh đào</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà thạch vải</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà thạch đào</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà sen vàng</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Detox</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Detox thanh lọc</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Detox giảm cân</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Bánh</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tiramisu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tart trứng</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Panna cotta</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Mousse cake</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Bông lan trứng muối</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Biscotti</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><span>Về chúng tôi</span></a>
+                        </li>
+                        <li>
+                            <a href=""><span>Tuyển dụng</span></a>
+                        </li>
+                        <li>
+                            <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm....">
+                            <a href="#" class="image-link">
+                                <img src="MainScreen\images\loupe.png" alt="cartIcon" class="cartIcon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </nav>
-        
+        </div>
     </header>
 
     <hr class="horizontal-line">
@@ -110,7 +233,7 @@
 
     <aside>
         <p style="font-weight: bold;">Mô tả sản phẩm</p>
-        <p style="font-size: 25px;" id="product-description">Bạc xỉu hay Bạc sỉu là một món đồ uống có nguồn gốc từ người Hoa sống ở vùng Sài Gòn-Chợ Lớn những năm thập niên 1950-1960 và là món thức uống phổ biến ở khu vực này và các vùng xung quanh.</p>
+        <p style="font-size: 22px;" id="product-description">Bạc xỉu hay Bạc sỉu là một món đồ uống có nguồn gốc từ người Hoa sống ở vùng Sài Gòn-Chợ Lớn những năm thập niên 1950-1960 và là món thức uống phổ biến ở khu vực này và các vùng xung quanh.</p>
     </aside>
 
     <hr style="margin-top: 70px;" class="horizontal-line">
@@ -121,25 +244,25 @@
                 <div class="relative_drinks_list">
                     <img src="Ảnh\Cà phê\Phin.png" id="PhinSuaDa" alt="Product 1">
                     <p>Cafe sữa đá</p>
-                    <p style="margin-top: -20px; font-weight: normal;">29.000 đ</p>
+                    <p style="margin-top: -10px; font-weight: normal;">29.000 đ</p>
                 </div>
 
                 <div class="relative_drinks_list">
                     <img src="Ảnh\Cà phê\Phindi.png" id="PhinHatDe" alt="Product 2">
                     <p>Cafe phin hạt dẻ</p>
-                    <p style="margin-top: -20px; font-weight: normal;">55.000 đ</p>
+                    <p style="margin-top: -10px; font-weight: normal;">55.000 đ</p>
                 </div>
 
                 <div class="relative_drinks_list">
                     <img src="Ảnh\Trà\TraThachVai.png" id="TraThachVai" alt="Product 3">
                     <p>Trà thạch vải</p>
-                    <p style="margin-top: -20px; font-weight: normal;">45.000 đ</p>
+                    <p style="margin-top: -10px; font-weight: normal;">45.000 đ</p>
                 </div>
 
                 <div class="relative_drinks_list">
                     <img src="Ảnh\Trà\TraXanhDauDo.png" id="DauChanhMat" alt="Product 4">
-                    <p>Nước dâu chanh mật</p>
-                    <p style="margin-top: -20px; font-weight: normal;">45.000 đ</p>
+                    <p>Nước dâu chanh</p>
+                    <p style="margin-top: -10px; font-weight: normal;">45.000 đ</p>
                 </div>
 
             </div>
