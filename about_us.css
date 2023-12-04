@@ -278,8 +278,17 @@ header {
     text-decoration: none;
     font-size: 14px;
  
-    letter-spacing: 0.28px;
-    
+    letter-spacing: 0.28px;   
+}
+
+.aside_1_left:hover a,.aside_1_left:hover h6,.aside_1_left:hover h5 {
+    color: red;
+}
+.aside_1_right:hover a,.aside_1_right:hover h6, .aside_1_right:hover h5{
+    color: red;
+}
+.aside_1 img:hover{
+    transform: translateY(-10px);
 }
 
 .aside_1 h4 ,.aside_1 h5 ,.aside_1 h6{
@@ -368,8 +377,22 @@ header {
     height: 380px;
     width: 600px;
     border-radius: 20px;
-    
-    
+       
+}
+.content_2_left img:hover{
+    transform: translateY(-10px);
+}
+
+.content_2_right_1:hover a,.content_2_right_1:hover h6, .content_2_right_1:hover h5{
+    color: red;
+}
+
+.content_2_right_2:hover a,.content_2_right_2:hover h6, .content_2_right_2:hover h5{
+    color: red;
+}
+
+.content_2_right_3:hover a,.content_2_right_3:hover h6, .content_2_right_3:hover h5{
+    color: red;
 }
 
 .content_2_right{
@@ -440,7 +463,21 @@ header {
  
 }
 
+.content_3_right img:hover{
+    transform: translateY(-10px);
+}
 
+.content_3_left_1:hover a,.content_3_left_1:hover h6, .content_3_left_1:hover h5{
+    color: red;
+}
+
+.content_3_left_2:hover a,.content_3_left_2:hover h6, .content_3_left_2:hover h5{
+    color: red;
+}
+
+.content_3_left_3:hover a,.content_3_left_3:hover h6, .content_3_left_3:hover h5{
+    color: red;
+}
 
 .content_3 a{
     color: #000;
@@ -536,6 +573,21 @@ header {
     justify-content: center;
 }
 
+.content_4_left img:hover{
+    transform: translateY(-10px);
+}
+
+.content_4_right_1:hover a,.content_4_right_1:hover h6, .content_4_right_1:hover h5{
+    color: red;
+}
+
+.content_4_right_2:hover a,.content_4_right_2:hover h6, .content_4_right_2:hover h5{
+    color: red;
+}
+
+.content_4_right_3:hover a,.content_4_right_3:hover h6, .content_4_right_3:hover h5{
+    color: red;
+}
 
 .content_4 a{
     color: #000;
@@ -611,6 +663,10 @@ header {
     height: 70%;
     display: flex;
     
+}
+
+#footer a:hover{
+    color: red;
 }
 
 /*chỉnh kích cở cho icon*/
