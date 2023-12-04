@@ -6,7 +6,7 @@ body {
     font-size: 20px;
     color: #000;
     line-height: 1.4;
-    font-family: 'Lato', sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 
 a {
@@ -34,7 +34,7 @@ img {
     display: flex;
     background-color: rgba(255, 255, 255, 0.879);
     justify-content: center;
-    font-size: 15px;
+    font-size: 12px;
     height: 30px;
     align-items: center;
     justify-self: center;
@@ -51,14 +51,28 @@ img {
     align-items: center;
 }
 
+.row div a:hover {
+    color: #E57905;
+}
+
 .topBarIcon {
     width: auto;
-    height: 20px;
+    height: 15px;
     margin-right: 10px;
 }
 
 
 /* --------------------------------------header------------------------------------------ */
+.navbar {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.778);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+    font-weight: 600;
+    height: 60px;
+}
+
 .nav-links {
     font-size: 0.7em;
 }
@@ -66,31 +80,28 @@ img {
 .clearfix {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    height: 60px;
+    justify-content: space-between;
     align-items: center;
-    height: 2em;
+    margin: 0 300px;
 }
 
-.clearfix li {
+.clearfix li a {
+    color:rgb(62, 60, 60);
+}
+
+.clearfix > li {  
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
+    /* min-width: 78px; */
 }
 
 .menu_child {
     display: flex;
     justify-content: space-around;
     align-items: start;
-}
-
-.navbar {
-    /* display: block; */
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    width: 100%;
-    font-weight: 400;
 }
 
 .logo {
@@ -110,7 +121,7 @@ img {
 .product-menu {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.873);
+    background-color: rgba(255, 255, 255, 0.93);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -120,13 +131,18 @@ img {
     display: block;
     color: rgb(53, 53, 53);
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 20px 0;
 }
 
-.menu-item:hover {
+
+/* .menu-item:hover {
     background-color: rgba(255, 255, 255, 0.681);
     color: black;
+} */
+
+.clearfix a :hover{
+    color: rgb(213, 146, 100);
 }
 
 .product-menu a {
@@ -134,6 +150,7 @@ img {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-weight: 500;
 }
 
 .product-menu a:hover {
@@ -152,11 +169,15 @@ img {
 
 
 /* Chỉnh vị trí bảng xuất hiện */
-.menu-item:hover .product-menu {
-    top: 92%;
+.menu-item:hover .product-menu{
+    top: 100%;
     right: 0;
     display: block;
     width: 100%;
+}
+
+.menu-item:hover .menu-name {
+    color: rgb(213, 146, 100);
 }
 
 .product-menu .menu_title {
@@ -205,37 +226,41 @@ header {
 .menu_home {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 9%;
+    margin-left: 10%;
     margin-right: 0%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .mainMenuPic {
-    max-width: 700px;
-    width: 620px;
+    max-width: 900px;
+    width: 640px;
     height: 300px;
     border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    
 }
 
 .asideItemPic {
-    max-width: 270px;
+    max-width: 300px;
     width: 100%;
     height: auto;
     border-radius: 15px;
     margin-bottom: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 .asideItemPic2 {
-    max-width: 270px;
+    max-width: 300px;
     width: 100%;
     height: auto;
     border-radius: 15px;
     margin: 50px 0px 10px 0px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 .menu_item {
-    margin: 0px 40px 0px 40px;
+    margin: 0px 20px 0px 20px;
     font-size: 15px;
 }
 
