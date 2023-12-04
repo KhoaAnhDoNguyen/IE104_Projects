@@ -87,10 +87,12 @@ const modalBuy = document.querySelector('#buy-ticket')
     //modal.addEventListener('click',hideBuyTickets)
     modal.addEventListener('click',function(event){
         event.stopImmediatePropagation()
+        
     })
 
     modalcontainer.addEventListener('click',function(event){
         event.stopImmediatePropagation()
+        alert("Quý khách đã đặt hàng thành công. Xin cảm ơn!");
     })
 
     //size
