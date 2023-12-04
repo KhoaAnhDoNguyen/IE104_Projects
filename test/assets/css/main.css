@@ -243,6 +243,7 @@ header {
     z-index: 1;
     width: 100%;
     height: var(--header-navbar-height);
+    
 }
 
 .logo {
