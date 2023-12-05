@@ -50,3 +50,39 @@ function changePage(i) {
     thisPage = i;
     loadItem();
 }
+
+
+/*phân các trang blog*/
+function changeBlogContent(topicNumber) {
+    // Lấy phần tử span trong thẻ a
+    const blogSpan = document.querySelector('.body_tab-a span');
+
+    switch (topicNumber) {
+        case 1:
+            blogSpan.innerText = 'Chuyện cà phê:';
+            break;
+        case 2:
+            blogSpan.innerText = 'Pha cà phê:';
+            changePage(1);
+            break;
+        case 3:
+            blogSpan.innerText = 'Pha trà:';
+            changePage(1);
+            break;
+        case 4:
+            blogSpan.innerText = 'Chuyện trà:';
+            changePage(1);
+            break;
+        case 5:
+            blogSpan.innerText = 'In the moon';
+            changePage(1);
+            break;
+        case 6:
+            blogSpan.innerText = 'Review';
+            changePage(1);
+            break;
+
+        // Thêm các trường hợp khác tương ứng với các chủ đề khác
+    }
+}
+
