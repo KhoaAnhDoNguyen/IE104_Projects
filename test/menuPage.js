@@ -11,6 +11,7 @@ let navbarItemcoffee = document.querySelector('.Coffee.navbar-item'),
 function showAll(item) {
     item.style.display = 'block'
 }
+
 function hiddenForID(item, X) {
     if (item.id === X) {
         item.style.display = 'block'
@@ -90,3 +91,57 @@ cakeNode.onclick = function () {
         hiddenForClass(item, 'Cake sidebar__navbar')
     })
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Lấy tham số id từ URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var id = urlParams.get('id');
+    if (id === 'Coffee1')
+    {
+        window.onload = function () {
+            itemsNode.forEach((item) => {
+                hiddenForID(item, 'Coffee')
+            })
+            sidebarNode.forEach((item) => {
+                hiddenForClass(item, 'Coffee sidebar__navbar')
+            })
+        }
+    }
+
+    else if (id === 'Tea1')
+    {
+        window.onload = function () {
+            itemsNode.forEach((item) => {
+                hiddenForID(item, 'Tea')
+            })
+            sidebarNode.forEach((item) => {
+                hiddenForClass(item, 'Tea sidebar__navbar')
+            })
+        }
+    }
+
+    else if (id === 'Detox1')
+    {
+        window.onload = function () {
+            itemsNode.forEach((item) => {
+                hiddenForID(item, 'Detox')
+            })
+            sidebarNode.forEach((item) => {
+                hiddenForClass(item, 'Detox sidebar__navbar')
+            })
+        }
+    }
+
+    else if (id === 'Cake1')
+    {
+        window.onload = function () {
+            itemsNode.forEach((item) => {
+                hiddenForID(item, 'Cake')
+            })
+            sidebarNode.forEach((item) => {
+                hiddenForClass(item, 'Cake sidebar__navbar')
+            })
+        }
+    }
+})
