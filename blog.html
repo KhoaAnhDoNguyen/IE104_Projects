@@ -205,14 +205,14 @@
                         <ol class="body_tab-ol">
                             <li class="body_tab-li">
                                 <a href="#" class="body_tab-a">
-                                    <span itemprop="name">Blog</span> 
+                                    <span itemprop="name">Chuyện cà phê:</span>
                                 </a>
                             </li>
                         </ol>
                     </div>
                 </div>
             </div>
-            <div class="content-container"> <!--sử dụng css flexbox-->
+            <div class="content-container"> <!--sử dụng css flexbox-->  
                 <section class="main-content">
                     <div class="list">
                         <!-- Bài viết 1 update -->
@@ -222,16 +222,9 @@
                                 <img src="./assets/img_article.png"
                                     alt="Hình ảnh bài viết 1">
                                 <div class="article-content">
-                                    <h4>SIGNATURE BY THE COFFEE HOUSE -
-                                        "DẤU ẤN"
-                                        MỚI CỦA NHÀ CÀ PHÊ</h4>
+                                    <h4>CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON</h4>
                                     <p id="time-blog">16/08/2023</p>
-                                    <p id="content-blog">Ngày 11.01.2023,
-                                        Chuỗi
-                                        The Coffee House thông báo cửa hàng
-                                        SIGNATURE by The Coffee House chính
-                                        thức
-                                        khai trương tại...</p>
+                                    <p id="content-blog">Mới đây, các "tín đồ" cà phê đang bàn tán xôn xao về SIGNATURE - Biểu tượng văn hóa cà phê của The Coffee House đã quay trở lại....</p>
                                 </div>
                             </a>
                         </article>
@@ -243,41 +236,27 @@
                                 <img src="./assets/coffee healthy (small).jpg"
                                     alt="Hình ảnh bài viết 22">
                                 <div class="article-content">
-                                    <h4>SIGNATURE BY THE COFFEE HOUSE -
-                                        "DẤU ẤN"
-                                        MỚI CỦA NHÀ CÀ PHÊ</h4>
+                                    <h4>TRÀ XANH ĐẬU ĐỎ THE COFFEE HOUSE - HƯƠNG VỊ TRUYỀN THỐNG</h4>
                                     <p id="time-blog">16/08/2023</p>
-                                    <p id="content-blog">Ngày 11.01.2023,
-                                        Chuỗi
-                                        The Coffee House thông báo cửa hàng
-                                        SIGNATURE by The Coffee House chính
-                                        thức
-                                        khai trương tại...</p>
+                                    <p id="content-blog">Mới đây, các "tín đồ" cà phê đang bàn tán xôn xao về SIGNATURE - Biểu tượng văn hóa cà phê của The Coffee House đã quay trở lại....</p>
                                 </div>
                             </a>
                         </article>
 
-                        <!-- Bài viết 2 -->
+                        <!-- Bài viết 3 -->
                         <article class="article">
                             <a
                                 href="https://thecoffeehouse.com/blogs/blog/signature-by-the-coffee-house-dau-an-moi-cua-nha-ca-phe">
                                 <img src="./assets/hold coffee.jpg"
                                     alt="Hình ảnh bài viết 3">
                                 <div class="article-content">
-                                    <h4>SIGNATURE BY THE COFFEE HOUSE -
-                                        "DẤU ẤN"
-                                        MỚI CỦA NHÀ CÀ PHÊ</h4>
+                                    <h4>BÁNH BÔNG LAN TRỨNG MUỐI THE COFFEE HOUSE - HƯƠNG VỊ TRUYỀN THỐNG</h4>
                                     <p id="time-blog">16/08/2023</p>
-                                    <p id="content-blog">Ngày 11.01.2023,
-                                        Chuỗi
-                                        The Coffee House thông báo cửa hàng
-                                        SIGNATURE by The Coffee House chính
-                                        thức
-                                        khai trương tại...</p>
+                                    <p id="content-blog">Mới đây, các "tín đồ" cà phê đang bàn tán xôn xao về SIGNATURE - Biểu tượng văn hóa cà phê đã quay...</p>
                                 </div>
                             </a>
                         </article>
-                        <!-- Bài viết 2 -->
+                        <!-- Bài viết 4 -->
                         <article class="article">
                             <a
                                 href="https://thecoffeehouse.com/blogs/blog/signature-by-the-coffee-house-dau-an-moi-cua-nha-ca-phe">
@@ -298,7 +277,7 @@
                             </a>
                         </article>
 
-                        <!-- Bài viết 2 -->
+                        <!-- Bài viết 5 -->
                         <article class="article">
                             <a
                                 href="https://thecoffeehouse.com/blogs/blog/signature-by-the-coffee-house-dau-an-moi-cua-nha-ca-phe">
@@ -576,24 +555,23 @@
 
                 <aside class="table-of-contents">
                     <ul class="main-sections">
-                        <li class="main-section"><a href="#">Chủ đề liên
-                                quan</a>
+                        <li class="main-section"><a href="#">Chủ đề liên quan</a>
                             <ul class="sub-sections">
-                                <li><a href="#">Chuyện cà phê</a></li>
-                                <li><a href="#">Pha cà phê</a></li>
+                                <li><a href="#" onclick="changeBlogContent(1)">Chuyện cà phê</a></li>
+                                <li><a href="#" onclick="changeBlogContent(2)">Pha cà phê</a></li>
                             </ul>
                         </li>
 
                         <li class="main-section"><a href="#">Teaholic</a>
                             <ul class="sub-sections">
-                                <li><a href="#">Pha Trà</a></li>
-                                <li><a href="#">Câu chuyện về trà</a></li>
+                                <li><a href="#" onclick="changeBlogContent(3)">Pha Trà</a></li>
+                                <li><a href="#" onclick="changeBlogContent(4)">Câu chuyện về trà</a></li>
                             </ul>
                         </li>
                         <li class="main-section"><a href="#">Blog</a>
                             <ul class="sub-sections">
-                                <li><a href="#">In The Mood</a></li>
-                                <li><a href="#">Review</a></li>
+                                <li><a href="#" onclick="changeBlogContent(5)">In The Mood</a></li>
+                                <li><a href="#" onclick="changeBlogContent(6)">Review</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -607,7 +585,7 @@
                     <li>3</li>
                 </ul>
             </div>
-
+           
         </div>
         <footer id="footer">
             <div class="footer__info">

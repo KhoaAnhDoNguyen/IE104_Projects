@@ -185,7 +185,6 @@ ol {
 .body_tab-li {
   display: inline;
 }
-
 .body_tab-a {
   right: 0;
   transition: right linear 0.1s;
@@ -203,7 +202,7 @@ ol {
 .body_main-context {
   display: block;
   margin-top: 7%;
-  margin-left: 18%;
+  margin-left: 15%;
 }
 .body_main-ul {
   display: block;
@@ -332,7 +331,7 @@ ol {
 .main-content {
   flex:2;
   /* Chiếm 2 phần trên tổng 3 phần */
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 
@@ -347,7 +346,7 @@ ol {
 .article a img {
   float: left;
   /* Đặt hình ảnh sang trái */
-  margin-right: 30px;
+  margin-right: 25px;
   /* Tạo khoảng cách giữa hình ảnh và nội dung */
 }
 
@@ -399,10 +398,12 @@ aside.table-of-contents {
   position: sticky;
   top: 0;
   /* Điều này sẽ làm cho phần table-of-contents cố định ở trên đầu màn hình khi cuộn xuống */
-  padding: 80px 20px 20px 20px;
+  padding: 80px 20px 20px 0px;
   z-index: 120;
   flex:1;
 }
+
+
 
 /*--------pagination------*/
 .list {
@@ -625,3 +626,6 @@ aside.table-of-contents .main-section a {
     margin-bottom: 20px;
   }
 }
+
+
+
