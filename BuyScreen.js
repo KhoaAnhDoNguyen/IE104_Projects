@@ -14,6 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+var Price;
+var firstPrice;
+
+function updateProductInfo(id, src, intro, name, price, description) {
+    document.getElementById('product-show').src = src;
+    document.getElementById('smallpicture-id').src = src;
+    document.getElementById('product-description').textContent = description;
+    document.getElementById('intro-id').textContent = intro;
+    document.getElementById('product-name').textContent = name;
+    var formattedPrice =  price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+    document.getElementById('product-price-id').textContent = formattedPrice;
+    Price = price;
+    firstPrice = price;
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     // Lấy tham số id từ URL
@@ -21,41 +35,22 @@ document.addEventListener('DOMContentLoaded', function() {
     var id = urlParams.get('id');
 
     // Kiểm tra giá trị của id và hiển thị thông tin tương ứng
-    if (id === 'Phindii') {
-        document.getElementById('product-show').src = 'Ảnh/Cà phê/Phin.png';
-        document.getElementById('smallpicture-id').src = 'Ảnh/Cà phê/Phin.png';
-        document.getElementById('product-description').textContent = 'Phin Sữa Đá hương vị cà phê Việt Nam đích thực! Từng hạt cà phê hảo hạng được chọn bằng tay, phối trộn độc đáo giữa hạt Robusta từ cao nguyên Việt Nam, thêm Arabica thơm lừng. Cà phê được pha từ Phin truyền thống, hoà cùng sữa đặc sánh và thêm vào chút đá tạo nên ly Phin Sữa Đá – Đậm Đà Chất Phin.';
-        document.getElementById('intro-id').textContent = 'Menu / Cafe / Phin Sữa Đá';
-        document.getElementById('product-name').textContent = 'Cafe Sữa Đá';
-        document.getElementById('product-price-id').textContent = '29.000 đ';
+    if (id === 'PHINDI') {
+        updateProductInfo('PHINDI', 'Ảnh/Cà phê/Phindi.png', 'Menu / Cafe / PHINDI', 'PHINDI', 45000, 
+        'Cà phê Phindi mang đến hương thơm nồng nàn của đất trái và cỏ dại từ vùng cao nguyên Việt Nam. Với vị đắng nhẹ và êm dịu, mỗi giọt cà phê Phindi là một chuyến phiêu lưu đầy tinh tế, khám phá hương vị độc đáo và tận hưởng sự trọn vẹn của khoảnh khắc.');
     } 
 
-    else if (id === 'Phindi') {
-        document.getElementById('product-show').src = 'Ảnh/Cà phê/Phindi.png';
-        document.getElementById('smallpicture-id').src = 'Ảnh/Cà phê/Phindi.png';
-        document.getElementById('product-description').textContent = 'Phindi Hạt Dẻ Cười là sự kết hợp tinh tế giữa hương vị đậm đà của cà phê và sự mịn màng, thơm ngon của sốt phistiachio. ';
-        document.getElementById('intro-id').textContent = 'Menu / Cafe / Phin Hạt Dẻ';
-        document.getElementById('product-name').textContent = 'Phin Hạt Dẻ';
-        document.getElementById('product-price-id').textContent = '55.000 đ';
-    } 
+    else if (id === 'Macchiato'){
+        updateProductInfo('Macchiato', 'Ảnh/Cà phê/Macchiato.png', 'Menu / Cafe / Macchiato', 'Macchiato', 65000, 
+        'Macchiato - một tác phẩm ngắn gọn của nghệ thuật cà phê. Hòa quyện giữa hương thơm nồng nàn của hạt cà phê và vị ngọt mát của sữa tươi, macchiato là sự kết hợp tinh tế giữa đắng và ngọt. Mỗi giọt macchiato không chỉ là một cảm xúc, mà còn là một chuyến du hành ngắn qua thế giới hương vị, để lại ấn tượng đậm sâu trong vị giác của người thưởng thức.')
+    }
 
-    else if (id === 'TraThachVai') {
-        document.getElementById('product-show').src = 'Ảnh/Trà/TraThachVai.png';
-        document.getElementById('smallpicture-id').src = 'Ảnh/Trà/TraThachVai.png';
-        document.getElementById('product-description').textContent = 'Một sự kết hợp thú vị giữa trà đen, những quả vải thơm ngon và thạch giòn khó cưỡng, mang đến thức uống tuyệt hảo!';
-        document.getElementById('intro-id').textContent = 'Menu / Cafe / Trà Thạch Vải';
-        document.getElementById('product-name').textContent = 'Trà Thạch Vải';
-        document.getElementById('product-price-id').textContent = '45.000 đ';
-    } 
+    else if (id === 'Latte'){
+        updateProductInfo('Latte', 'Ảnh/Cà phê/Latte.png', 'Menu / Cafe / Latte', 'Latte', 65000,
+        'Latte - một bức tranh ấm áp và tinh tế của cà phê. Hòa quyện giữa hương thơm độc đáo của hạt cà phê và sự mềm mại của sữa hấp, latte là một trải nghiệm đẳng cấp và êm dịu. Với lớp bọt sánh mịn, mỗi giọt latte không chỉ là một đồ uống, mà là một cuộc phiêu lưu ngọt ngào đưa người uống vào thế giới ấm áp của sự thư giãn và hưởng thụ.')
+    }
 
-    else if (id === 'DauChanhMat') {
-        document.getElementById('product-show').src = 'Ảnh/Trà/TraXanhDauDo.png';
-        document.getElementById('smallpicture-id').src = 'Ảnh/Trà/TraXanhDauDo.png';
-        document.getElementById('product-description').textContent = 'Nước dâu tây chanh detox với công thức đơn giản và chưa đến 15 phút thực hiện à bạn đã có ngay cho mình một chai detox giảm cân, xả stress, loại bỏ căng thẳng mệt mỏi và cải thiện làn da rồi.';
-        document.getElementById('intro-id').textContent = 'Menu / Cafe / Nước dâu tây chanh detox';
-        document.getElementById('product-name').textContent = 'Nước dâu tây chanh detox';
-        document.getElementById('product-price-id').textContent = '45.000 đ';
-    } 
+
 }
 );
 
@@ -95,12 +90,11 @@ const modalBuy = document.querySelector('#buy-ticket')
 
     //size
 var selectedSize = 'off';
-var Price = 29000;
 var PriceIncrease = 0;
 
 if (selectedSize === 'off')
 {
-    Price = 29000;
+    Price = firstPrice;
     var formattedPrice =  Price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
     document.getElementById('product-price-id').textContent = formattedPrice;
 }
