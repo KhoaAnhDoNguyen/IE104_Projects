@@ -91,10 +91,7 @@ header a {
   display: block;
 }
 
-img {
-  max-width: 300px;
-  max-height: auto;
-}
+
 
 .navbar {
   position: absolute;
