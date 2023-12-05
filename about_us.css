@@ -83,8 +83,7 @@ h5{
 
 /* ----------------------------------------------Header Info---------------------------------------- */
 
-/* --------------------------------------top bar------------------------------------------ */
-.topBar .rowHeader {
+.row_header {
     display: flex;
     background-color: #32312f;
     justify-content: center;
@@ -92,14 +91,7 @@ h5{
     height: 30px;
     align-items: center;
     justify-self: center;
-    height: 40px;
-    font-weight: lighter;
 }
-
-.topBar .rowHeader div {
-    margin-right: 80px;
-}
-
 .div {
     display: block;
 }
@@ -115,58 +107,17 @@ h5{
 }
 
 .topBarIcon {
-    width: auto;
-    height: 15px;
-    margin-right: 10px;
+    width: 20px;
+    height: auto;
 }
 
-.topBar {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: #000;
-    line-height: 1.4;
-    font-family: 'roboto', sans-serif;
-}
-
-.topBar a {
+.topBar a{
     text-decoration: none;
-    color: #191919;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-/* --------------------------------------header------------------------------------------ */
-.navbar {
-    position:absolute;
-    background-color: rgba(255, 255, 255, 0.778);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    width: 100%;
-    font-weight: 600;
-    height: 60px;
-}
-
-header {
-    margin: 0;
-    padding: 0;
-    font-size: 17px;
     color: #000;
-    line-height: 1.4;
-    font-family: 'roboto', sans-serif;
 }
 
-header a {
-    text-decoration: none;
-    color: #191919;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
+.topBar a:hover{
+    color: red;
 }
 
 .nav-links {
@@ -300,6 +251,27 @@ header {
 #searchInput:focus {
     outline: none;
 }
+
+.clearfix{
+    height: 47px;
+}
+
+.clearfix >li{
+    height: 47px;
+    width: 100%;
+}
+
+.clearfix >li:hover, .clearfix >li:hover>a{
+    background-color: #CCCCCC;
+    color: white;
+}
+
+.clearfix >li:hover>.menu-item>a{
+    color: white;
+    background-color: #CCCCCC;
+    
+}
+
 
 /* Center */
 .center {
