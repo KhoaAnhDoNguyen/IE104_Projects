@@ -3,9 +3,9 @@ var blogList = [
   {
     content: "CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON",
     images: [
-      "/blog/assets/img/image_1.png",
-      "/blog/assets/img/image_2.png",
-      "/blog/assets/img/image_3.png",
+      "./assets/img/image_1.png",
+      "./assets/img/image_2.png",
+      "./assets/img/image_3.png",
     ],
     paragraphs: [
       "Mới đây, các tín đồ cà phê đang bàn tán xôn xao về SIGNATURE - Biểu tượng văn hóa cà phê của The Coffee House đã quay trở lại.",
@@ -24,9 +24,9 @@ var blogList = [
   {
     content: "TẠI SAO CÀ PHÊ CÓ VỊ CHUA?",
     images: [
-      "/blog/assets/img/image_1.png",
-      "/blog/assets/img/image_2.png",
-      "/blog/assets/img/trà xanh đậu đỏ.jpg",
+      "../MainScreen/images/blog1.jpg",
+      "../MainScreen/images/blog2.png",
+      "./assets/img/trà xanh đậu đỏ.jpg",
     ],
     paragraphs: [
       "Nhiều người khi uống cà phê cảm thấy có vị chua thường e ngại rằng cà phê hỏng, kém chất lượng hay gặp các vấn đề trong quá trình pha chế và bảo quản. Tuy nhiên, điều này chưa chính xác. Cả hương vị của Arabica hay Robusta nguyên chất, trải qua quá trình chế biến, rang xay đều có vị chua nhẹ. Vậy nên, cà phê có vị chua chua, vẫn giữ được hương thơm đặc trưng vốn có của nó thì bạn có thể yên tâm đó không phải là cà phê hỏng.",
@@ -45,9 +45,9 @@ var blogList = [
   {
     content: "NGHE NHÀ MÁCH NHỎ BÍ KÍP HEALTHY GỌN NHẸ, AI CŨNG ÁP DỤNG ĐƯỢC",
     images: [
-      "/blog/assets/img/image_1.png",
-      "/blog/assets/img/image_2.png",
-      "/blog/assets/img/BongLan.png",
+      "../MainScreen/images/blog5.png",
+      "../MainScreen/images/blog6.png",
+      "./assets/img/BongLan.png",
     ],
     paragraphs: [
       "Sống lành mạnh (healthy) đang là xu hướng được nhiều người trẻ ưa chuộng. Tuy nhiên, không đơn thuần là việc chăm chút đi theo các chế độ ăn uống hoặc tập luyện khắt khe, ngày nay healthy phải “easy” để vừa khỏe mạnh, vừa thoải mái tận hưởng mọi cuộc vui!",
