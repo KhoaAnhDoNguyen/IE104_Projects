@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var id = urlParams.get('id');
 
     // Kiểm tra giá trị của id và hiển thị thông tin tương ứng
-    if (id === 'PhinSuaDa') {
+    if (id === 'Phindii') {
         document.getElementById('product-show').src = 'Ảnh/Cà phê/Phin.png';
         document.getElementById('smallpicture-id').src = 'Ảnh/Cà phê/Phin.png';
         document.getElementById('product-description').textContent = 'Phin Sữa Đá hương vị cà phê Việt Nam đích thực! Từng hạt cà phê hảo hạng được chọn bằng tay, phối trộn độc đáo giữa hạt Robusta từ cao nguyên Việt Nam, thêm Arabica thơm lừng. Cà phê được pha từ Phin truyền thống, hoà cùng sữa đặc sánh và thêm vào chút đá tạo nên ly Phin Sữa Đá – Đậm Đà Chất Phin.';
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('product-price-id').textContent = '29.000 đ';
     } 
 
-    else if (id === 'PhinHatDe') {
+    else if (id === 'Phindi') {
         document.getElementById('product-show').src = 'Ảnh/Cà phê/Phindi.png';
         document.getElementById('smallpicture-id').src = 'Ảnh/Cà phê/Phindi.png';
         document.getElementById('product-description').textContent = 'Phindi Hạt Dẻ Cười là sự kết hợp tinh tế giữa hương vị đậm đà của cà phê và sự mịn màng, thơm ngon của sốt phistiachio. ';

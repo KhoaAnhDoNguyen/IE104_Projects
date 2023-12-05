@@ -1,15 +1,6 @@
 /* --------------------------------------General------------------------------------------ */
-body {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: #000;
-    line-height: 1.4;
-    font-family: 'roboto', sans-serif;
-}
 
-a {
+header a, .topBar a {
     text-decoration: none;
     color: #191919;
     -o-transition: .5s;
@@ -23,7 +14,7 @@ a {
     display: block;
 }
 
-img {
+header img, .topBar img {
     max-width: 300px;
     max-height: auto;
 }
