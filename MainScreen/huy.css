@@ -227,7 +227,7 @@ header {
 .menu_home {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 0%;
     margin-top: 150px;
     margin-bottom: 50px;
@@ -335,6 +335,7 @@ header {
 
 /* --------------------------------------Blog Home------------------------------------------ */
 .blog_home .container {
+    margin-top: 150px;
     display: relative;
     background-color: rgb(240, 224, 189);
     padding-bottom: 100px;
@@ -357,16 +358,31 @@ header {
     flex-wrap: wrap;
 }
 
+.article_item_img img{
+    transition: transform 0.3s ease;
+}
+
+.article_item_img:hover img{
+    transform: scale(1.05);
+}
+
 .blog_list_item {
     display: block;
-    max-width: 600px;
+    max-width: 420px;
     margin: 0px 0px 15px 40px;
+}
+
+.blog_list_item span {
+    font-size: 1rem;
+    margin: 0 3% 15% 0;
+    word-wrap: break-word;
+    color: black;
 }
 
 .blog_list_item img {
     max-width: 420px;
     width: 100%;
-    height: auto;
+    height: 250px;
 }
 
 /*---------------footer start--------------------------*/
