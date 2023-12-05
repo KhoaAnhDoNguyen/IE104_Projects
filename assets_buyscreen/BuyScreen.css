@@ -1,6 +1,16 @@
 /* --------------------------------------General------------------------------------------ */
 
-/* header a, .topBar a {
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #000;
+    line-height: 1.4;
+    font-family: 'roboto', sans-serif;
+}
+
+a {
     text-decoration: none;
     color: #191919;
     -o-transition: .5s;
@@ -14,23 +24,12 @@
     display: block;
 }
 
-header img, .topBar img {
+header img {
     max-width: 300px;
-    max-height: auto;
+    height: auto;
 }
- */
 
 /* --------------------------------------top bar------------------------------------------ */
-.row a {
-    text-decoration: none;
-    color: #191919;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-
 .row {
     display: flex;
     background-color: #32312f;
@@ -41,92 +40,59 @@ header img, .topBar img {
     justify-self: center;
     height: 40px;
     font-weight: lighter;
-  }
-  
-  .row div {
+}
+
+.row div {
     margin-right: 80px;
-  }
-  
-  .row div a {
+}
+
+.row div a {
     color: #b7aaaa;
     display: flex;
     align-items: center;
-  }
-  
-  .row div a:hover {
+}
+
+.row div a:hover {
     color: #d8944a;
-  }
-  
-  .topBarIcon {
+}
+
+.topBarIcon {
     width: auto;
     height: 15px;
     margin-right: 10px;
-  }
-  
-  
-  /* --------------------------------------header------------------------------------------ */
-  .topBar {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: #000;
-    line-height: 1.4;
-    font-family: 'roboto', sans-serif;
-  }
-  
-  header {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: #000;
-    line-height: 1.4;
-    font-family: 'roboto', sans-serif;
-  }
-  
-  header a {
-    text-decoration: none;
-    color: #191919;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-  }
-  
-  .div {
-    display: block;
-  }
+}
 
-  .navbar {
-    position: absolute;
+
+/* --------------------------------------header------------------------------------------ */
+.navbar {
+    position:absolute;
     background-color: rgba(255, 255, 255, 0.778);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     width: 100%;
     font-weight: 600;
     height: 60px;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     font-size: 0.7em;
-  }
-  
-  .clearfix {
+}
+
+.clearfix {
+    padding-left: 0;
     display: flex;
     list-style: none;
     height: 60px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10% 0 7%;
+    margin: 0 100px;
 }
 
 .clearfix li a {
-    color: rgb(62, 60, 60);
+    color:rgb(62, 60, 60);
 }
 
-.clearfix>li {
+.clearfix > li {  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,93 +107,93 @@ header img, .topBar img {
 }
 
 .logo {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
-  
-  .cartIcon {
+
+.cartIcon {
     max-width: 100%;
     height: 20px;
-  }
-  
-  .downArrowIcon {
+}
+
+.downArrowIcon {
     height: 12px;
-  }
-  
-  .product-menu {
+}
+
+.product-menu {
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.93);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  .menu-item {
+}
+
+.menu-item {
     float: left;
     display: block;
     color: rgb(53, 53, 53);
     text-align: center;
     text-decoration: none;
     padding: 20px 0;
-  }
-  
-  
-  /* .menu-item:hover {
+}
+
+
+/* .menu-item:hover {
     background-color: rgba(255, 255, 255, 0.681);
     color: black;
-  } */
-  
-  .clearfix a :hover {
+} */
+
+.clearfix a :hover{
     color: rgb(213, 146, 100);
-  }
-  
-  .product-menu a {
+}
+
+.product-menu a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     font-weight: 500;
-  }
-  
-  .product-menu a:hover {
+}
+
+.product-menu a:hover {
     color: rgb(213, 146, 0);
-  }
-  
-  .product-menu ul {
+}
+
+.product-menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .product-menu li {
+}
+
+.product-menu li {
     border-bottom: 0px solid #ddd;
-  }
-  
-  
-  /* Chỉnh vị trí bảng xuất hiện */
-  .menu-item:hover .product-menu {
+}
+
+
+/* Chỉnh vị trí bảng xuất hiện */
+.menu-item:hover .product-menu{
     top: 100%;
     right: 0;
     display: block;
     width: 100%;
-  }
-  
-  .menu-item:hover .menu-name {
+}
+
+.menu-item:hover .menu-name {
     color: rgb(213, 146, 100);
-  }
-  
-  .product-menu .menu_title {
+}
+
+.product-menu .menu_title {
     text-decoration: underline;
     font-size: 1.2em;
-  }
-  
-  header {
+}
+
+header {
     position: sticky;
     top: 0px;
     z-index: 100;
-  }
-  
-  #searchInput {
+}
+
+#searchInput {
     align-self: center;
     height: 25px;
     margin-right: 7px;
@@ -235,15 +201,16 @@ header img, .topBar img {
     border-width: 0.01cap;
     border-radius: 2%;
     background-color: white;
-  }
-  
-  #searchInput:focus {
+}
+
+#searchInput:focus {
     outline: none;
-  }
- 
+}
+
+
 /**/
-main .intro{
-    color:black;
+main .intro {
+    color: black;
     font-weight: bold;
     font-size: 25px;
     margin-left: 180px;
@@ -251,17 +218,19 @@ main .intro{
 }
 
 .product-info {
-    display: flex; /* Hiển thị các phần tử con cùng một hàng (ngang) */
+    display: flex;
+    /* Hiển thị các phần tử con cùng một hàng (ngang) */
 }
 
-.product-image img{
-    margin-left: 180px; /* Khoảng cách giữa chữ và hình ảnh (tùy chỉnh) */
+.product-image img {
+    margin-left: 180px;
+    /* Khoảng cách giữa chữ và hình ảnh (tùy chỉnh) */
     height: 600px;
     width: 500px;
 }
 
-.product-price  p{
-    color:black;
+.product-price p {
+    color: black;
     font-weight: bold;
     font-size: 27px;
     margin: 15px;
@@ -274,7 +243,7 @@ main .list-size {
     display: flex;
 }
 
-main .size-product{
+main .size-product {
     align-items: center;
     justify-content: center;
 
@@ -289,25 +258,32 @@ main .size-product{
 }
 
 .size-product img {
-    width: 40px; /* Điều chỉnh kích thước hình ảnh (tùy chỉnh) */
-    height: 40px;   
-    vertical-align:-10px; 
+    width: 40px;
+    /* Điều chỉnh kích thước hình ảnh (tùy chỉnh) */
+    height: 40px;
+    vertical-align: -10px;
 }
 
 .size-product a {
-    color: black; /* Màu chữ ban đầu */
-    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+    color: black;
+    /* Màu chữ ban đầu */
+    text-decoration: none;
+    /* Loại bỏ gạch chân cho liên kết */
 }
 
 .size-product a:hover {
-    background-color:darkorange; /* Màu nền khi di chuột vào */
+    background-color: darkorange;
+    /* Màu nền khi di chuột vào */
 
-    display: block; /* Chuyển thành khối để có thể đặt chiều rộng và chiều cao */
-    border-radius: 5px; /* Bo tròn các góc */
-    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
+    display: block;
+    /* Chuyển thành khối để có thể đặt chiều rộng và chiều cao */
+    border-radius: 5px;
+    /* Bo tròn các góc */
+    transition: background-color 0.3s ease;
+    /* Hiệu ứng màu nền */
 }
 
-.product-price a{
+.product-price a {
     text-decoration: none;
 }
 
@@ -316,7 +292,7 @@ main .list-topping {
     display: flex;
 }
 
-main .topping p{
+main .topping p {
     align-items: center;
     justify-content: center;
 
@@ -335,9 +311,11 @@ main .topping p{
 main .ul-topping {
     align-items: center;
     justify-content: center;
-    text-align: center; /* Chỉnh text-align thành center */
+    text-align: center;
+    /* Chỉnh text-align thành center */
 
-    border: 1px solid #000; /* Giảm độ rộng của border xuống 1px */
+    border: 1px solid #000;
+    /* Giảm độ rộng của border xuống 1px */
     border-radius: 5px;
     box-shadow: 5px 5px 5px #888;
 
@@ -351,7 +329,8 @@ main .ul-topping {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%; /* Kích thước chiều cao của a sẽ bằng chiều cao của ul-topping */
+    height: 100%;
+    /* Kích thước chiều cao của a sẽ bằng chiều cao của ul-topping */
 }
 
 .ul-topping p {
@@ -379,7 +358,7 @@ section .delivery img {
     margin-right: 10px;
     vertical-align: -10px;
     filter: invert(88%) sepia(30%) saturate(5428%) hue-rotate(78deg) brightness(96%) contrast(94%);
-    
+
 }
 
 section .delivery {
@@ -394,7 +373,8 @@ section .delivery {
 
     margin-left: 100px;
     margin-right: 15px;
-    margin-top: 20px; /* Giảm giá trị margin-top xuống để kéo hình và chữ xuống 1 chút */
+    margin-top: 20px;
+    /* Giảm giá trị margin-top xuống để kéo hình và chữ xuống 1 chút */
 }
 
 section .delivery p {
@@ -413,8 +393,9 @@ section .delivery p {
 
 
 /*change color when touch*/
-.delivery a:hover, .delivery:hover{
-    background-color:darkorange;
+.delivery a:hover,
+.delivery:hover {
+    background-color: darkorange;
     cursor: pointer;
 }
 
@@ -425,11 +406,12 @@ section .delivery p {
 
 /*small picture*/
 main .smallpicture img {
-    width:200px;
+    width: 200px;
     height: 200px;
     margin-left: 180px;
     margin-top: 50px;
-    border-radius: 10%; /* Đặt giá trị này để bo góc hình ảnh thành hình tròn */
+    border-radius: 10%;
+    /* Đặt giá trị này để bo góc hình ảnh thành hình tròn */
     border: 2px solid orange;
 }
 
@@ -460,7 +442,8 @@ span .relative_drinks_list img {
     width: 170px;
     height: 170px;
     margin-top: 25px;
-    border-radius: 10%; /* Đặt giá trị này để bo góc hình ảnh thành hình tròn */
+    border-radius: 10%;
+    /* Đặt giá trị này để bo góc hình ảnh thành hình tròn */
     border: 2px solid orange;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -488,15 +471,15 @@ span .relative_drinks_list p {
 .footer__info {
     height: 70%;
     display: flex;
-    
+
 }
 
-#footer a:hover{
+#footer a:hover {
     color: red;
 }
 
 /*chỉnh kích cở cho icon*/
-.social-icon i{
+.social-icon i {
     width: 15px;
 }
 
@@ -507,7 +490,7 @@ span .relative_drinks_list p {
     margin-top: 36px;
 }
 
-.text-center{
+.text-center {
     text-align: center !important;
 }
 
@@ -529,7 +512,7 @@ span .relative_drinks_list p {
 
 .footer__info-item li {
     list-style: none;
-    
+
 }
 
 .footer__info-item a {
@@ -555,6 +538,7 @@ span .relative_drinks_list p {
     width: 95%;
     border: 1px solid #555;
 }
+
 .footer__address {
     height: 30%;
     text-align: center;
@@ -564,29 +548,29 @@ span .relative_drinks_list p {
     font-size: 12px;
 }
 
-.footer__info-item ul{
+.footer__info-item ul {
 
     padding-left: 0px;
 }
 
-.footer__info-item{
+.footer__info-item {
     height: 0px;
 }
 
-.tilte{
+.tilte {
     font-size: 19px;
 }
 
 
 
 /*delivery btn start*/
-.clear{
+.clear {
     clear: both;
 }
 
-.modal{
+.modal {
     position: fixed;
-    top : 0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -597,11 +581,11 @@ span .relative_drinks_list p {
     display: none;
 }
 
-.modal.open{
+.modal.open {
     display: flex;
 }
 
-.modal-container{
+.modal-container {
     background-color: #fff;
     width: 900px;
     max-width: calc(100%-32px);
@@ -610,7 +594,7 @@ span .relative_drinks_list p {
     animation: modalFadeIn ease 0.5s;
 }
 
-.modal-header{
+.modal-header {
     background-color: #009688;
     height: 130px;
     display: flex;
@@ -620,7 +604,7 @@ span .relative_drinks_list p {
     color: white;
 }
 
-.modal-close{
+.modal-close {
     position: absolute;
     right: 0;
     top: 0;
@@ -630,30 +614,30 @@ span .relative_drinks_list p {
     opacity: 0.9;
 }
 
-.modal-close i{
-   color: white;
+.modal-close i {
+    color: white;
 }
 
-.modal-close:hover{
+.modal-close:hover {
     background-color: red;
     color: white;
     display: block;
-    border:10px ;
+    border: 10px;
     opacity: 1;
 }
 
-.modal-body{
+.modal-body {
     padding: 16px;
 }
 
-.modal-label{
+.modal-label {
     display: block;
     font-size: 15px;
     margin-bottom: 12px;
-    
+
 }
 
-.modal-input{
+.modal-input {
     border: 1px solid #ccc;
     width: 100%;
     padding: 10px;
@@ -674,28 +658,32 @@ span .relative_drinks_list p {
     cursor: pointer;
 }
 
-#buy-ticket:hover{
+#buy-ticket:hover {
     opacity: 0.7;
 }
 
-.modal-footer{
+.modal-footer {
     padding: 16px;
     text-align: right;
-    
+
 }
 
-.modal-footer a{
+.modal-footer a {
     color: #2196f3;
 }
 
-#name, #phone_number, #address,#note{
+#name,
+#phone_number,
+#address,
+#note {
     width: 840px;
 }
- /*delivery btn end*/
+
+/*delivery btn end*/
 
 body {
     zoom: 100%;
     -moz-transform: scale(1.0);
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
-  }
+}
