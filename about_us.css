@@ -82,9 +82,7 @@ h5{
 
 
 /* ----------------------------------------------Header Info---------------------------------------- */
-
-/* --------------------------------------top bar------------------------------------------ */
-.row_header {
+.rowHeader {
     display: flex;
     background-color: #32312f;
     justify-content: center;
@@ -96,17 +94,17 @@ h5{
     font-weight: lighter;
 }
 
-.row_header div {
+.rowHeader div {
     margin-right: 80px;
 }
 
-.row_header div a {
+.rowHeader div a {
     color: #b7aaaa;
     display: flex;
     align-items: center;
 }
 
-.row_header div a:hover {
+.rowHeader div a:hover {
     color: #d8944a;
 }
 
@@ -116,6 +114,15 @@ h5{
     margin-right: 10px;
 }
 
+.rowHeader a {
+    text-decoration: none;
+    color: #191919;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
 
 /* --------------------------------------header------------------------------------------ */
 .navbar {
@@ -130,6 +137,26 @@ h5{
 
 .nav-links {
     font-size: 0.7em;
+}
+
+header a {
+    text-decoration: none;
+    color: #191919;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+header {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    color: #000;
+    line-height: 1.4;
+    font-family: 'roboto', sans-serif;
 }
 
 .clearfix {
@@ -259,6 +286,7 @@ header {
 #searchInput:focus {
     outline: none;
 }
+
 
 
 /* Center */
