@@ -66,93 +66,63 @@ var blogList = [
   // Thêm thông tin của các bài tiếp theo vào đây
 ];
 
-// Lấy đối tượng nút Bài trước
 var prevButton = document.getElementById("prevButton");
-
-// Lấy đối tượng nút Bài kế tiếp
 var nextButton = document.getElementById("nextButton");
 
-// Lắng nghe sự kiện click cho nút Bài trước
-prevButton.addEventListener("click", function () {
-  // Lấy chỉ số hiện tại
+prevButton.addEventListener("click", navigateBlog.bind(null, -1));
+nextButton.addEventListener("click", navigateBlog.bind(null, 1));
+
+function navigateBlog(direction) {
   var currentIndex = parseInt(prevButton.getAttribute("data-index"));
+  currentIndex = (currentIndex + direction + blogList.length) % blogList.length;
 
-  // Giảm chỉ số
-  currentIndex--;
+  updateBlogContent(currentIndex);
 
-  // Kiểm tra nếu chỉ số là dưới 0, chuyển về bài cuối cùng
-  if (currentIndex < 0) {
-    currentIndex = blogList.length - 1;
-  }
-
-  // Thay đổi nội dung và hình ảnh
-  document.getElementById("blog_1").innerText = blogList[currentIndex].content;
-  setImages(blogList[currentIndex].images);
-
-  // Cập nhật chỉ số mới
   prevButton.setAttribute("data-index", currentIndex);
-  updateBlogContent(currentIndex);
-});
-
-// Lắng nghe sự kiện click cho nút Bài kế tiếp
-nextButton.addEventListener("click", function () {
-  // Lấy chỉ số hiện tại
-  var currentIndex = parseInt(nextButton.getAttribute("data-index"));
-
-  // Tăng chỉ số
-  currentIndex++;
-
-  // Kiểm tra nếu chỉ số vượt quá số lượng bài, chuyển về bài đầu tiên
-  if (currentIndex >= blogList.length) {
-    currentIndex = 0;
-  }
-
-  // Thay đổi nội dung và hình ảnh
-  document.getElementById("blog_1").innerText = blogList[currentIndex].content;
-  setImages(blogList[currentIndex].images);
-
-  // Cập nhật chỉ số mới
   nextButton.setAttribute("data-index", currentIndex);
-  updateBlogContent(currentIndex);
-});
-// Lấy tất cả các phần tử có class 'blog'
-var blogElements = document.querySelectorAll(".blog");
+}
 
-// Lặp qua mỗi phần tử và thêm sự kiện click
-blogElements.forEach(function (blogElement, index) {
-  blogElement.addEventListener("click", function () {
-    // Thay đổi nội dung và hình ảnh dựa trên chỉ số
-    document.getElementById("blog_1").innerText = blogList[index].content;
-    setImages(blogList[index].images);
-
-    // Cập nhật chỉ số mới cho cả prevButton và nextButton
-    prevButton.setAttribute("data-index", index);
-    nextButton.setAttribute("data-index", index);
-  });
-});
-
-// Hàm để cập nhật nội dung của thẻ p
 function updateBlogContent(index) {
   var paragraphs = document.querySelectorAll(".body_main-context p");
   var blogContents = blogList[index].paragraphs;
 
-  // Kiểm tra nếu số lượng đoạn văn không bằng số lượng trong blogContents, thì không cập nhật
   for (var i = 0; i < paragraphs.length && i < blogContents.length; i++) {
     paragraphs[i].innerText = blogContents[i];
-    // In đậm cho 2 thẻ p đầu tiên
-    if (i < 2) {
-      paragraphs[i].style.fontWeight = "bold";
-    } else {
-      paragraphs[i].style.fontWeight = "normal";
-    }
+    paragraphs[i].style.fontWeight = i < 2 ? "bold" : "normal";
   }
+
+  document.getElementById("blog_1").innerText = blogList[index].content;
+  setImages(blogList[index].images);
 }
-// Hàm để đặt hình ảnh
+
 function setImages(images) {
   var imageElements = document.querySelectorAll(".body_img1");
 
-  // Đặt hình ảnh cho từng phần tử có class 'body_img1'
   for (var i = 0; i < images.length; i++) {
     imageElements[i].src = images[i];
   }
 }
+
+// Lấy tất cả các phần tử có class 'blog'
+var blogElements = document.querySelectorAll(".blog");
+
+blogElements.forEach(function (blogElement, index) {
+  blogElement.addEventListener("click", function () {
+    updateBlogContent(index);
+
+    prevButton.setAttribute("data-index", index);
+    nextButton.setAttribute("data-index", index);
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  // Lấy tham số index từ URL
+  var urlParams = new URLSearchParams(window.location.search);
+  var index = parseInt(urlParams.get("index")) || 0; // Nếu không có tham số, sử dụng index mặc định là 0
+
+  // Gọi hàm updateBlogContent với chỉ số index
+  updateBlogContent(index);
+
+  // Cập nhật chỉ số cho nút trước và nút sau
+  prevButton.setAttribute("data-index", index);
+  nextButton.setAttribute("data-index", index);
+});
