@@ -96,7 +96,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    /* min-width: 78px; */
+    min-width: 78px;
 }
 
 .menu_child {
@@ -223,6 +223,13 @@ header {
 }
 
 /*--------------------------------------------------------------------------------------------*/
+.menu_home img{
+    transition: transform 0.3s ease;
+}
+
+.menu_home a:hover img{
+    transform: scale(1.05);
+}
 
 .menu_home {
     display: flex;
@@ -272,6 +279,14 @@ header {
     margin: 150px 150px 0;
 }
 
+.signature img{
+    transition: transform 0.3s ease;
+}
+
+.signature a:hover img{
+    transform: scale(1.01);
+}
+
 
 .signature .signaturePic {
     position: relative;
@@ -293,6 +308,14 @@ header {
 
 .signature .info {
     width: 100px;
+}
+
+.signature_2 img{
+    transition: transform 0.3s ease;
+}
+
+.signature_2 a:hover img{
+    transform: scale(1.05);
 }
 
 .signature_2 {

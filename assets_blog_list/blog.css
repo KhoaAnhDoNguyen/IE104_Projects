@@ -29,7 +29,32 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+header {
+  font-size: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #191919;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.div {
+  display: block;
+}
+
+img {
+  max-width: 300px;
+  max-height: auto;
+}
+
+
 /* --------------------------------------top bar------------------------------------------ */
+
 .row {
   display: flex;
   background-color: #32312f;
@@ -40,16 +65,6 @@ body {
   justify-self: center;
   height: 40px;
   font-weight: lighter;
-}
-
-.row a {
-  text-decoration: none;
-  color: #191919;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
 }
 
 .row div {
@@ -74,31 +89,11 @@ body {
 
 
 /* --------------------------------------header------------------------------------------ */
-header {
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  color: #000;
-  line-height: 1.4;
-  font-family: 'roboto', sans-serif;
-}
-
-header a {
-  text-decoration: none;
-  color: #191919;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
 .navbar {
-  position: absolute;
+  position:absolute;
   background-color: rgba(255, 255, 255, 0.778);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
+  z-index: 1;
   width: 100%;
   font-weight: 600;
   height: 60px;
@@ -109,23 +104,24 @@ header a {
 }
 
 .clearfix {
+  padding-left: 0;
   display: flex;
   list-style: none;
   height: 60px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 10% 0 7%;
+  margin: 0 7.4%;
 }
 
 .clearfix li a {
-  color: rgb(62, 60, 60);
+  color:rgb(62, 60, 60);
 }
 
-.clearfix>li {
+.clearfix > li {  
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  margin: 0 7px;
   /* min-width: 78px; */
 }
 
@@ -154,7 +150,7 @@ header a {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.93);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
+  z-index: 1;
 }
 
 .menu-item {
@@ -172,7 +168,7 @@ header a {
   color: black;
 } */
 
-.clearfix a :hover {
+.clearfix a :hover{
   color: rgb(213, 146, 100);
 }
 
@@ -200,7 +196,7 @@ header a {
 
 
 /* Chỉnh vị trí bảng xuất hiện */
-.menu-item:hover .product-menu {
+.menu-item:hover .product-menu{
   top: 100%;
   right: 0;
   display: block;
@@ -219,7 +215,7 @@ header a {
 header {
   position: sticky;
   top: 0px;
-  z-index: 1000;
+  z-index: 100;
 }
 
 #searchInput {
@@ -230,6 +226,7 @@ header {
   border-width: 0.01cap;
   border-radius: 2%;
   background-color: white;
+  font-size: 13px;
 }
 
 #searchInput:focus {
@@ -634,42 +631,26 @@ aside.table-of-contents .main-section a {
 @media screen and (max-width: 768px) {
 
   /* Phần header */
-  .row {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .menu {
-    margin-left: 0;
-  }
-
-  .menu li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .menu a {
-    font-size: 1.2rem;
-    /* Giảm kích thước font cho menu */
+  header {
+    font-size: 1rem;
   }
 
   .navbar {
     position: relative;
   }
 
-  .logo {
-    position: static;
-    margin: 10px 0;
-    text-align: center;
-  }
-
   #searchInput {
     margin-right: 0;
-    width: 100%;
+    width: 90%;
   }
 
   /* Phần main */
+  .menu a {
+    font-size: 1.2rem;
+    /* Giảm kích thước font cho menu */
+  }
+
   .content-container {
     flex-direction: column;
     margin-top: 20px;
