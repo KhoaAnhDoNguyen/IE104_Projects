@@ -114,7 +114,7 @@ header a {
   height: 60px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 300px 0 100px;
+  margin: 0 10% 0 7%;
 }
 
 .clearfix li a {
@@ -125,7 +125,7 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  padding: 0 20px;
   /* min-width: 78px; */
 }
 
@@ -135,7 +135,7 @@ header a {
   align-items: start;
 }
 
-.logoo {
+.logo {
   width: 80%;
   height: auto;
 }
@@ -333,17 +333,7 @@ ol {
   height: 30px;
 }
 
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 50px;
-  z-index: 1;
-  /* Đảm bảo logo hiển thị trên cùng */
-}
 
-.logo img {
-  width: 80%;
-}
 
 .menu {
   display: flex;

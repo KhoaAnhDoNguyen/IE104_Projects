@@ -113,7 +113,7 @@ header a {
   height: 60px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 300px 0 100px;
+  margin: 0 10% 0 7%;
 }
 
 .clearfix li a {
@@ -268,7 +268,7 @@ header {
   color: rgb(213, 146, 0);
 }
 
-.body_tab-ol>li+li ::before {
+.body_tab-ol>li+li::before {
   content: "|";
   color: #000;
   margin-right: 7px;
