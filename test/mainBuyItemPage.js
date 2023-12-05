@@ -1,10 +1,3 @@
-function ChooseProduct(Product)
-{
-    if (Product === 'Phindi')
-    {
-        window.location.href = 'BuyScreen.html?id=' + Product;
-    }
-}
 
 let coffeeNode = document.querySelector('.Coffee.menu_title'),
             teaNode = document.querySelector('.Tea.menu_title'),
