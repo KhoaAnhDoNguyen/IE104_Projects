@@ -126,10 +126,10 @@
                                 <img src="./assets/img/logoName.png" alt="logoName" class="logo">
                             </li>
                             <li>
-                                <a href=""><span>Cà phê</span></a>
+                                <a class="Coffee navbar-item" href="#">Cà phê</a>
                             </li>
                             <li>
-                                <a href=""><span>Trà</span></a>
+                                <a class="Tea navbar-item" href="#">Trà</a>
                             </li>
                             <li>
                                 <div class="menu-item">
@@ -363,7 +363,7 @@
                                                 style="background-image: url(./assets/img/Macchiato.png);"></div>
                                             <div class="content-item__product-desc">
                                                 <h5>Macchiato</h5>
-                                                <p class="price">45.000đ</p>
+                                                <p class="price">65.000đ</p>
                                             </div>
                                         </a>
                                     </div>
@@ -376,7 +376,7 @@
                                                 style="background-image: url(./assets/img/Latte.png);"></div>
                                             <div class="content-item__product-desc">
                                                 <h5>Latte</h5>
-                                                <p class="price">45.000đ</p>
+                                                <p class="price">65.000đ</p>
                                             </div>
                                         </a>
                                     </div>
@@ -389,7 +389,7 @@
                                                 style="background-image: url(./assets/img/Phin.png);"></div>
                                             <div class="content-item__product-desc">
                                                 <h5>Cà phê phin</h5>
-                                                <p class="price">45.000đ</p>
+                                                <p class="price">35.000đ</p>
                                             </div>
                                         </a>
                                     </div>
@@ -402,7 +402,7 @@
                                                 style="background-image: url(./assets/img/BacXiu.png);"></div>
                                             <div class="content-item__product-desc">
                                                 <h5>Bạc xỉu</h5>
-                                                <p class="price">45.000đ</p>
+                                                <p class="price">40.000đ</p>
                                             </div>
                                         </a>
                                     </div>
@@ -433,7 +433,7 @@
                                                 style="background-image: url(./assets/img/TraXanhDauDo.png);"></div>
                                             <div class="content-item__product-desc">
                                                 <h5>Trà xanh đậu đỏ</h5>
-                                                <p class="price">45.000đ</p>
+                                                <p class="price">55.000đ</p>
                                             </div>
                                         </a>
                                     </div>
@@ -472,7 +472,7 @@
                                                 style="background-image: url(./assets/img/TraThachDao.png);"></div>
                                             <div class="content-item__product-desc">
                                                 <h5>Trà thạch đào</h5>
-                                                <p class="price">45.000đ</p>
+                                                <p class="price">40.000đ</p>
                                             </div>
                                         </a>
                                     </div>
@@ -485,7 +485,7 @@
                                                 style="background-image: url(./assets/img/TraSenVang.png);"></div>
                                             <div class="content-item__product-desc">
                                                 <h5>Trà sen vàng</h5>
-                                                <p class="price">45.000đ</p>
+                                                <p class="price">55.000đ</p>
                                             </div>
                                         </a>
                                     </div>
@@ -683,79 +683,6 @@
 
     </div>
 
-    <script>
-        let coffeeNode = document.querySelector('.Coffee.menu_title'),
-            teaNode = document.querySelector('.Tea.menu_title'),
-            detoxNode = document.querySelector('.Detox.menu_title'),
-            cakeNode = document.querySelector('.Cake.menu_title')
-        allNode = document.querySelector('.All.menu_title')
-        let itemNode = document.querySelectorAll('.content-item'),
-            sidebarNode = document.querySelectorAll('.sidebar__navbar')
-
-
-        function showAll(item) {
-            item.style.display = 'block'
-        }
-        function hiddenForID(item, X) {
-            if (item.id === X) {
-                item.style.display = 'block'
-            } else {
-                item.style.display = 'none'
-            }
-        }
-        function hiddenForClass(item, X) {
-            if (item.className === X) {
-                item.style.display = 'block'
-            } else {
-                item.style.display = 'none'
-            }
-        }
-
-        allNode.onclick = function () {
-            itemNode.forEach((item) => {
-                showAll(item)
-            })
-            sidebarNode.forEach((item) => {
-                showAll(item)
-            })
-        }
-
-        coffeeNode.onclick = function () {
-            itemNode.forEach((item) => {
-                hiddenForID(item, 'Coffee')
-            })
-            sidebarNode.forEach((item) => {
-                hiddenForClass(item, 'Coffee sidebar__navbar')
-            })
-        }
-
-        teaNode.onclick = function () {
-            itemNode.forEach((item) => {
-                hiddenForID(item, 'Tea')
-            })
-            sidebarNode.forEach((item) => {
-                hiddenForClass(item, 'Tea sidebar__navbar')
-            })
-        }
-
-        detoxNode.onclick = function () {
-            itemNode.forEach((item) => {
-                hiddenForID(item, 'Detox')
-            })
-            sidebarNode.forEach((item) => {
-                hiddenForClass(item, 'Detox sidebar__navbar')
-            })
-        }
-
-        cakeNode.onclick = function () {
-            itemNode.forEach((item) => {
-                hiddenForID(item, 'Cake')
-            })
-            sidebarNode.forEach((item) => {
-                hiddenForClass(item, 'Cake sidebar__navbar')
-            })
-        }
-    </script>
 </body>
-
+<script src="./menuPage.js"></script>
 </html>
