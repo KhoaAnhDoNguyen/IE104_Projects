@@ -453,17 +453,24 @@ aside.table-of-contents .main-section a {
 /*---------------footer start--------------------------*/
 #footer {
   width: 100%;
-  height: auto;
-  background-color: #cccccc;
+  height: 330px;
+  background-color: #CCCCCC;
 }
+
+
 
 .footer__info {
   height: 70%;
   display: flex;
+  
+}
+
+.footer__info a:hover{
+  color: red;
 }
 
 /*chỉnh kích cở cho icon*/
-.social-icon i {
+.social-icon i{
   width: 15px;
 }
 
@@ -472,6 +479,10 @@ aside.table-of-contents .main-section a {
   width: 70px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 36px;
+}
+
+.text-center{
+  text-align: center !important;
 }
 
 .footer__info-icon {
@@ -488,18 +499,19 @@ aside.table-of-contents .main-section a {
 .footer__info-item h4 {
   margin-top: 12px;
   margin-bottom: 4px;
-  font-size: 1.4rem;
 }
 
 .footer__info-item li {
   list-style: none;
+  
 }
 
 .footer__info-item a {
   text-decoration: none;
   color: var(--black-color);
-  font-size: 1.3rem;
+  font-size: 12px;
 }
+
 
 .footer__location,
 .footer__call {
@@ -509,7 +521,7 @@ aside.table-of-contents .main-section a {
 .footer__location-icon,
 .footer__call-icon {
   min-width: 16px;
-  margin: 0 4px;
+  margin: 0 4px
 }
 
 .line-sereprate {
@@ -517,20 +529,26 @@ aside.table-of-contents .main-section a {
   width: 95%;
   border: 1px solid #555;
 }
-
-.footer__address {
+.footer__address { 
   height: 30%;
   text-align: center;
+}
+
+.footer__info-item h4{
+  font-size: 15px;
 }
 
 .address-info {
   font-size: 12px;
 }
 
-.footer__address p {
-  font-size: 1.3rem;
+.footer__address p{
+  font-size: 10px;
 }
 
+.footer__info-item ul{
+  padding-left: 0px;
+}
 /*---------------footer end--------------------------*/
 
 /* --------------------------------------Hover-----------------------------------------  */
