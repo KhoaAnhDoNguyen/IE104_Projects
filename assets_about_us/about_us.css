@@ -165,14 +165,14 @@ header {
     height: 60px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 300px 0 100px;
+    margin: 0 10% 0 7%;
 }
 
 .clearfix li a {
-    color:rgb(62, 60, 60);
+    color: rgb(62, 60, 60);
 }
 
-.clearfix > li {  
+.clearfix>li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,11 +186,10 @@ header {
     align-items: start;
 }
 
-
 .logo {
-    max-width: 60%;
-    height:auto;
-  }
+    width: 80%;
+    height: auto;
+}
 
 .cartIcon {
     max-width: 100%;

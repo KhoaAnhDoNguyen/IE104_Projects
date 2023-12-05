@@ -113,7 +113,7 @@ header a {
   height: 60px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 300px 0 100px;
+  margin: 0 10% 0 7%;
 }
 
 .clearfix li a {
@@ -134,10 +134,9 @@ header a {
   align-items: start;
 }
 
-
 .logo {
-  max-width: 60%;
-  height:auto;
+  width: 80%;
+  height: auto;
 }
 
 .cartIcon {

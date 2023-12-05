@@ -119,31 +119,31 @@ header img, .topBar img {
     height: 60px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 300px 0 100px;
-  }
-  
-  .clearfix li a {
+    margin: 0 10% 0 7%;
+}
+
+.clearfix li a {
     color: rgb(62, 60, 60);
-  }
-  
-  .clearfix>li {
+}
+
+.clearfix>li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 20px;
     /* min-width: 78px; */
-  }
-  
-  .menu_child {
+}
+
+.menu_child {
     display: flex;
     justify-content: space-around;
     align-items: start;
-  }
-  
-  .logo {
-    width: 80%;
+}
+
+.logo {
+    width: 100%;
     height: auto;
-  }
+}
   
   .cartIcon {
     max-width: 100%;
