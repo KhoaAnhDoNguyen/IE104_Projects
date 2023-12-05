@@ -29,41 +29,108 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* --------------------------------------top bar------------------------------------------ */
 .row {
   display: flex;
-  background-color: rgb(233, 201, 133);
-  justify-content: space-around;
-  font-size: 1.3rem;
-  height: 50px;
+  background-color: #32312f;
+  justify-content: center;
+  font-size: 12px;
+  height: 30px;
   align-items: center;
   justify-self: center;
+  height: 40px;
+  font-weight: lighter;
+}
+
+.row div {
+  margin-right: 80px;
+}
+
+.row div a {
+  color: #b7aaaa;
+  display: flex;
+  align-items: center;
+}
+
+.row div a:hover {
+  color: #d8944a;
 }
 
 .topBarIcon {
-  width: 20px;
-  height: auto;
+  width: auto;
+  height: 15px;
+  margin-right: 10px;
 }
 
+
 /* --------------------------------------header------------------------------------------ */
+.topBar {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.4;
+  font-family: 'roboto', sans-serif;
+}
+
+header {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.4;
+  font-family: 'roboto', sans-serif;
+}
+
+header a {
+  text-decoration: none;
+  color: #191919;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.div {
+  display: block;
+}
+
+
+.navbar {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.778);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+  font-weight: 600;
+  height: 60px;
+}
+
 .nav-links {
-  font-size: 0.7rem;
+  font-size: 0.7em;
 }
 
 .clearfix {
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  height: 60px;
+  justify-content: space-between;
   align-items: center;
-  height: 2rem;
-  height: 10%;
-  font-size: 1.3rem;
+  margin: 0 300px 0 100px;
 }
 
-.clearfix li {
-  /* display: flex; */
+.clearfix li a {
+  color: rgb(62, 60, 60);
+}
+
+.clearfix>li {
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
+  /* min-width: 78px; */
 }
 
 .menu_child {
@@ -72,17 +139,8 @@ body {
   align-items: start;
 }
 
-.navbar {
-  /* display: block; */
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  width: 100%;
-}
-
 .logo {
-  width: 50px;
+  width: 80%;
   height: auto;
 }
 
@@ -91,10 +149,14 @@ body {
   height: 20px;
 }
 
+.downArrowIcon {
+  height: 12px;
+}
+
 .product-menu {
   display: none;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.873);
+  background-color: rgba(255, 255, 255, 0.93);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -102,15 +164,20 @@ body {
 .menu-item {
   float: left;
   display: block;
-  color: white;
+  color: rgb(53, 53, 53);
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  padding: 20px 0;
 }
 
-.menu-item:hover {
-  background-color: #ffffff;
+
+/* .menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.681);
   color: black;
+} */
+
+.clearfix a :hover {
+  color: rgb(213, 146, 100);
 }
 
 .product-menu a {
@@ -118,6 +185,7 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  font-weight: 500;
 }
 
 .product-menu a:hover {
@@ -134,23 +202,28 @@ body {
   border-bottom: 0px solid #ddd;
 }
 
+
 /* Chỉnh vị trí bảng xuất hiện */
 .menu-item:hover .product-menu {
-  top: 99%;
+  top: 100%;
   right: 0;
   display: block;
   width: 100%;
 }
 
+.menu-item:hover .menu-name {
+  color: rgb(213, 146, 100);
+}
+
 .product-menu .menu_title {
   text-decoration: underline;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 header {
   position: sticky;
   top: 0px;
-  z-index: 100;
+  z-index: 1000;
 }
 
 #searchInput {
@@ -167,9 +240,6 @@ header {
   outline: none;
 }
 
-span {
-  color: black;
-}
 
 /* -------------------------------------------------------------------------------------- */
 .body_tab-ol {
