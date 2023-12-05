@@ -333,16 +333,10 @@ ol {
   height: 30px;
 }
 
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 50px;
-  z-index: 1;
-  /* Đảm bảo logo hiển thị trên cùng */
-}
 
-.logo img {
-  width: 80%;
+.logo {
+  max-width: 60%;
+  height:auto;
 }
 
 .menu {

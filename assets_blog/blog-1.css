@@ -134,9 +134,10 @@ header a {
   align-items: start;
 }
 
+
 .logo {
-  width: 80%;
-  height: auto;
+  max-width: 60%;
+  height:auto;
 }
 
 .cartIcon {
@@ -268,7 +269,7 @@ header {
   color: rgb(213, 146, 0);
 }
 
-.body_tab-ol>li+li ::before {
+.body_tab-ol>li+li::before {
   content: "|";
   color: #000;
   margin-right: 7px;

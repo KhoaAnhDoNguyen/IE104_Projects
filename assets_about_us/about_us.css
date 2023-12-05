@@ -186,10 +186,11 @@ header {
     align-items: start;
 }
 
+
 .logo {
-    width: 80%;
-    height: auto;
-}
+    max-width: 60%;
+    height:auto;
+  }
 
 .cartIcon {
     max-width: 100%;
