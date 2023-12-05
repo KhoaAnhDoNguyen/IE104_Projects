@@ -161,7 +161,6 @@ header {
 .bannerPic {
   width: 100%;
   margin-bottom: 50px;
-
 }
 
 .main_base {
@@ -175,14 +174,14 @@ header {
 .body_tab-li {
   display: inline;
 }
-.body_tab-a{
+.body_tab-a {
   right: 0;
   transition: right linear 0.1s;
   position: relative;
 }
 .body_tab-a:hover {
   right: 3px;
-  color:rgb(213, 146, 0);
+  color: rgb(213, 146, 0);
 }
 .body_tab-ol > li + li ::before {
   content: "|";
@@ -192,7 +191,7 @@ header {
 }
 
 .body_main-context {
-  max-width:56% ;
+  max-width: 56%;
   margin: 0 auto 0 auto;
 }
 .body_h2 {
@@ -210,13 +209,13 @@ p {
 
 .body_img1 {
   width: 80%;
-  height:auto;
+  height: auto;
   margin: 30px auto;
   display: block;
 }
 .body_img {
   width: 100%;
-  height:auto;
+  height: auto;
   margin: 30px auto;
   display: block;
 }
