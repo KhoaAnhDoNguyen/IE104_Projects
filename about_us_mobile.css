@@ -12,7 +12,8 @@
     overflow: hidden;
 }
 /* --------------------------------------top bar------------------------------------------ */
-.topBar .rowHeader {
+/* ----------------------------------------------Header Info---------------------------------------- */
+.rowHeader {
     display: flex;
     background-color: #32312f;
     justify-content: center;
@@ -24,12 +25,8 @@
     font-weight: lighter;
 }
 
-.topBar .rowHeader div {
+.rowHeader div {
     margin-right: 80px;
-}
-
-.div {
-    display: block;
 }
 
 .rowHeader div a {
@@ -48,17 +45,7 @@
     margin-right: 10px;
 }
 
-.topBar {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: #000;
-    line-height: 1.4;
-    font-family: 'roboto', sans-serif;
-}
-
-.topBar a {
+.rowHeader a {
     text-decoration: none;
     color: #191919;
     -o-transition: .5s;
@@ -67,6 +54,7 @@
     -webkit-transition: .5s;
     transition: .5s;
 }
+
 /* --------------------------------------header------------------------------------------ */
 .navbar {
     position:absolute;
@@ -76,6 +64,10 @@
     width: 100%;
     font-weight: 600;
     height: 60px;
+}
+
+.nav-links {
+    font-size: 0.7em;
 }
 
 header a {
@@ -88,8 +80,10 @@ header a {
     transition: .5s;
 }
 
-.nav-links {
-    font-size: 0.7em;
+header {
+    color: #000;
+    line-height: 1.4;
+    font-family: 'roboto', sans-serif;
 }
 
 .clearfix {
@@ -109,8 +103,8 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 7px;
     /* padding: 0 20px; */
-    margin: 0 10px;
     /* min-width: 78px; */
 }
 
@@ -220,6 +214,8 @@ header {
 #searchInput:focus {
     outline: none;
 }
+
+
 /*----------------------------content_1--------------------------*/
 .content_1 h1{
     margin-top: 100px;
