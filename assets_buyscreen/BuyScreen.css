@@ -630,6 +630,10 @@ span .relative_drinks_list p {
     opacity: 0.9;
 }
 
+.modal-close i{
+   color: white;
+}
+
 .modal-close:hover{
     background-color: red;
     color: white;
