@@ -369,75 +369,102 @@ header {
     height: auto;
 }
 
-/* --------------------------------------Footer------------------------------------------ */
+/*---------------footer start--------------------------*/
 #footer {
     width: 100%;
-    height: auto;
+    height: 330px;
     background-color: #CCCCCC;
-}
-
-.footer__info {
+  }
+  
+  
+  
+  .footer__info {
     height: 70%;
     display: flex;
-
-}
-
-.footer__logo-img {
+    
+  }
+  
+  .footer__info a:hover{
+    color: red;
+  }
+  
+  /*chỉnh kích cở cho icon*/
+  .social-icon i{
+    width: 15px;
+  }
+  
+  /*kích cở của ảnh*/
+  .footer__logo-img {
     width: 70px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-top: 36px;
-}
-
-.footer__info-icon {
+  }
+  
+  .text-center{
+    text-align: center !important;
+  }
+  
+  .footer__info-icon {
     margin-top: 4px;
     font-size: 16px;
     padding: 4px;
-}
-
-.footer__info-item {
+  }
+  
+  .footer__info-item {
     flex: 1;
     height: 100%;
-}
-
-.footer__info-item h4 {
+  }
+  
+  .footer__info-item h4 {
     margin-top: 12px;
     margin-bottom: 4px;
-}
-
-.footer__info-item li {
+  }
+  
+  .footer__info-item li {
     list-style: none;
-
-}
-
-.footer__info-item a {
+    
+  }
+  
+  .footer__info-item a {
     text-decoration: none;
     color: var(--black-color);
     font-size: 12px;
-}
-
-
-.footer__location,
-.footer__call {
+  }
+  
+  
+  .footer__location,
+  .footer__call {
     margin-top: 4px;
-}
-
-.footer__location-icon,
-.footer__call-icon {
+  }
+  
+  .footer__location-icon,
+  .footer__call-icon {
     min-width: 16px;
     margin: 0 4px
-}
-
-.line-sereprate {
+  }
+  
+  .line-sereprate {
     margin: auto;
     width: 95%;
     border: 1px solid #555;
-}
-
-.footer__address {
+  }
+  .footer__address {
     height: 30%;
     text-align: center;
-}
-
-.address-info {
+  }
+  
+  .footer__info-item h4{
+    font-size: 15px;
+  }
+  
+  .address-info {
     font-size: 12px;
-}
+  }
+  
+  .footer__address p{
+    font-size: 10px;
+  }
+  
+  .footer__info-item ul{
+    padding-left: 0px;
+  }
