@@ -437,7 +437,7 @@ span .relative_drinks_list p {
 /*footer*/
 #footer {
     width: 100%;
-    height: 250px;
+    height: 380px;
     background-color: #CCCCCC;
 }
 
@@ -458,9 +458,13 @@ span .relative_drinks_list p {
 
 /*kích cở của ảnh*/
 .footer__logo-img {
-    width: 70px;
+    width: 80px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-top: 36px;
+}
+
+.text-center{
+    text-align: center !important;
 }
 
 .footer__info-icon {
@@ -476,7 +480,7 @@ span .relative_drinks_list p {
 
 .footer__info-item h4 {
     margin-top: 12px;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
 }
 
 .footer__info-item li {
@@ -487,7 +491,7 @@ span .relative_drinks_list p {
 .footer__info-item a {
     text-decoration: none;
     color: var(--black-color);
-    font-size: 12px;
+    font-size: 15px;
 }
 
 
@@ -515,6 +519,21 @@ span .relative_drinks_list p {
 .address-info {
     font-size: 12px;
 }
+
+.footer__info-item ul{
+
+    padding-left: 0px;
+}
+
+.footer__info-item{
+    height: 0px;
+}
+
+.tilte{
+    font-size: 19px;
+}
+
+
 
 /*delivery btn start*/
 .clear{
