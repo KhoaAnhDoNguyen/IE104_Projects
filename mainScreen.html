@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<!-- MSSV: 21520910 -->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./assets_mainScreen/mainScreen.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./assets_mainScreen/mainScreen.js"></script>
+    <title>Main Screen</title>
+
+</head> 
+
+<body>
+
+    <!-- Này là phần top bar -->
+    <div class="topBar">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <a href>
+                        <img src="./assets_mainScreen/images/location.png" alt="StoreIcon" class="topBarIcon">
+                        <span>Hơn 1000 cửa hàng trên toàn quốc</span>
+                    </a>
+                </div>
+                <div>
+                    <a href>
+                        <img src="./assets_mainScreen/images/telephone.png" alt="telephoneIcon" class="topBarIcon">
+                        <span>Đặt hàng: 1800.6969</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Đây là phần header -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="nav-links" id="nav-links">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="">
+                                <img src="./assets_mainScreen/images/logoName.png" alt="logoName" class="logo">
+                            </a>    
+                        </li>
+                        <li>
+                            <a href=""><span>Cà phê</span></a>
+                        </li>
+                        <li>
+                            <a href=""><span>Trà</span></a>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <a href="" class="menu-name">
+                                    <span>Menu</span>
+                                    <img src="./assets_mainScreen/images/down-arrow.png" alt="downArrowIcon" class="downArrowIcon">
+                                </a>
+
+                                <div class="product-menu" id="productMenu">
+                                    <!-- Nội dung bảng sản phẩm chi tiết -->
+                                    <ul class="menu_child">
+                                        <li>
+                                            <a class="menu_title" href="#">Tất cả</a>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Cà phê</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHINDI</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Macchiato</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Latte</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Cà phê phin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Bạc xỉu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Americano</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Trà</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà xanh đậu đỏ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà xanh đào</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà thạch vải</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà thạch đào</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Trà sen vàng</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Detox</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Detox thanh lọc</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Detox giảm cân</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a class="menu_title" href="#">Bánh</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tiramisu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tart trứng</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Panna cotta</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Mousse cake</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Bông lan trứng muối</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Biscotti</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><span>Về chúng tôi</span></a>
+                        </li>
+                        <li>
+                            <a href=""><span>Tuyển dụng</span></a>
+                        </li>
+                        <li>
+                            <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm....">
+                            <a href="#" class="image-link">
+                                <img src="./assets_mainScreen/images/loupe.png" alt="cartIcon" class="cartIcon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bắt đầu từ đây là nội dung chính(Main) -->
+    <main>
+        <!-- Đây là hình ảnh banner đầu trang -->
+        <section class="banner_home">
+            <a href="">
+                <img src="./assets_mainScreen/images/BannerPic4.png" alt="bannerPic2" class="bannerPic">
+                <img src="./assets_mainScreen/images/BannerPic2.png" alt="bannerPic2" class="bannerPic">
+                <img src="./assets_mainScreen/images/BannerPic3.png" alt="bannerPic2" class="bannerPic">
+                <img src="./assets_mainScreen/images/BannerPic1.png" alt="bannerPic2" class="bannerPic">
+            </a>
+        </section>
+
+        <!-- Đây là phần menu -->
+        <section class="menu_home">
+            <div class="menu_item">
+                <a href="">
+                    <img src="./assets_mainScreen/images/BannerPic4.png" alt="menuItem" class="mainMenuPic">
+                    <span></span>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="./assets_mainScreen/images/Phin.png" alt="menuItem" class="asideItemPic"><br>
+                    <span>Cà phê phin<br>
+                        20.000<br></span>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="./assets_mainScreen/images/TraSenVang.png" alt="menuItem" class="asideItemPic"><br>
+                    <span>Trà Sen Vàng<br>
+                        20.000<br></span>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="./assets_mainScreen/images/TraThachVai.png" alt="menuItem" class="asideItemPic2"><br>
+                    <span>Trà Thạch Vải<br>
+                        20.000<br></span>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="./assets_mainScreen/images/Tiramisu.png" alt="menuItem" class="asideItemPic2"><br>
+                    <span>Bánh Tiramisu<br>
+                        20.000<br></span>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="./assets_mainScreen/images/PannaCotta.png" alt="menuItem" class="asideItemPic2"><br>
+                    <span>Bánh Panna Cotta<br>
+                        20.000<br></span>
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="">
+                    <img src="./assets_mainScreen/images/DetoxGiamCan.png" alt="menuItem" class="asideItemPic2"><br>
+                    <span>Detox Giảm Cân<br>
+                        20.000<br></span>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- ul.main>li.con*5 -->
+        <!-- Đây là phần signature -->
+        <section class="signature">
+            <div class="container">
+                <div class="img_block">
+                    <a href="">
+                        <img src="./assets_mainScreen/images/signaturePic.png" alt="signature_pic" class="signaturePic">
+                    </a>
+                </div>
+
+                <div class="info_block">
+                    <span>Món độc đáo kết hợp hương vị cà phê đậm và sô cô la đen bí ẩn, espresso thơm pha
+                        lẫn sữa ấm, đánh bại căng thẳng đêm tối và tạo nên trải nghiệm đầy quyến rũ, với lớp kem mịn và
+                        hạt cacao tinh tế.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="signature_2">
+            <div class="container">
+                <div class="img_block">
+                    <a href="">
+                        <img src="./assets_mainScreen/images/signature(2).webp" alt="signature_pic" class="signaturePic">
+                    </a>
+                </div>
+
+                <div class="info_block">
+                    <span class="info">SIGNATURE<br>
+                        By Group 4<br>
+                        Tận hưởng trọn khoảng khắc với Cà phê đặc sản, Món ăn đa bản sắc và đầy đủ Thức uống đặc biệt
+                        khác.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog_home">
+            <div class="container">
+                <h2 class="blog_home_title">
+                    <img src="https://file.hstatic.net/1000075078/file/coffee-2_2_92db24958ff14ac4b4249b3256f7a415.png">
+                    Chuyện nhà
+                </h2>
+                <h3 class="blog_home_blogtitle">
+                    <a href="">Blog</a>
+                </h3>
+                <div class="blog_list">
+                    <div class="blog_list_item">
+                        <a class="article_item_img" href="">
+                            <img src="./assets_mainScreen/images/blog1.jpg" alt="article_item_img">
+                        </a><br>
+
+                        <span>3 tháng trước<br />
+                            Sống lành mạnh (healthy) đang là xu
+                            hướng
+                            được nhiều người trẻ ưa chuộng.
+                            Tuy nhiên, không đơn thuần là việc chăm
+                            chút
+                            đi theo các chế độ ăn uống...</span>
+                    </div>
+                    <div class="blog_list_item">
+                        <a class="article_item_img" href="">
+                            <img src="./assets_mainScreen/images/blog2.png" alt="article_item_img">
+                        </a><br>
+
+                        <span>5 tháng trước<br />
+                            Sống lành mạnh (healthy) đang là xu
+                            hướng
+                            được nhiều người trẻ ưa chuộng.
+                            Tuy nhiên, không đơn thuần là việc chăm
+                            chút
+                            đi theo các chế độ ăn uống...</span>
+                    </div>
+                    <div class="blog_list_item">
+                        <a class="article_item_img" href="">
+                            <img src="./assets_mainScreen/images/blog3.png" alt="article_item_img">
+                        </a><br>
+
+                        <span>1 tháng trước<br />
+                            Sống lành mạnh (healthy) đang là xu
+                            hướng
+                            được nhiều người trẻ ưa chuộng.
+                            Tuy nhiên, không đơn thuần là việc chăm
+                            chút
+                            đi theo các chế độ ăn uống...</span>
+                    </div>
+                </div>
+
+
+                <h3 class="blog_home_blogtitle">
+                    <a href="">Coffeeholic</a>
+                </h3>
+                <div class="blog_list">
+                    <div class="blog_list_item">
+                        <a class="article_item_img" href="">
+                            <img src="./assets_mainScreen/images/blog4.png" alt="article_item_img">
+                        </a><br>
+
+                        <span>1 tháng trước<br />
+                            Vừa qua, Group 4 chính thức khai trương cửa hàng SIGNATURE 
+                            by Group 4, chuyên phục vụ cà phê đặc sản, các món ăn đa bản sắc ấy...</span>
+                    </div>
+                    <div class="blog_list_item">
+                        <a class="article_item_img" href="">
+                            <img src="./assets_mainScreen/images/blog5.png" alt="article_item_img">
+                        </a><br>
+
+                        <span>3 tháng trước<br />
+                            Vừa qua, Group 4 chính thức khai trương cửa hàng SIGNATURE 
+                            by Group 4, chuyên phục vụ cà phê đặc sản, các món ăn đa bản sắc ấy...</span>
+                    </div>
+                    <div class="blog_list_item">
+                        <a class="article_item_img" href="">
+                            <img src="./assets_mainScreen/images/blog6.png" alt="article_item_img">
+                        </a><br>
+
+                        <span>1 tuần trước<br />
+                            Vừa qua, Group 4 chính thức khai trương cửa hàng SIGNATURE 
+                            by Group 4, chuyên phục vụ cà phê đặc sản, các món ăn đa bản sắc ấy...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer__info">
+            <div class="text-center footer__info-item">
+                <img src="./images/logo.png" alt="primary logo" class="footer__logo-img">
+                <div class = 'social-icon'>
+                    <a href="#" class="facebook">
+                        <i class="ti-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="instagram">
+                        <i class="ti-instagram"></i>
+                    </a>
+                    <a href="#" class="twitter">
+                        <i class="ti-twitter"></i>
+                    </a>
+                    <a href="#" class="youtube">
+                        <i class="ti-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__info-item">
+                <div class="tilte"><h4>Giới thiệu</h4></div>
+                <ul>
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Sản phẩm</a></li>
+                    <li><a href="">Khuyến mãi</a></li>
+                    <li><a href="">Chuyện cà phê</a></li>
+                    <li><a href="">Cửa Hàng</a></li>
+                    <li><a href="">Tuyển dụng</a></li>
+                </ul>
+            </div>
+            <div class="footer__info-item">
+                <div class="tilte"><h4>Điều khoản</h4></div>
+                <ul>
+                    <li><a href="">Điều khoản sử dụng</a></li>
+                    <li><a href="">Chính sách bảo mật thông tin</a></li>
+                    <li><a href="">Hướng dẫn xuất hóa đơn GTGT</a></li>
+                </ul>
+            </div>
+            <div class="footer__info-item">
+                <div class="footer__location">
+                    <i class="ti-location-pin"></i>
+                    <a href="">Hơn 150 cửa hàng trên toàn quốc</a>
+                </div>
+                <div class="footer__call">
+                    <i class="ti-mobile"></i>
+                    <a href="tel: 012345678">012345678</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="line-sereprate"></div>
+    
+        <div class="footer__address">
+            <div class="address-info">
+                <p>Công ty cổ phần thương mại dịch vụ Trà Cà Phê Team 4</p>
+                <p>Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại diện: Team 4</p>
+                <p>Địa chỉ: Khu phố 6 Phường Linh Trung Quận Thủ Đức</p>
+                <p>© 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
