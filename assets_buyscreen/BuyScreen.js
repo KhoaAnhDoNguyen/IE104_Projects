@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Lấy tất cả các ảnh
-    var images = document.querySelectorAll('img');
+    var images = document.querySelectorAll('.relative_drinks img');
 
     // Gán sự kiện click cho mỗi ảnh
     images.forEach(function(image) {
@@ -175,6 +175,7 @@ const modalBuy = document.querySelector('#buy-ticket')
 var selectedSize = 'off';
 var PriceIncrease = 0;
 
+
 function toggleBackgroundColor(sizeId) {
 
         //size small is clicked?
@@ -345,10 +346,4 @@ function toggleBackgroundColor(sizeId) {
     Price = firstPrice;
     var formattedPrice =  Price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
     document.getElementById('product-price-id').textContent = formattedPrice;
-}
-
-function yourFunction() {
-    // Thực hiện các hành động bạn muốn khi bấm vào ảnh
-    console.log('Bạn đã bấm vào ảnh!');
-    // Gọi đến các hàm hoặc thực hiện logic bạn mong muốn ở đây
 }
