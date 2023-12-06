@@ -564,13 +564,13 @@ span .relative_drinks_list p {
 
 
 /*delivery btn start*/
-.clear {
+.clear{
     clear: both;
 }
 
-.modal {
+.modal{
     position: fixed;
-    top: 0;
+    top : 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -581,11 +581,11 @@ span .relative_drinks_list p {
     display: none;
 }
 
-.modal.open {
+.modal.open{
     display: flex;
 }
 
-.modal-container {
+.modal-container{
     background-color: #fff;
     width: 900px;
     max-width: calc(100%-32px);
@@ -594,7 +594,7 @@ span .relative_drinks_list p {
     animation: modalFadeIn ease 0.5s;
 }
 
-.modal-header {
+.modal-header{
     background-color: #009688;
     height: 130px;
     display: flex;
@@ -602,42 +602,23 @@ span .relative_drinks_list p {
     justify-content: center;
     font-size: 30px;
     color: white;
+    position: relative;
 }
 
-.modal-close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: white;
-    padding: 12px;
-    cursor: pointer;
-    opacity: 0.9;
-}
 
-.modal-close i {
-    color: white;
-}
 
-.modal-close:hover {
-    background-color: red;
-    color: white;
-    display: block;
-    border: 10px;
-    opacity: 1;
-}
-
-.modal-body {
+.modal-body{
     padding: 16px;
 }
 
-.modal-label {
+.modal-label{
     display: block;
     font-size: 15px;
     margin-bottom: 12px;
-
+    
 }
 
-.modal-input {
+.modal-input{
     border: 1px solid #ccc;
     width: 100%;
     padding: 10px;
@@ -648,7 +629,7 @@ span .relative_drinks_list p {
 #buy-ticket {
     height: 54px;
     border: none;
-    width: 100%;
+    width: 40%;
     color: white;
     background: #009688;
     margin: 16px 0px;
@@ -656,19 +637,20 @@ span .relative_drinks_list p {
     font-size: 15px;
     text-transform: uppercase;
     cursor: pointer;
+    margin-left: 90px;
 }
 
-#buy-ticket:hover {
+#buy-ticket:hover{
     opacity: 0.7;
 }
 
-.modal-footer {
+.modal-footer{
     padding: 16px;
     text-align: right;
-
+    
 }
 
-.modal-footer a {
+.modal-footer a{
     color: #2196f3;
 }
 
@@ -679,6 +661,22 @@ span .relative_drinks_list p {
     width: 840px;
 }
 
+.cancel-ticket{
+    height: 54px;
+    border: none;
+    width: 40%;
+    color: white;
+    background:#555;
+    margin: 16px 0px;
+    padding: 16px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cancel-ticket:hover{
+    opacity: 0.7;
+}
 /*delivery btn end*/
 
 body {

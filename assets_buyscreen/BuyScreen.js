@@ -166,6 +166,10 @@ const modalBuy = document.querySelector('#buy-ticket')
     modalcontainer.addEventListener('click',function(event){
         event.stopImmediatePropagation()
     })
+    modalBuy.addEventListener('click',function(event){
+        event.stopImmediatePropagation()
+        alert("Xin cảm ơn bạn đã đặt hàng !")
+    })
 
     //size
 var selectedSize = 'off';
