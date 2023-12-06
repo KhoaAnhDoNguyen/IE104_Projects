@@ -176,14 +176,15 @@ var selectedSize = 'off';
 var PriceIncrease = 0;
 
 function toggleBackgroundColor(sizeId) {
+
         //size small is clicked?
-        if (sizeId === 'size-small' && selectedSize === 'off')
+        if ( (sizeId === 'size-small' && selectedSize === 'off') )
         {
             selectedSize = sizeId;
             PriceIncrease = 0;
             document.getElementById(sizeId).style.backgroundColor = 'darkorange';
         }
-        else if (sizeId === 'size-small' && selectedSize === 'size-small')
+        else if ( (sizeId === 'size-small' && selectedSize === 'size-small') )
         {
             selectedSize = 'off';
             PriceIncrease = 0;
@@ -260,6 +261,8 @@ function toggleBackgroundColor(sizeId) {
             selectedSize = sizeId;
             PriceIncrease = 6000;
         }
+    
+
     Price += PriceIncrease;
     var formattedPrice =  Price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
     document.getElementById('product-price-id').textContent = formattedPrice;
@@ -342,4 +345,10 @@ function toggleBackgroundColor(sizeId) {
     Price = firstPrice;
     var formattedPrice =  Price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
     document.getElementById('product-price-id').textContent = formattedPrice;
+}
+
+function yourFunction() {
+    // Thực hiện các hành động bạn muốn khi bấm vào ảnh
+    console.log('Bạn đã bấm vào ảnh!');
+    // Gọi đến các hàm hoặc thực hiện logic bạn mong muốn ở đây
 }

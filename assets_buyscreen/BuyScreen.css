@@ -10,7 +10,7 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
-a {
+header a {
     text-decoration: none;
     color: #191919;
     -o-transition: .5s;
@@ -20,7 +20,7 @@ a {
     transition: .5s;
 }
 
-.div {
+header .div {
     display: block;
 }
 
