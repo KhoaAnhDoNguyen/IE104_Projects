@@ -184,6 +184,10 @@ header img {
     color:rgb(62, 60, 60);
 }
 
+.clearfix a:hover {
+    color: #d8944a;
+}
+
 .clearfix > li {  
     display: flex;
     justify-content: center;
