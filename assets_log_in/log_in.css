@@ -94,7 +94,7 @@ section  .content
 }
 .content a:hover
 {
-    background-color: #002200;
+    background-color: rgb(234, 46, 21);;
 }
 .login
 {
@@ -176,23 +176,35 @@ section  .content
     transition: .5s;
     background-color: #FF6633;
     color: #fff;
+    display: inline-block; /* Ensure inline-block so padding can be applied */
+    padding: 10px;
+    box-sizing: border-box; 
+    text-align: center;
 }
+
 .register-link
 {
     display: flex;
-    justify-content: center;
     color: #fff;
+    flex-direction: row;
+    align-items: flex-start;
 }
+
 .register-link a
 {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
+    margin-left: 150px;
 }
 .register-link a:hover
 {
     text-decoration: underline;
 }
+.login .log-in-btn:hover{
+    background-color: rgb(234, 46, 21);
+}
+
 
 .background-log{
     display: flex;
