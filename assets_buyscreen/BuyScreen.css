@@ -29,6 +29,31 @@ header img {
     height: auto;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 741px) {
+    body {
+        font-size: 18px; /* Adjust the font size as needed */
+        color: #333; /* Adjust color if necessary */
+    }
+
+    header a {
+        font-size: 16px; /* Adjust the font size as needed */
+    }
+    
+    /* Add other font-size adjustments for specific elements if needed */
+}
+
+@media screen and (max-width: 741px) {
+    body {
+        font-size: 16px; /* Adjust the font size as needed */
+        color: #555; /* Adjust color if necessary */
+    }
+
+    header a {
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+    
+    /* Add other font-size adjustments for specific elements if needed */
+}
 /* --------------------------------------top bar------------------------------------------ */
 .row {
     display: flex;
@@ -207,6 +232,35 @@ header {
     outline: none;
 }
 
+/* Font size adjustments for tablet screens */
+@media screen and (max-width: 1024px) and (min-width: 741px) {
+    .navbar {
+        height: 50px; /* Adjust the height as needed */
+    }
+
+    .menu-item {
+        padding: 15px 0; /* Adjust the padding as needed */
+    }
+
+    .product-menu a {
+        padding: 10px 14px; /* Adjust the padding as needed */
+    }
+}
+
+/* Font size adjustments for small screens (max-width: 741px) */
+@media screen and (max-width: 741px) {
+    .navbar {
+        height: 40px; /* Adjust the height as needed */
+    }
+
+    .menu-item {
+        padding: 12px 0; /* Adjust the padding as needed */
+    }
+
+    .product-menu a {
+        padding: 8px 12px; /* Adjust the padding as needed */
+    }
+}
 
 /**/
 main .intro {
@@ -236,6 +290,46 @@ main .intro {
     margin: 15px;
     margin-left: 100px;
     margin-top: -10px;
+}
+
+/* Font size adjustments for tablet screens */
+@media screen and (max-width: 1024px) and (min-width: 741px) {
+    main .intro {
+        font-size: 20px; /* Adjust the font size as needed */
+        margin-left: 100px; /* Adjust the margin as needed */
+        margin-top: 80px; /* Adjust the margin as needed */
+    }
+
+    .product-image img {
+        margin-left: 100px; /* Adjust the margin as needed */
+        height: 500px; /* Adjust the height as needed */
+        width: 400px; /* Adjust the width as needed */
+    }
+
+    .product-price p {
+        font-size: 24px; /* Adjust the font size as needed */
+        margin-left: 80px; /* Adjust the margin as needed */
+    }
+}
+
+/* Font size adjustments for small screens (max-width: 741px) */
+@media screen and (max-width: 741px) {
+    main .intro {
+        font-size: 18px; /* Adjust the font size as needed */
+        margin-left: 50px; /* Adjust the margin as needed */
+        margin-top: 60px; /* Adjust the margin as needed */
+    }
+
+    .product-image img {
+        margin-left: 50px; /* Adjust the margin as needed */
+        height: 400px; /* Adjust the height as needed */
+        width: 300px; /* Adjust the width as needed */
+    }
+
+    .product-price p {
+        font-size: 20px; /* Adjust the font size as needed */
+        margin-left: 40px; /* Adjust the margin as needed */
+    }
 }
 
 /*size*/
@@ -285,6 +379,34 @@ main .size-product {
 
 .product-price a {
     text-decoration: none;
+}
+
+/* Size product adjustments for tablet screens */
+@media screen and (max-width: 1024px) and (min-width: 741px) {
+    main .size-product {
+        margin-left: 70px; /* Adjust the margin as needed */
+        font-size: 18px; /* Adjust the font size as needed */
+        margin-bottom: 20px; /* Adjust the margin as needed */
+    }
+
+    .size-product img {
+        width: 30px; /* Adjust the width as needed */
+        height: 30px; /* Adjust the height as needed */
+    }
+}
+
+/* Size product adjustments for small screens (max-width: 741px) */
+@media screen and (max-width: 741px) {
+    main .size-product {
+        margin-left: 40px; /* Adjust the margin as needed */
+        font-size: 16px; /* Adjust the font size as needed */
+        margin-bottom: 15px; /* Adjust the margin as needed */
+    }
+
+    .size-product img {
+        width: 25px; /* Adjust the width as needed */
+        height: 25px; /* Adjust the height as needed */
+    }
 }
 
 /*topping*/
@@ -346,6 +468,37 @@ main .ul-topping {
     transition: background-color 0.3s ease;
 }
 
+/* Topping adjustments for tablet screens */
+@media screen and (max-width: 1024px) and (min-width: 741px) {
+    main .topping p,
+    main .ul-topping {
+        margin-left: 70px; /* Adjust the margin as needed */
+        margin-right: 10px; /* Adjust the margin as needed */
+        font-size: 20px; /* Adjust the font size as needed */
+        margin-bottom: 20px; /* Adjust the margin as needed */
+    }
+
+    .ul-topping {
+        margin-left: 70px; /* Adjust the margin as needed */
+        margin-right: 50px; /* Adjust the margin as needed */
+    }
+}
+
+/* Topping adjustments for small screens (max-width: 741px) */
+@media screen and (max-width: 741px) {
+    main .topping p,
+    main .ul-topping {
+        margin-left: 40px; /* Adjust the margin as needed */
+        margin-right: 10px; /* Adjust the margin as needed */
+        font-size: 18px; /* Adjust the font size as needed */
+        margin-bottom: 15px; /* Adjust the margin as needed */
+    }
+
+    .ul-topping {
+        margin-left: 40px; /* Adjust the margin as needed */
+        margin-right: 30px; /* Adjust the margin as needed */
+    }
+}
 
 /*Shipping*/
 .delivery {
@@ -461,6 +614,92 @@ span .relative_drinks_list p {
     margin-left: 10px;
 }
 
+/* Tablet Screen Styles */
+@media screen and (max-width: 1024px) and (min-width: 741px) {
+    .delivery {
+        width: 500px; /* Adjust width as needed */
+    }
+
+    section .delivery {
+        margin-left: 50px; /* Adjust margin as needed */
+        margin-right: 10px; /* Adjust margin as needed */
+        margin-top: 10px; /* Adjust margin as needed */
+    }
+
+    main .smallpicture img {
+        width: 150px; /* Adjust width as needed */
+        height: 150px; /* Adjust height as needed */
+        margin-left: 120px; /* Adjust margin as needed */
+    }
+
+    aside {
+        margin-left: 120px; /* Adjust margin as needed */
+        margin-right: 100px; /* Adjust margin as needed */
+        margin-top: 40px; /* Adjust margin as needed */
+        font-size: 25px; /* Adjust font size as needed */
+    }
+
+    span p {
+        font-size: 25px; /* Adjust font size as needed */
+        margin-top: 40px; /* Adjust margin as needed */
+        margin-left: 120px; /* Adjust margin as needed */
+    }
+
+    span .relative_drinks_list img {
+        margin-left: 80px; /* Adjust margin as needed */
+        margin-right: 80px; /* Adjust margin as needed */
+        width: 120px; /* Adjust width as needed */
+        height: 120px; /* Adjust height as needed */
+        margin-top: 15px; /* Adjust margin as needed */
+    }
+
+    span .relative_drinks_list p {
+        font-size: 12px; /* Adjust font size as needed */
+        margin-top: 15px; /* Adjust margin as needed */
+        margin-right: 5px; /* Adjust margin as needed */
+        margin-left: 5px; /* Adjust margin as needed */
+    }
+}
+
+/* Additional styles for screens with a maximum width of 741px */
+@media screen and (max-width: 741px) {
+    .delivery {
+        width: 100%; /* Adjust width as needed for smaller screens */
+    }
+
+    section .delivery {
+        margin: 10px; /* Adjust margin as needed */
+    }
+
+    main .smallpicture img {
+        width: 100%; /* Adjust width as needed for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* Remove margin */
+    }
+
+    aside {
+        margin: 20px 10px; /* Adjust margin as needed */
+        font-size: 18px; /* Adjust font size as needed */
+    }
+
+    span p {
+        font-size: 18px; /* Adjust font size as needed */
+        margin: 20px 10px; /* Adjust margin as needed */
+    }
+
+    span .relative_drinks_list img {
+        width: 100%; /* Adjust width as needed for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px 0; /* Adjust margin as needed */
+    }
+
+    span .relative_drinks_list p {
+        font-size: 10px; /* Adjust font size as needed */
+        margin: 10px 5px; /* Adjust margin as needed */
+    }
+}
+
+
 /*footer*/
 #footer {
     width: 100%;
@@ -561,7 +800,175 @@ span .relative_drinks_list p {
     font-size: 19px;
 }
 
+@media screen and (max-width: 741px)
+{
+    #footer {
+        width: 100%;
+        height: 250px;
+        background-color: #CCCCCC;
+    }
+    
+    .footer__info {
+        height: 70%;
+        display: flex;
+        
+    }
+    
+    #footer a:hover{
+        color: red;
+    }
+    
+    /*chỉnh kích cở cho icon*/
+    .social-icon i{
+        width: 15px;
+    }
+    
+    /*kích cở của ảnh*/
+    .footer__logo-img {
+        width: 70px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-top: 36px;
+    }
+    
+    .footer__info-icon {
+        margin-top: 4px;
+        font-size: 16px;
+        padding: 4px;
+    }
+    
+    .footer__info-item {
+        flex: 1;
+        height: 100%;
+    }
+    
+    .footer__info-item h4 {
+        margin-top: 12px;
+        margin-bottom: 4px;
+    }
+    
+    .footer__info-item li {
+        list-style: none;
+        
+    }
+    
+    .footer__info-item a {
+        text-decoration: none;
+        color: var(--black-color);
+        font-size: 12px;
+    }
+    
+    
+    .footer__location,
+    .footer__call {
+        margin-top: 4px;
+    }
+    
+    .footer__location-icon,
+    .footer__call-icon {
+        min-width: 16px;
+        margin: 0 4px
+    }
+    
+    .line-sereprate {
+        margin: auto;
+        width: 95%;
+        border: 1px solid #555;
+    }
+    .footer__address {
+        height: 30%;
+        text-align: center;
+    }
+    
+    .address-info {
+        font-size: 12px;
+    }
+}
 
+
+@media screen and (max-width: 1024px) and (min-width: 741px)
+{
+    #footer {
+        width: 100%;
+        height: 250px;
+        background-color: #CCCCCC;
+    }
+    
+    .footer__info {
+        height: 70%;
+        display: flex;
+    
+    }
+    
+    #footer a:hover {
+        color: red;
+    }
+    
+    /*chỉnh kích cở cho icon*/
+    .social-icon i {
+        width: 15px;
+    }
+    
+    /*kích cở của ảnh*/
+    .footer__logo-img {
+        width: 70px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-top: 36px;
+    }
+    
+    .footer__info-icon {
+        margin-top: 4px;
+        font-size: 16px;
+        padding: 4px;
+    }
+    
+    .footer__info-item {
+        flex: 1;
+        height: 100%;
+    }
+    
+    .footer__info-item h4 {
+        margin-top: 12px;
+        margin-bottom: 4px;
+    }
+    
+    .footer__info-item li {
+        list-style: none;
+    
+    }
+    
+    .footer__info-item a {
+        text-decoration: none;
+        color: var(--black-color);
+        font-size: 12px;
+    }
+    
+    
+    .footer__location,
+    .footer__call {
+        margin-top: 4px;
+    }
+    
+    .footer__location-icon,
+    .footer__call-icon {
+        min-width: 16px;
+        margin: 0 4px
+    }
+    
+    .line-sereprate {
+        margin: auto;
+        width: 95%;
+        border: 1px solid #555;
+    }
+    
+    .footer__address {
+        height: 30%;
+        text-align: center;
+    }
+    
+    .address-info {
+        font-size: 12px;
+    }
+}
 
 /*delivery btn start*/
 .clear{
@@ -604,8 +1011,6 @@ span .relative_drinks_list p {
     color: white;
     position: relative;
 }
-
-
 
 .modal-body{
     padding: 16px;
@@ -679,9 +1084,55 @@ span .relative_drinks_list p {
 }
 /*delivery btn end*/
 
-body {
+/*body {
     zoom: 100%;
     -moz-transform: scale(1.0);
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
+}*/
+
+@media screen and (max-width: 1024px) and (min-width: 741px) {
+    .modal-container {
+        width: 80%; /* Adjust the width as needed */
+        max-width: 80%;
+    }
+
+    #buy-ticket,
+    .cancel-ticket {
+        width: 100%; /* Make buttons full width */
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 741px) {
+    .modal-container {
+        width: 100%; /* Make modal full width on small screens */
+        max-width: 100%;
+    }
+
+    #buy-ticket,
+    .cancel-ticket {
+        width: 100%; /* Make buttons full width */
+        margin-left: 0;
+    }
+
+    .modal-header {
+        height: 100px; /* Adjust header height for smaller screens */
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .modal-body {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .modal-label {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .modal-input {
+        padding: 8px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin-bottom: 16px; /* Adjust margin for smaller screens */
+    }
 }
