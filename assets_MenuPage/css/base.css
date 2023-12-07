@@ -68,10 +68,22 @@ html {
     width: 25%;
 }
 
+.grid__column-3-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33,3333%;
+}
+
 .grid__col-half {
     padding-left: 10px;
     padding-right: 10px;
     width: 50%;
+}
+
+.grid__col-full {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
 }
 
 
