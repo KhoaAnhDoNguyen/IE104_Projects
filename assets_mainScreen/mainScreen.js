@@ -33,7 +33,6 @@ const products = [
     { id: 'phin', name: 'Cà phê Phin', image: './assets_mainScreen/images/Phin.png' },
     { id: 'trathachdao', name: 'Trà Thạch đào', image: './assets_buyscreen/Ảnh/Trà/TraThachDao.png' },
     { id: 'trasenvang', name: 'Trà sen vàng', image: './assets_mainScreen/images/TraSenVang.png' },
-    // Thêm các sản phẩm khác vào đây
 ];
 
 function vietnameseToEnglish(inputString) {
