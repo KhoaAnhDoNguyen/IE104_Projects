@@ -247,10 +247,18 @@
                             <a href="./blog.html"><span>Blog list</span></a>
                         </li>
                         <li>
-                            <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm....">
-                            <a href="#" class="image-link">
-                                <img src="./assets_MenuPage/img/loupe.png" alt="cartIcon" class="cartIcon">
-                            </a>
+                            <div class="searchBar">
+                                <input type="text" id="searchInput" onkeyup="search(event)" placeholder="Tìm kiếm sản phẩm....">
+                                <a href="#" class="image-link">
+                                    <img src="./assets_MenuPage/img/loupe.png" alt="cartIcon" class="cartIcon" id="cartIcon">
+                                </a>
+                                <div class="product-menu2" id="productMenu">
+                                    <!-- Nội dung bảng sản phẩm chi tiết -->
+                                    <ul id="menu_child2">
+    
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -683,4 +691,6 @@
     </div>
 </footer>
 <script src="./assets_MenuPage/js/menuPage.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="./assets_mainScreen/mainScreen.js"></script>
 </html>

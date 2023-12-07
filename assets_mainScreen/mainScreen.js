@@ -96,36 +96,28 @@ function search(event) {
     });
 
     //Chuyển trang sau khi nhấn enter hoặc tìm kiếm
-    document.getElementById('cartIcon').addEventListener('click', function() {
+    document.getElementById('cartIcon').addEventListener('click', function () {
         checkAndRedirect(normalizedString);
     });
-    if (event.key === 'Enter')
-    {
+    if (event.key === 'Enter') {
         checkAndRedirect(normalizedString);
-    } 
+    }
 }
 
 function checkAndRedirect(normalizedString) {
+    const matchingProducts = products.filter(product =>
+        product.checkName.toLowerCase().includes(normalizedString.toLowerCase())
+    );
     if ("caphecafecoffee".toLowerCase().includes(normalizedString.toLowerCase())) {
         window.location.href = './MenuPage.html?id=Coffee1';
-    } else {
-        // alert('Chuỗi không hợp lệ');
-    }
-    if ("tratea".toLowerCase().includes(normalizedString.toLowerCase())) {
+    } else if ("tratea".toLowerCase().includes(normalizedString.toLowerCase())) {
         window.location.href = './MenuPage.html?id=Tea1';
-    } else {
-        // alert('Chuỗi không hợp lệ');
-    }
-    if ("detox".toLowerCase().includes(normalizedString.toLowerCase())) {
+    } else if ("detox".toLowerCase().includes(normalizedString.toLowerCase())) {
         window.location.href = './MenuPage.html?id=Detox1';
-    } else {
-        // alert('Chuỗi không hợp lệ');
-    }
-    if ("banhcake".toLowerCase().includes(normalizedString.toLowerCase())) {
+    } else if ("banhcake".toLowerCase().includes(normalizedString.toLowerCase())) {
         window.location.href = './MenuPage.html?id=Cake1';
-    } 
-    if (products.checkName.toLowerCase().includes(normalizedString.toLowerCase()))
-    {
-        window.location.href = `./BuyScreen.html?id=${products.id}`;
+    } else if (matchingProducts.length > 0) {
+        const matchedProduct = matchingProducts[0];
+        window.location.href = `./BuyScreen.html?id=${matchedProduct.id}`;
     }   
 }

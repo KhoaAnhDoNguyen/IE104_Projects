@@ -247,6 +247,43 @@ header {
   right: 30px;
 }
 
+.product-menu2 {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.93);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.product-menu2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.searchBar .product-menu2 {
+  top: 70%;
+  right: 13.4%;
+  display: block;
+  width: 10.7%;
+}
+
+#menu_child2 img {
+  margin: 10px 10px;
+  max-width: 30px;
+}
+
+#menu_child2 li a {
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 10px;
+}
+
+#menu_child2 li {
+  border-top: 0.5px #67626255 solid;
+}
+
 /* ------------------------------------------MAIN---------------------------------------- */
 
 .bannerPic {
