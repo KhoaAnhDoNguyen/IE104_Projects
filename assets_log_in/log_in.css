@@ -93,8 +93,7 @@ section  .content
  transition: .5s;
 }
 .content a:hover
-{
-    background-color: rgb(234, 46, 21);;
+{background-color: rgb(234, 46, 21);;
 }
 .login
 {
@@ -173,6 +172,7 @@ section  .content
     font-size: 20px;
     font-weight: 800;
     margin-bottom: 20px;
+
     transition: .5s;
     background-color: #FF6633;
     color: #fff;
@@ -180,6 +180,15 @@ section  .content
     padding: 10px;
     box-sizing: border-box; 
     text-align: center;
+}
+
+#register{
+    margin-top: 40px;
+}
+#register.log-in-btn {
+    width: 150px;
+    height: 50px;
+    float: right;
 }
 
 .register-link
@@ -213,3 +222,4 @@ section  .content
     z-index: -10;
     position: absolute;
 }
+
