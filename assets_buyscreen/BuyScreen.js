@@ -1,3 +1,23 @@
+/*function vietnameseToEnglish(inputString) {
+    const vietnameseMap = {
+        'à': 'a', 'á': 'a', 'ả': 'a', 'ã': 'a', 'ạ': 'a',
+        'è': 'e', 'é': 'e', 'ẻ': 'e', 'ẽ': 'e', 'ẹ': 'e',
+        'ì': 'i', 'í': 'i', 'ỉ': 'i', 'ĩ': 'i', 'ị': 'i',
+        'ò': 'o', 'ó': 'o', 'ỏ': 'o', 'õ': 'o', 'ọ': 'o',
+        'ù': 'u', 'ú': 'u', 'ủ': 'u', 'ũ': 'u', 'ụ': 'u',
+        'ỳ': 'y', 'ý': 'y', 'ỷ': 'y', 'ỹ': 'y', 'ỵ': 'y',
+        'đ': 'd',
+    };
+
+    const englishString = inputString
+        .toLowerCase()
+        .split('')
+        .map(char => vietnameseMap[char] || char)
+        .join('');
+
+    return englishString;
+};*/
+
 document.addEventListener('DOMContentLoaded', function() {
     // Lấy tất cả các ảnh
     var images = document.querySelectorAll('.relative_drinks img');
@@ -12,7 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'BuyScreen.html?id=' + imageId;
         });
     });
+
 });
+
+
 
 var Price;
 var firstPrice;
@@ -85,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Vị trà đậm đà kết hợp cùng những miếng đào thơm ngon mọng nước cùng thạch đào giòn dai. Thêm vào ít sữa để gia tăng vị béo.');
     } 
 
-    else if (id === 'TraSen') {
+    else if (id === 'TraSen' ) {
         updateProductInfo('TraSenVang', './assets_buyscreen/Ảnh/Trà/TraSenVang.png', 'Menu / Trà / Trà Sen Vàng', 'Trà Sen Vàng', 55000, 
         'Thức uống chinh phục những thực khách khó tính! Sự kết hợp độc đáo giữa trà Ô long, hạt sen thơm bùi và củ năng giòn tan. Thêm vào chút sữa sẽ để vị thêm ngọt ngào.');
     } 
@@ -95,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Detox thanh lọc - một hành trình tươi mới cho cơ thể và tâm hồn. Sự kết hợp của các thành phần tự nhiên như cây lúa mạch, tảo spirulina và trái cây tươi, tạo ra một đồ uống thanh lọc độc đáo. Với hương thơm tinh tế và vị tươi mới, mỗi giọt detox không chỉ là sự tận hưởng hương vị tự nhiên mà còn là cơ hội để cơ thể bạn trải qua quá trình làm mới và làm sạch. Detox thanh lọc không chỉ là một đồ uống, mà là một chuyến hành trình đều đặn để tái tạo năng lượng và cân bằng cho cả cơ thể và tâm hồn.');
     } 
 
-    else if (id === 'DetoxGiamCan') {
+    else if (id === 'DetoxGiamCan' ) {
         updateProductInfo('DetoxGiamCan', './assets_buyscreen/Ảnh/Detox/detox giam can.jpg', 'Menu / Detox / Detox Giảm Cân', 'Detox Giảm Cân', 25000, 
         'Detox giảm cân - một hành trình nhẹ nhàng để tạo ra sự thay đổi tích cực trong cơ thể. Sự phối hợp tinh tế giữa các thành phần detox như nước lọc, chanh và gừng, tạo nên một đồ uống không chỉ thanh lọc cơ thể mà còn hỗ trợ quá trình giảm cân. Với hương thơm tươi mới và vị nhẹ nhàng, mỗi giọt detox giảm cân là một bước chuyển mình dễ dàng, mang đến sự hỗ trợ cho cả cơ thể và tâm hồn. Đây không chỉ là một đồ uống, mà là một phương tiện tự nhiên để đạt được mục tiêu làm đẹp và khám phá sức khỏe mới.');
     } 
