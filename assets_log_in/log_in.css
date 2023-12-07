@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*
-{
+
+* {
     margin: 0;
-    padding :0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins' , sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-.header
-{
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,11 +15,11 @@
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     z-index: 99;
 }
-.header .logo
-{
+
+.header .logo {
     font-size: 2em;
     font-weight: 700;
     color: #fff;
@@ -27,18 +27,16 @@
 }
 
 
-.header .nav a
-{
-   position: relative;
-   font-size: 1.2em;
-   color: #fff;
-   text-decoration: none;
-   margin-left: 40px;
-   font-weight: 600;
-   
+.header .nav a {
+    position: relative;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 600;
 }
-.nav a::after
-{
+
+.nav a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -50,58 +48,63 @@
     transform: scaleX(0);
     transition: .5s;
 }
-.nav a:hover::after
-{
+
+.nav a:hover::after {
     transform: scaleX(1);
 }
-section
-{
-    position:relative ;
+
+section {
+    position: relative;
     width: 100%;
     height: 100vh;
     background: url('./media/pexels-craig-adderley-1563356.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
-   padding: 80px 200px 0;
-    align-items: center;
+    padding: 80px 200px 0;
+    align-items: flex-start;
 
 }
-section  .content
-{
-  max-width: 600px;
-  color: #fff;
+
+section .content {
+    margin-top: 100px;
+    max-width: 600px;
+    color: rgb(255, 255, 255);
 }
-.content h2
-{
+
+.content h2 {
     font-size: 3em;
     letter-spacing: 0.3em;
     color: #FF6633;
 }
-.content p
-{
-    margin:10px 0 40px;
+
+.content p {
+    margin: 10px 0 40px;
 }
-.content a
-{
- text-decoration:none;
- color: #fff;
- border: 2px solid #FF6633;
- font-weight: 500;
- padding: 10px 40px;
- border-radius: 40px;
- transition: .5s;
+
+.content a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #FF6633;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 40px;
+    transition: .5s;
 }
-.content a:hover
-{background-color: rgb(234, 46, 21);;
+
+.content a:hover {
+    background-color: rgb(234, 46, 21);
+    ;
 }
-.login
-{
+
+.login {
+    margin-top: 70px;
+    margin-left: 150px;
     position: relative;
     width: 440px;
 }
 
-.header img{
+.header img {
     width: 100px;
     margin-top: 0;
 }
@@ -110,25 +113,25 @@ section  .content
     margin-top: 0;
 }
 
-.login h2
-{
+.login h2 {
     text-align: center;
-    color: #FF6633;
+    color: #ffffff;
     font-size: 2em;
 }
-.input-box 
-{
-    position:relative ;
+
+.input-box {
+    position: relative;
     width: 100%;
     height: 50px;
     padding: 40px 0;
 }
+
 .input-box input::placeholder {
-    color: #999; /* Màu sắc của văn bản mờ khi không được tô điền */
+    color: rgb(255, 255, 255);
+    /* Màu sắc của văn bản mờ khi không được tô điền */
 }
 
-.input-box .input
-{
+.input-box .input {
     text-indent: 5%;
     width: 100%;
     height: 50px;
@@ -137,96 +140,97 @@ section  .content
     background: transparent;
     outline: none;
 }
-::placeholder
-{
-    color: #fff;
+
+::placeholder {
+    color: #ffffff;
     font-size: 1.2em;
     padding: 0 20px;
 }
-.input-box i
-{
+
+.input-box i {
     position: absolute;
     top: 55px;
     left: 400px;
     font-size: 1.2em;
     color: #FF6633;
 }
-.remember-forgot
-{
-    color: #fff;
+
+.remember-forgot {
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     font-weight: 500px;
     margin: 25px 0 15px;
 }
-.remember-forgot a
-{
-    color: #fff;
+
+.remember-forgot a {
+    color: #ffffff;
     text-decoration: none;
 }
-.remember-forgot a:hover
-{
+
+.remember-forgot a:hover {
     text-decoration: underline;
 }
 
-.log-in-btn{
+.log-in-btn {
     width: 100%;
     height: 50px;
     border: 1px solid #FF6633;
     border-radius: 40px;
     font-size: 20px;
     font-weight: 800;
-    margin-bottom: 20px;
-
     transition: .5s;
     background-color: #FF6633;
-    color: #fff;
-    display: inline-block; /* Ensure inline-block so padding can be applied */
+    color: #ffffff;
+    display: inline-block;
+    /* Ensure inline-block so padding can be applied */
     padding: 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     text-align: center;
 }
 
-#register{
+#register {
     margin-top: 40px;
 }
+
 #register.log-in-btn {
     width: 150px;
     height: 50px;
     float: right;
 }
 
-.register-link
-{
+.register-link {
     display: flex;
-    color: #fff;
+    color: #ffffff;
     flex-direction: row;
     align-items: flex-start;
 }
 
-.register-link a
-{
+.register-link a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-weight: 600;
     margin-left: 150px;
 }
-.register-link a:hover
-{
+
+.register-link a:hover {
     text-decoration: underline;
 }
-.login .log-in-btn:hover{
+
+.login .log-in-btn:hover {
     background-color: rgb(234, 46, 21);
 }
 
 
-.background-log{
+.background-log {
     display: flex;
     width: 100%;
     height: 100%;
     z-index: -10;
     position: absolute;
+    filter: blur(1px);
 }
+
 img {
     width: 100%;
     height: auto;
