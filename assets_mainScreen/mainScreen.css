@@ -64,6 +64,13 @@ img {
 
 
 /* --------------------------------------header------------------------------------------ */
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
 .navbar {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.778);
@@ -99,10 +106,8 @@ img {
     min-width: 78px;
 }
 
-.menu_child {
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
+.clearfix a :hover {
+    color: rgb(213, 146, 100);
 }
 
 .logo {
@@ -119,12 +124,8 @@ img {
     height: 12px;
 }
 
-.product-menu {
-    display: none;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.93);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+.menu-item:hover .menu-name {
+    color: rgb(213, 146, 100);
 }
 
 .menu-item {
@@ -136,15 +137,18 @@ img {
     padding: 20px 0;
 }
 
+.product-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.93);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
 
-/* .menu-item:hover {
-    background-color: rgba(255, 255, 255, 0.681);
-    color: black;
-} */
-
-
-.clearfix a:hover {
-    color: rgb(213, 146, 100);
+.menu_child {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
 }
 
 .product-menu a {
@@ -169,7 +173,6 @@ img {
     border-bottom: 0px solid #ddd;
 }
 
-
 /* Chỉnh vị trí bảng xuất hiện */
 .menu-item:hover .product-menu {
     top: 100%;
@@ -178,19 +181,9 @@ img {
     width: 100%;
 }
 
-.menu-item:hover .menu-name {
-    color: rgb(213, 146, 100);
-}
-
 .product-menu .menu_title {
     text-decoration: underline;
     font-size: 1.2em;
-}
-
-header {
-    position: sticky;
-    top: 0px;
-    z-index: 100;
 }
 
 #searchInput {
@@ -205,6 +198,43 @@ header {
 
 #searchInput:focus {
     outline: none;
+}
+
+.product-menu2 {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.93);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.product-menu2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.searchBar .product-menu2 {
+    top: 70%;
+    right: 13.4%;
+    display: block;
+    width: 11%;
+}
+
+#menu_child2 img {
+    margin: 10px 10px;
+    max-width: 30px;
+}
+
+#menu_child2 li a {
+    display: flex;
+    align-items: center;
+    color:rgba(0, 0, 0, 0.4);
+    font-size: 10px;
+}
+
+#menu_child2 li {
+    border-top: 0.5px #67626255 solid;
 }
 
 /* --------------------------------------Main------------------------------------------ */
@@ -224,11 +254,11 @@ header {
 }
 
 /*--------------------------------------------------------------------------------------------*/
-.menu_home img{
+.menu_home img {
     transition: transform 0.3s ease;
 }
 
-.menu_home a:hover img{
+.menu_home a:hover img {
     transform: scale(1.05);
 }
 
@@ -280,11 +310,11 @@ header {
     margin: 150px 150px 0;
 }
 
-.signature img{
+.signature img {
     transition: transform 0.3s ease;
 }
 
-.signature a:hover img{
+.signature a:hover img {
     transform: scale(1.01);
 }
 
@@ -311,11 +341,11 @@ header {
     width: 100px;
 }
 
-.signature_2 img{
+.signature_2 img {
     transition: transform 0.3s ease;
 }
 
-.signature_2 a:hover img{
+.signature_2 a:hover img {
     transform: scale(1.05);
 }
 
@@ -382,11 +412,11 @@ header {
     flex-wrap: wrap;
 }
 
-.article_item_img img{
+.article_item_img img {
     transition: transform 0.3s ease;
 }
 
-.article_item_img:hover img{
+.article_item_img:hover img {
     transform: scale(1.05);
 }
 
@@ -416,99 +446,100 @@ header {
     width: 100%;
     height: 330px;
     background-color: #CCCCCC;
-  }
-  
-  
-  
-  .footer__info {
+}
+
+
+
+.footer__info {
     height: 70%;
     display: flex;
-    
-  }
-  
-  .footer__info a:hover{
+
+}
+
+.footer__info a:hover {
     color: red;
-  }
-  
-  /*chỉnh kích cở cho icon*/
-  .social-icon i{
+}
+
+/*chỉnh kích cở cho icon*/
+.social-icon i {
     width: 15px;
-  }
-  
-  /*kích cở của ảnh*/
-  .footer__logo-img {
+}
+
+/*kích cở của ảnh*/
+.footer__logo-img {
     width: 70px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-top: 36px;
-  }
-  
-  .text-center{
+}
+
+.text-center {
     text-align: center !important;
-  }
-  
-  .footer__info-icon {
+}
+
+.footer__info-icon {
     margin-top: 4px;
     font-size: 16px;
     padding: 4px;
-  }
-  
-  .footer__info-item {
+}
+
+.footer__info-item {
     flex: 1;
     height: 100%;
-  }
-  
-  .footer__info-item h4 {
+}
+
+.footer__info-item h4 {
     margin-top: 12px;
     margin-bottom: 4px;
-  }
-  
-  .footer__info-item li {
+}
+
+.footer__info-item li {
     list-style: none;
-    
-  }
-  
-  .footer__info-item a {
+
+}
+
+.footer__info-item a {
     text-decoration: none;
     color: var(--black-color);
     font-size: 12px;
-  }
-  
-  
-  .footer__location,
-  .footer__call {
+}
+
+
+.footer__location,
+.footer__call {
     margin-top: 4px;
-  }
-  
-  .footer__location-icon,
-  .footer__call-icon {
+}
+
+.footer__location-icon,
+.footer__call-icon {
     min-width: 16px;
     margin: 0 4px
-  }
-  
-  .line-sereprate {
+}
+
+.line-sereprate {
     margin: auto;
     width: 95%;
     border: 1px solid #555;
-  }
-  .footer__address {
+}
+
+.footer__address {
     height: 30%;
     text-align: center;
-  }
-  
-  .footer__info-item h4{
+}
+
+.footer__info-item h4 {
     font-size: 15px;
-  }
-  
-  .address-info {
+}
+
+.address-info {
     font-size: 12px;
-  }
-  
-  .footer__address p{
+}
+
+.footer__address p {
     font-size: 10px;
-  }
-  
-  .footer__info-item ul{
+}
+
+.footer__info-item ul {
     padding-left: 0px;
-  }
+}
 
 /*---------------footer end--------------------------*/
