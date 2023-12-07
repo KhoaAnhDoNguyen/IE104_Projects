@@ -24,9 +24,12 @@ html {
 
 
 .text-center {
-    text-align: center;
+    text-align: center !important; 
 }
 
+.text-left {
+    text-align: left !important;
+}
 
 /* Responsive */
 .grid {
@@ -42,8 +45,8 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+    padding-left: -10px;
+    padding-right: -10px;
 }
 
 /* test */
@@ -63,6 +66,24 @@ html {
     padding-left: 10px;
     padding-right: 10px;
     width: 25%;
+}
+
+.grid__column-3-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33,3333%;
+}
+
+.grid__col-half {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+}
+
+.grid__col-full {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
 }
 
 

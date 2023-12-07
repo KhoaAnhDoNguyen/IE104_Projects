@@ -93,12 +93,11 @@ cakeNode.onclick = function () {
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Lấy tham số id từ URL
     var urlParams = new URLSearchParams(window.location.search);
     var id = urlParams.get('id');
-    if (id === 'Coffee1')
-    {
+    if (id === 'Coffee1') {
         window.onload = function () {
             itemsNode.forEach((item) => {
                 hiddenForID(item, 'Coffee')
@@ -109,8 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    else if (id === 'Tea1')
-    {
+    else if (id === 'Tea1') {
         window.onload = function () {
             itemsNode.forEach((item) => {
                 hiddenForID(item, 'Tea')
@@ -121,8 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    else if (id === 'Detox1')
-    {
+    else if (id === 'Detox1') {
         window.onload = function () {
             itemsNode.forEach((item) => {
                 hiddenForID(item, 'Detox')
@@ -133,8 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    else if (id === 'Cake1')
-    {
+    else if (id === 'Cake1') {
         window.onload = function () {
             itemsNode.forEach((item) => {
                 hiddenForID(item, 'Cake')
@@ -145,3 +141,86 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 })
+
+
+let mobileMenu = document.getElementById('mobile-menu');
+let navbar = document.querySelector('.clearfix');
+
+mobileMenu.onclick = function () {
+    if (navbar.style.display == 'none') {
+        navbar.style.display = 'block';
+    } else {
+        navbar.style.display = 'none';
+    }
+}
+
+let productItem = document.querySelectorAll('.item-wrap')
+
+window.onresize = function () {
+    // 4 item in row
+    if (window.innerWidth >= 1200) {
+        for (let i = 0; i < productItem.length; i++) {
+            switch (true) {
+                case productItem[i].classList.contains('grid__column-3-10'):
+                    productItem[i].classList.remove('grid__column-3-10');
+                    productItem[i].classList.add('grid__column-4-10');
+                    break;
+                case productItem[i].classList.contains('grid__col-half'):
+                    productItem[i].classList.remove('grid__col-half');
+                    productItem[i].classList.add('grid__column-4-10');
+                    break;
+                case productItem[i].classList.contains('grid__col-full'):
+                    productItem[i].classList.remove('grid__col-full');
+                    productItem[i].classList.add('grid__column-4-10');
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+    // 3 item in row
+    else if (window.innerWidth < 1200 && window.innerWidth >= 1024) {
+        for (let i = 0; i < productItem.length; i++) {
+            switch (true) {
+                case productItem[i].classList.contains('grid__column-4-10'):
+                    productItem[i].classList.remove('grid__column-4-10');
+                    productItem[i].classList.add('grid__column-3-10');
+                    break;
+                case productItem[i].classList.contains('grid__col-half'):
+                    productItem[i].classList.remove('grid__col-half');
+                    productItem[i].classList.add('grid__column-3-10');
+                    break;
+                case productItem[i].classList.contains('grid__col-full'):
+                    productItem[i].classList.remove('grid__col-full');
+                    productItem[i].classList.add('grid__column-3-10');
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+    
+
+    // tablet  2 item in row
+    else if (window.innerWidth < 1024 && window.innerWidth >= 740) {
+        for (let i = 0; i < productItem.length; i++) {
+            switch (true) {
+                case productItem[i].classList.contains('grid__column-4-10'):
+                    productItem[i].classList.remove('grid__column-4-10');
+                    productItem[i].classList.add('grid__col-half');
+                    break;
+                case productItem[i].classList.contains('grid__column-3-10'):
+                    productItem[i].classList.remove('grid__column-3-10');
+                    productItem[i].classList.add('grid__col-half');
+                    break;
+                case productItem[i].classList.contains('grid__col-full'):
+                    productItem[i].classList.remove('grid__col-full');
+                    productItem[i].classList.add('grid__col-half');
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+}
