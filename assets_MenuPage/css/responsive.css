@@ -51,12 +51,49 @@
     .downArrowIcon {
         display: none;
     }
+
+    #footer-tablet-mobile {
+        display: block;
+    }
+
+    .footer__info {
+        display: block;
+        padding: 0 64px;
+    }
+
+    .footer__location {
+        padding-top: 30px;
+    }
+
+    .address-info {
+        margin-left: 64px;
+    }
+
+    .address-info p {
+        font-size: 1.2rem;
+    }
+}
+
+/* PC */
+@media (min-width: 64em) {
+    #footer-pc {
+        display: block;
+    }
+
+    .footer__info {
+        display: flex;
+    }
+    
+    .footer__address {
+        padding: 0 64;
+    }
 }
 
 
-
 /* tablet */
-@media (min-width: 46.25em) and (max-width: 63.9375em) {}
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
 
 
 /* mobile */
