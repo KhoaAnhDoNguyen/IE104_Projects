@@ -123,8 +123,13 @@ section  .content
     height: 50px;
     padding: 40px 0;
 }
+.input-box input::placeholder {
+    color: #999; /* Màu sắc của văn bản mờ khi không được tô điền */
+}
+
 .input-box .input
 {
+    text-indent: 5%;
     width: 100%;
     height: 50px;
     border: 2px solid #FF6633;
