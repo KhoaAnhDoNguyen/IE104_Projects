@@ -1,5 +1,4 @@
 /* --------------------------------------General------------------------------------------ */
-
 body {
     max-width: 100%;
     margin: 0;
@@ -28,10 +27,6 @@ header img {
     max-width: 300px;
     height: auto;
 }
-
-
-
-
 /* --------------------------------------top bar------------------------------------------ */
 .row {
     display: flex;
@@ -64,7 +59,6 @@ header img {
     height: 15px;
     margin-right: 10px;
 }
-
 
 /* --------------------------------------header------------------------------------------ */
 .navbar {
@@ -252,10 +246,7 @@ header {
 #menu_child2 li {
     border-top: 0.5px #67626255 solid;
 }
-
-
-
-/**/
+/*---------------------main------------------------*/
 main .intro {
     color: black;
     font-weight: bold;
@@ -263,17 +254,18 @@ main .intro {
     margin-left: 180px;
     margin-top: 100px;
 }
-
 .product-info {
     display: flex;
     /* Hiển thị các phần tử con cùng một hàng (ngang) */
 }
-
 .product-image img {
-    margin-left: 180px;
     /* Khoảng cách giữa chữ và hình ảnh (tùy chỉnh) */
-    height: 600px;
-    width: 500px;
+    height: 400px;
+    width: 300px;
+    margin-left: 10px;
+}
+.product-price{
+    width: 700px;
 }
 
 .product-price p {
@@ -284,7 +276,6 @@ main .intro {
     margin-left: 100px;
     margin-top: -10px;
 }
-
 
 /*size*/
 main .list-size {
@@ -335,7 +326,6 @@ main .size-product {
     text-decoration: none;
 }
 
-
 /*topping*/
 main .list-topping {
     display: flex;
@@ -356,6 +346,7 @@ main .topping p {
     padding-right: 10px;
     margin-bottom: 30px;
 }
+
 
 main .ul-topping {
     align-items: center;
@@ -395,8 +386,6 @@ main .ul-topping {
     transition: background-color 0.3s ease;
 }
 
-
-
 /*Shipping*/
 .delivery {
     width: 700px;
@@ -412,6 +401,7 @@ section .delivery img {
 }
 
 section .delivery {
+    width: 600px;
     border: 2px solid #000;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #888;
@@ -458,7 +448,7 @@ section .delivery p {
 main .smallpicture img {
     width: 200px;
     height: 200px;
-    margin-left: 180px;
+    margin-left: 50px;
     margin-top: 50px;
     border-radius: 10%;
     /* Đặt giá trị này để bo góc hình ảnh thành hình tròn */
@@ -474,6 +464,7 @@ aside {
 }
 
 /*relative drinks*/
+
 span p {
     font-weight: bold;
     font-size: 30px;
@@ -487,10 +478,10 @@ span .relative_drinks {
 }
 
 span .relative_drinks_list img {
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 170px;
-    height: 170px;
+    margin-left: 90px;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
     margin-top: 25px;
     border-radius: 10%;
     /* Đặt giá trị này để bo góc hình ảnh thành hình tròn */
@@ -738,6 +729,8 @@ span .relative_drinks_list p {
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
 }*/
+
+
 
 
 
