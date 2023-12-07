@@ -98,10 +98,14 @@ img {
   margin-right: 10px;
 }
 
+.toLogin {
+  position: absolute;
+  right: 30px;
+}
 
 /* --------------------------------------header------------------------------------------ */
 .navbar {
-  position:absolute;
+  position: absolute;
   background-color: rgba(255, 255, 255, 0.778);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -125,10 +129,10 @@ img {
 }
 
 .clearfix li a {
-  color:rgb(62, 60, 60);
+  color: rgb(62, 60, 60);
 }
 
-.clearfix > li {  
+.clearfix>li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,7 +183,7 @@ img {
   color: black;
 } */
 
-.clearfix a:hover{
+.clearfix a:hover {
   color: rgb(213, 146, 100);
 }
 
@@ -207,7 +211,7 @@ img {
 
 
 /* Chỉnh vị trí bảng xuất hiện */
-.menu-item:hover .product-menu{
+.menu-item:hover .product-menu {
   top: 100%;
   right: 0;
   display: block;
@@ -645,6 +649,10 @@ aside.table-of-contents .main-section a {
 
   header {
     font-size: 1rem;
+  }
+
+  .toLogin {
+    position: relative;
   }
 
   .navbar {

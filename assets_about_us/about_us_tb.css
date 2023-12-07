@@ -149,6 +149,11 @@ header img {
     transition: .5s;
 }
 
+.toLogin {
+    position: absolute;
+    right: 30px;
+}
+
 /* --------------------------------------header------------------------------------------ */
 .navbar {
     position: absolute;

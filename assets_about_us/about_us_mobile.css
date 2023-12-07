@@ -57,6 +57,11 @@ body {
     transition: .5s;
 }
 
+/* .toLogin {
+    position: absolute;
+    right: 0;
+} */
+
 /* --------------------------------------header------------------------------------------ */
 .navbar {
     position:absolute;

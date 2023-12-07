@@ -232,6 +232,11 @@ header {
     outline: none;
 }
 
+.toLogin {
+    position: absolute;
+    right: 30px;
+}
+
 /* Font size adjustments for tablet screens */
 @media screen and (max-width: 1024px) and (min-width: 741px) {
     .navbar {

@@ -242,6 +242,11 @@ header {
   outline: none;
 }
 
+.toLogin {
+  position: absolute;
+  right: 30px;
+}
+
 /* ------------------------------------------MAIN---------------------------------------- */
 
 .bannerPic {

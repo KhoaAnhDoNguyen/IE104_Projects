@@ -230,7 +230,10 @@ img {
     margin-right: 10px;
 }
 
-
+.toLogin {
+    position: absolute;
+    right: 30px;
+}
 /* --------------------------------------header------------------------------------------ */
 .navbar {
     position:absolute;
