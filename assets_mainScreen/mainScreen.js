@@ -116,8 +116,13 @@ function checkAndRedirect(normalizedString) {
         window.location.href = './MenuPage.html?id=Detox1';
     } else if ("banhcake".toLowerCase().includes(normalizedString.toLowerCase())) {
         window.location.href = './MenuPage.html?id=Cake1';
-    } else if (matchingProducts.length > 0) {
+    } else if (matchingProducts.length === 1) {
         const matchedProduct = matchingProducts[0];
         window.location.href = `./BuyScreen.html?id=${matchedProduct.id}`;
-    }   
+    } else if (matchingProducts.length > 1) {
+        window.location.href = './MenuPage.html?id=' + normalizedString;
+    }
+    else{
+        alert("Không có sản phẩm theo yêu cầu khách hàng. Vui lòng tìm kiếm lại !!!");
+    }
 }
