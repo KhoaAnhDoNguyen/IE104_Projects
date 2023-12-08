@@ -156,6 +156,7 @@ mobileMenu.onclick = function () {
 
 let productItem = document.querySelectorAll('.item-wrap')
 
+
 window.onresize = function () {
     // 4 item in row
     if (window.innerWidth >= 1200) {
