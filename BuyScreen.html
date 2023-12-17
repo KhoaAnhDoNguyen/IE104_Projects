@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
     <meta charset="utf-8">
     <title>Buy Screen</title>
@@ -194,6 +194,7 @@
     <main>
         <p class="intro" id="intro-id"></p>
         <section class="product-info">
+            <h1 style="display: none;">Main</h1>
             <div class="product-image">
                 <img src="#" id="product-show" alt="Product Image">
             </div>
@@ -246,7 +247,7 @@
                     <a href=""> <p> <img src="Ảnh\Header&FooterImage\Delivery.png">Giao hàng tận nơi</p></a>
                 </div> 
                 -->      
-                <button  class="delivery place-buy-btn js-buy-ticket"><p> <img src="./assets_buyscreen/Ảnh/Header&FooterImage/Delivery.png" alt="Delivery Icon">Giao hàng tận nơi</p></button> 
+                <button  class="delivery place-buy-btn js-buy-ticket"><span> <img src="./assets_buyscreen/Ảnh/Header&FooterImage/Delivery.png" alt="Delivery Icon">Giao hàng tận nơi</span></button> 
             </div>
         </section>
 
@@ -264,35 +265,35 @@
 
     <hr style="margin-top: 70px;" class="horizontal-line">
     
-    <span>
+    <div class="SPLQ">
             <p>Sản phẩm liên quan</p>
             <div class="relative_drinks">
                 <div class="relative_drinks_list">
-                    <img src="./assets_buyscreen/Ảnh/Cà phê/BacXiu.png" id="BacXiu" alt="Product 1">
+                    <img src="./assets_buyscreen/Ảnh/Càphê/BacXiu.png" id="BacXiu" alt="Product1">
                     <p>Bạc Xỉu</p>
                     <p style="margin-top: -10px; font-weight: normal;">45.000 đ</p>
                 </div>
 
                 <div class="relative_drinks_list">
-                    <img src="./assets_buyscreen/Ảnh/Trà/TraXanhDauDo.png" id="TraXanh" alt="Product 2">
+                    <img src="./assets_buyscreen/Ảnh/Trà/TraXanhDauDo.png" id="TraXanh" alt="Product2">
                     <p>Trà Xanh Đậu Đỏ</p>
                     <p style="margin-top: -10px; font-weight: normal;">55.000 đ</p>
                 </div>
 
                 <div class="relative_drinks_list">
-                    <img src="./assets_buyscreen/Ảnh/Trà/TraThachDao.png" id="TraThachDao" alt="Product 3">
+                    <img src="./assets_buyscreen/Ảnh/Trà/TraThachDao.png" id="TraThachDao" alt="Product3">
                     <p>Trà thạch đào</p>
                     <p style="margin-top: -10px; font-weight: normal;">40.000 đ</p>
                 </div>
 
                 <div class="relative_drinks_list">
-                    <img src="./assets_buyscreen/Ảnh/Detox/DetoxThanhLoc.png" id="DetoxThanhLoc" alt="Product 4">
+                    <img src="./assets_buyscreen/Ảnh/Detox/DetoxThanhLoc.png" id="DetoxThanhLoc" alt="Product4">
                     <p>Detox Thanh Lọc</p>
                     <p style="margin-top: -10px; font-weight: normal;">25.000 đ</p>
                 </div>
 
             </div>
-    </span>
+    </div>
 
     
 
@@ -342,8 +343,7 @@
  <!--delivery btn end-->
  <script src="./assets_buyscreen/BuyScreen.js"></script>
  <script src="./assets_mainScreen/mainScreen.js"></script>
-</body>
-<footer id="footer">
+ <footer id="footer">
     <div class="footer__info">
         <div class="text-center footer__info-item">
             <img src="./assets_about_us/img/footer/logo.png" alt="primary logo" class="footer__logo-img">
@@ -392,7 +392,7 @@
             </div>
             <div class="footer__call">
                 <i class="ti-mobile"></i>
-                <a href="tel: 012345678">012345678</a>
+                <a href="tel:012345678">012345</a>
             </div>
         </div>
     </div>
@@ -409,5 +409,6 @@
     </div>
 </footer>
 <script src="script.js"></script>
+</body>
 </html>
 

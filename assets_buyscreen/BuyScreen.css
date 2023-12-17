@@ -428,7 +428,8 @@ main section .delivery {
     /* Giảm giá trị margin-top xuống để kéo hình và chữ xuống 1 chút */
 }
 
-main section .delivery p {
+main section .delivery span {
+    font-size: 25px;
     color: white;
     font-weight: normal;
     margin-bottom: 0px;
@@ -450,10 +451,6 @@ main section .delivery p {
     cursor: pointer;
 }
 
-/*.delivery a:hover, .delivery:hover{
-    background-color: #888;
-    color: #000;
-}*/
 
 /*small picture*/
 main .smallpicture img {
@@ -475,19 +472,19 @@ aside {
 }
 
 /*relative drinks*/
-span p {
+.SPLQ p {
     font-weight: bold;
     font-size: 30px;
     margin-top: 70px;
     margin-left: 180px;
 }
 
-span .relative_drinks {
+.SPLQ .relative_drinks {
     display: flex;
     justify-content: space-between;
 }
 
-span .relative_drinks_list img {
+.SPLQ .relative_drinks_list img {
     margin-left: 100px;
     margin-right: 100px;
     width: 170px;
@@ -504,7 +501,7 @@ span .relative_drinks_list img {
     transform: translateY(-10px);
 }
 
-span .relative_drinks_list p {
+.SPLQ .relative_drinks_list p {
     font-size: 15px;
     text-align: center;
     margin-top: 20px;

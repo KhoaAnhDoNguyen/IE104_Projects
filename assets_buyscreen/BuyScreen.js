@@ -59,32 +59,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Kiểm tra giá trị của id và hiển thị thông tin tương ứng
     if (id === 'PHINDI') {
-        updateProductInfo('PHINDI', './assets_buyscreen/Ảnh/Cà phê/BacXiu.png', 'Menu / Cafe / PHINDI', 'PHINDI', 45000, 
+        updateProductInfo('PHINDI', './assets_buyscreen/Ảnh/Càphê/BacXiu.png', 'Menu / Cafe / PHINDI', 'PHINDI', 45000, 
         'Cà phê Phindi mang đến hương thơm nồng nàn của đất trái và cỏ dại từ vùng cao nguyên Việt Nam. Với vị đắng nhẹ và êm dịu, mỗi giọt cà phê Phindi là một chuyến phiêu lưu đầy tinh tế, khám phá hương vị độc đáo và tận hưởng sự trọn vẹn của khoảnh khắc.');
     } 
 
     else if (id === 'Macchiato'){
-        updateProductInfo('Macchiato', './assets_buyscreen/Ảnh/Cà phê/Macchiato.png', 'Menu / Cafe / Macchiato', 'Macchiato', 65000, 
+        updateProductInfo('Macchiato', './assets_buyscreen/Ảnh/Càphê/Macchiato.png', 'Menu / Cafe / Macchiato', 'Macchiato', 65000, 
         'Macchiato - một tác phẩm ngắn gọn của nghệ thuật cà phê. Hòa quyện giữa hương thơm nồng nàn của hạt cà phê và vị ngọt mát của sữa tươi, macchiato là sự kết hợp tinh tế giữa đắng và ngọt. Mỗi giọt macchiato không chỉ là một cảm xúc, mà còn là một chuyến du hành ngắn qua thế giới hương vị, để lại ấn tượng đậm sâu trong vị giác của người thưởng thức.')
     }
 
     else if (id === 'Latte'){
-        updateProductInfo('Latte', './assets_buyscreen/Ảnh/Cà phê/Latte.png', 'Menu / Cafe / Latte', 'Latte', 65000,
+        updateProductInfo('Latte', './assets_buyscreen/Ảnh/Càphê/Latte.png', 'Menu / Cafe / Latte', 'Latte', 65000,
         'Latte - một bức tranh ấm áp và tinh tế của cà phê. Hòa quyện giữa hương thơm độc đáo của hạt cà phê và sự mềm mại của sữa hấp, latte là một trải nghiệm đẳng cấp và êm dịu. Với lớp bọt sánh mịn, mỗi giọt latte không chỉ là một đồ uống, mà là một cuộc phiêu lưu ngọt ngào đưa người uống vào thế giới ấm áp của sự thư giãn và hưởng thụ.')
     }
 
     else if (id === 'CoffeePhin'){
-        updateProductInfo('CoffeePhin', './assets_buyscreen/Ảnh/Cà phê/Phin.png', 'Menu / Cafe / Phin', 'Phin', 35000,
+        updateProductInfo('CoffeePhin', './assets_buyscreen/Ảnh/Càphê/Phin.png', 'Menu / Cafe / Phin', 'Phin', 35000,
         'Cà phê phin - một hành trình giữa hương vị truyền thống và sự tươi mới. Vị cà phê đắng ngắt nhẹ nhàng hòa quyện với hương thơm của đất trái, làm cho mỗi giấc nhấm nháp trở thành một trải nghiệm độc đáo, làm dịu đi nhiệt độ và làm tỉnh táo tâm hồn. Cà phê phin đá không chỉ là đồ uống, mà còn là nguồn cảm hứng cho những khoảnh khắc tận hưởng sự sôi động của cuộc sống.')
     }
 
     else if (id === 'BacXiu') {
-        updateProductInfo('BacXiu', './assets_buyscreen/Ảnh/Cà phê/BacXiu.png', 'Menu / Cafe / Bạc Xỉu', 'Bạc Xỉu', 40000, 
+        updateProductInfo('BacXiu', './assets_buyscreen/Ảnh/Càphê/BacXiu.png', 'Menu / Cafe / Bạc Xỉu', 'Bạc Xỉu', 40000, 
         'Bạc xỉu - một biểu tượng của sự đơn giản và ngon miệng. Cà phê đen mạnh mẽ kết hợp với sữa béo ngậy, tạo ra một hòa quyện hương vị đặc trưng. Với tỷ lệ cân đối, bạc xỉu không chỉ là sự kết hợp hoàn hảo giữa đắng và ngọt, mà còn là một hành trình vị giác đơn giản, đem đến cảm giác thư giãn và thỏa mãn. Mỗi giọt bạc xỉu là một chuyến phiêu lưu qua vùng đất tinh tế của hương vị cà phê truyền thống, làm say đắm trái tim người thưởng thức.');
     } 
 
     else if (id === 'Americano') {
-        updateProductInfo('Americano', './assets_buyscreen/Ảnh/Cà phê/Americano.png', 'Menu / Cafe / Americano', 'Americano', 45000, 
+        updateProductInfo('Americano', './assets_buyscreen/Ảnh/Càphê/Americano.png', 'Menu / Cafe / Americano', 'Americano', 45000, 
         'Americano - sự hòa quyện của đơn giản và mạnh mẽ trong mỗi giọt cà phê. Với hương thơm độc đáo và vị đắng nhẹ, americano là cuộc phiêu lưu của sự tinh tế giữa nước và cà phê. Mỗi giọt americano là một chuyến hành trình đơn sơ, nhưng đầy sức mạnh, mang đến sự tỉnh táo và hứng khởi. Khám phá một thế giới độc đáo qua hương vị, americano không chỉ là một cốc cà phê, mà là một trải nghiệm độc đáo cho người thưởng thức đam mê hương vị thuần túy.');
     } 
 

@@ -391,7 +391,7 @@ main .ul-topping {
     width: 700px;
 }
 
-section .delivery img {
+main section .delivery img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
@@ -400,7 +400,7 @@ section .delivery img {
 
 }
 
-section .delivery {
+main section .delivery  {
     width: 600px;
     border: 2px solid #000;
     border-radius: 5px;
@@ -417,7 +417,7 @@ section .delivery {
     /* Giảm giá trị margin-top xuống để kéo hình và chữ xuống 1 chút */
 }
 
-section .delivery p {
+main section .delivery span {
     color: white;
     font-weight: normal;
     margin-bottom: 0px;
@@ -465,19 +465,19 @@ aside {
 
 /*relative drinks*/
 
-span p {
+.SPLQ p {
     font-weight: bold;
     font-size: 30px;
     margin-top: 70px;
     margin-left: 180px;
 }
 
-span .relative_drinks {
+.SPLQ .relative_drinks {
     display: flex;
     justify-content: space-between;
 }
 
-span .relative_drinks_list img {
+.SPLQ .relative_drinks_list img {
     margin-left: 90px;
     margin-right: 20px;
     width: 100px;
@@ -494,7 +494,7 @@ span .relative_drinks_list img {
     transform: translateY(-10px);
 }
 
-span .relative_drinks_list p {
+.SPLQ .relative_drinks_list p {
     font-size: 15px;
     text-align: center;
     margin-top: 20px;
