@@ -403,7 +403,7 @@ main .ul-topping {
     width: 700px;
 }
 
-section .delivery img {
+main section .delivery img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
@@ -412,7 +412,7 @@ section .delivery img {
 
 }
 
-section .delivery {
+main section .delivery {
     border: 2px solid #000;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #888;
@@ -428,7 +428,7 @@ section .delivery {
     /* Giảm giá trị margin-top xuống để kéo hình và chữ xuống 1 chút */
 }
 
-section .delivery p {
+main section .delivery p {
     color: white;
     font-weight: normal;
     margin-bottom: 0px;
