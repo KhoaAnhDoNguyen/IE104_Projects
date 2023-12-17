@@ -302,7 +302,8 @@ main .size-product {
     margin-left: 90px;
     margin-right: 5px;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: -20px;
 }
 
 .size-product img {
@@ -354,7 +355,7 @@ main .topping p {
     font-size: 25px;
     font-weight: normal;
     padding-right: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 main .ul-topping {
@@ -363,15 +364,15 @@ main .ul-topping {
     text-align: center;
     /* Chỉnh text-align thành center */
 
-    border: 1px solid #000;
-    /* Giảm độ rộng của border xuống 1px */
+    border: 2px solid #000;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #888;
 
     margin-left: 100px;
     margin-right: 90px;
     font-size: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .ul-topping a {
