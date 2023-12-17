@@ -330,103 +330,7 @@ ol {
   margin-left: 18%;
 }
 
-#the-bar {
-  display: flex;
-  align-items: center;
-}
 
-.image-container {
-  position: relative;
-}
-
-.image-container img {
-  width: 100%;
-  /* Đảm bảo hình ảnh lấp đầy toàn bộ phần tử */
-  max-width: 100%;
-  height: auto;
-}
-
-.text-container {
-  /*cha */
-  display: flex;
-  align-items: center;
-}
-
-.left-text {
-  position: absolute;
-  top: 0px;
-  left: 300px;
-  color: rgb(9, 214, 98);
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.right-text {
-  position: absolute;
-  top: 0px;
-  right: 50px;
-  font-size: 15px;
-  color: rgb(9, 214, 98);
-  font-weight: 700;
-}
-
-.icon_map {
-  content: url(assets/icon_map.png);
-  margin-right: 5px;
-  width: 30px;
-  height: 30px;
-}
-
-.icon_phone {
-  content: url(assets/icon_phone.png);
-  margin-right: 5px;
-  width: 30px;
-  height: 30px;
-}
-
-
-
-.menu {
-  display: flex;
-  /* Đặt menu ngang */
-  margin-left: 150px;
-}
-
-.menu ul {
-  list-style: none;
-  /* Loại bỏ dấu chấm trước các mục menu */
-  display: flex;
-  /* Đặt các mục menu ngang */
-}
-
-.menu li {
-  margin-right: 30px;
-  /* Khoảng cách giữa các mục menu */
-}
-
-/* Điều chỉnh kiểu hiển thị và căn chỉnh văn bản trong các mục menu */
-.menu a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.icon_giohang {
-  content: url(assets/gio_hang.png);
-  width: 35px;
-  height: 35px;
-  margin-left: 200px;
-  margin-right: 5px;
-  /* Điều chỉnh khoảng cách giữa biểu tượng và chữ */
-}
-
-.horizontal-line {
-  border: 1px solid #ab5454;
-  margin: 1px 20px;
-  width: 100%;
-  /*đọo rộng bằng 100% trang web*/
-}
 
 /* Bố trí phần main sử dụng Flexbox */
 .content-container {
@@ -437,7 +341,7 @@ ol {
   font-size: 1.5rem;
 }
 
-/* Phần nội dung chính chiếm nhiều nhất */
+/* Phần nội dung */
 .main-content {
   flex: 2;
   /* Chiếm 2 phần trên tổng 3 phần */
@@ -445,7 +349,7 @@ ol {
 }
 
 
-/*---------BODY------------*/
+/*---------BODY'S CONTENT------------*/
 /* Thiết kế mỗi bài viết */
 .article {
   /* flex: 1; */
@@ -503,16 +407,6 @@ ol {
   margin-bottom: 10px;
 }
 
-/* CSS cho phần table-of-contents */
-aside.table-of-contents {
-  position: sticky;
-  top: 0;
-  /* Điều này sẽ làm cho phần table-of-contents cố định ở trên đầu màn hình khi cuộn xuống */
-  padding: 80px 20px 20px 0px;
-  z-index: 120;
-  flex: 1;
-}
-
 
 
 /*--------pagination------*/
@@ -541,6 +435,14 @@ aside.table-of-contents {
 }
 
 /*table of contents*/
+
+aside.table-of-contents {
+  position: sticky;
+  top: 0;
+  padding: 80px 20px 20px 0px;
+  z-index: 120;
+  flex: 1;
+}
 
 .table-of-contents {
   margin-right: 200px;
