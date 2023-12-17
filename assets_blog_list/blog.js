@@ -82,7 +82,7 @@ function changeBlogContent(topicNumber) {
             changePage(1);
             break;
 
-        // Thêm các trường hợp khác tương ứng với các chủ đề khác
+        // Thêm các trường hợp khác tương ứng với các chủ đề 
     }
 }
 
